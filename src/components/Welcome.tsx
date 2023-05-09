@@ -5,12 +5,9 @@ import Image from "next/image";
 import wallpaper from "../images/wallpaper-folhas2.png";
 import logo from "../images/logo.png";
 
-export default function HomeBanner() {
+export default function Welcome() {
   return (
-    <motion.header
-      className="relative flex justify-center"
-      variants={textTransition(1)}
-    >
+    <motion.header className="relative flex justify-center h-screen">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
