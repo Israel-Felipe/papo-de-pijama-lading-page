@@ -39,7 +39,7 @@ export default function Welcome() {
           alt="logo"
         />
         <motion.p
-          variants={fadeIn("right", "spring", 0.8, 1)}
+          variants={fadeIn("right", "spring", 0.4, 1)}
           className="relative flex justify-center text-center
           text-[38px] font-bold
         px-8 sm:px-16 md:px-12 md:leading-[52px] z-50 mt-16"
@@ -49,7 +49,7 @@ export default function Welcome() {
         </motion.p>
 
         <motion.p
-          variants={fadeIn("let", "tween", 0.8, 1)}
+          variants={fadeIn("let", "tween", 0.4, 1)}
           className="relative flex justify-center text-center
           text-[30px] font-bold text-[#943A49]
         px-8 sm:px-16 md:px-12 md:leading-[52px] z-50 mt-10"
@@ -72,8 +72,7 @@ function Topics({ number, text }: { number: string; text: string }) {
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      variants={textTransition(1)}
+      variants={textTransition(0.6)}
       className="flex mt-10 gap-6 items-center justify-start text-[26px] font-medium"
     >
       <div className="flex justify-center items-center rounded-full text-center w-10 h-10 border border-[#751133]">

@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Welcome from "../components/Welcome";
 import Video from "../components/Video";
+import Depo_videos from "../components/Depo_videos";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <main className="min-h-xl m-auto flex-col justify-center items-start">
         <Welcome />
         <Video />
+        <Depo_videos />
       </main>
     </>
   );

@@ -7,16 +7,11 @@ import sombra from "../images/sombra.svg";
 
 export default function Video() {
   return (
-    <motion.header
-      className="relative flex justify-center h-screen bg-[#FEF4E6] z-0"
-      variants={textTransition(1)}
-    >
+    <motion.header className="relative flex justify-center h-screen bg-[#FEF4E6] z-0">
       <nav className="relative w-auto h-auto mt-12 max-w-screen-xl w-full">
         <motion.div
           initial="hidden"
           whileInView="show"
-          viewport={{ amount: 0.25 }}
-          variants={textTransition(0.4)}
           className="w-3/5 h-auto m-auto"
         >
           <Image
@@ -41,13 +36,7 @@ export default function Video() {
           </div> */}
         </motion.div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ amount: 0.25 }}
-          variants={textTransition(0.4)}
-          className="relative w-[65%] h-auto m-auto mt-10 z-10"
-        >
+        <div className="relative w-[65%] h-auto m-auto mt-10 z-10">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-20 w-[97%] h-auto -z-10
@@ -59,7 +48,7 @@ export default function Video() {
               QUERO SER ÍNTIMA DE DEUS NO DIA A DIA!
             </button>
           </a>
-        </motion.div>
+        </div>
 
         <motion.div className="flex justify-around w-3/5 m-auto mt-16">
           {blocsVideo_content.map((content, i) => (
@@ -76,12 +65,11 @@ function Blocs({ image, title }: { image: StaticImageData; title: string }) {
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-      variants={textTransition(1)}
+      variants={textTransition(0.4)}
       className="gap-6 items-center justify-center text-[26px] font-medium w-44"
     >
       <motion.div
-        variants={textTransition(0.6)}
+        variants={textTransition(0.2)}
         className="relative flex justify-center"
       >
         <Image
