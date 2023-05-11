@@ -7,7 +7,7 @@ import balon2 from "../images/balon2.svg";
 
 export default function DepoVideos() {
   return (
-    <motion.header className="relative flex justify-center h-screen bg-[#E4AC80] z-0">
+    <motion.header className="relative flex justify-center h-auto z-0 mb-40 bg-[#EC9D74]">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
@@ -27,7 +27,7 @@ export default function DepoVideos() {
       <motion.nav
         initial="hidden"
         whileInView="show"
-        className="relative w-auto h-auto mt-32 max-w-screen-xl text-[44px] font-bold"
+        className="relative w-auto h-auto mt-28 max-w-screen-xl text-[44px] font-bold"
       >
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 1)}
@@ -45,7 +45,7 @@ export default function DepoVideos() {
           Método Papo de Pijama
         </motion.p>
 
-        <nav className="flex flex-col gap-40">
+        <nav className="flex flex-col gap-32">
           <DepoLeft
             video={
               "https://www.youtube-nocookie.com/embed/rY4eHXTQ3Fo?controls=0"
@@ -96,7 +96,7 @@ function DepoLeft({
       initial="hidden"
       whileInView="show"
       variants={textTransition(0.6)}
-      className="flex text-[26px] w-full gap-20"
+      className="flex text-[26px] w-full"
     >
       <motion.div className="relative flex w-auto">
         <iframe
@@ -123,11 +123,10 @@ function DepoLeft({
         </p>
       </motion.div>
 
-      <motion.div
-        className="flex justify-center items-center text-start font-normal text-[26px] -mt-16"
-        variants={fadeIn("right", "spring", 0.6, 1)}
-      >
-        <h3>{text}</h3>
+      <motion.div className="flex justify-center items-center text-start font-normal text-[26px] bg-white bg-opacity-50 rounded-r-3xl p-16 -ml-4">
+        <motion.h3 className="ml-4" variants={textTransition(0.6)}>
+          {text}
+        </motion.h3>
       </motion.div>
     </motion.div>
   );
@@ -152,12 +151,12 @@ function DepoRigth({
       variants={textTransition(0.4)}
       className="flex text-[26px] w-full gap-20"
     >
-      <motion.div
-        className="flex justify-center items-center text-end font-normal text-[28px] -mt-16"
-        variants={fadeIn("left", "spring", 0.6, 1)}
-      >
-        <h3>{text}</h3>
+      <motion.div className="flex justify-center items-center text-end font-normal text-[26px] bg-white bg-opacity-50 rounded-l-3xl p-16 -mr-24">
+        <motion.h3 className="mr-4" variants={textTransition(0.6)}>
+          {text}
+        </motion.h3>
       </motion.div>
+
       <motion.div className="relative flex justify-center w-auto">
         <iframe
           style={{

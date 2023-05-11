@@ -2,6 +2,7 @@ import Head from "next/head";
 import Welcome from "../components/Welcome";
 import Video from "../components/Video";
 import Depo_videos from "../components/Depo_videos";
+import Depo_images from "../components/Depo_images";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Welcome />
         <Video />
         <Depo_videos />
+        <Depo_images />
       </main>
     </>
   );
