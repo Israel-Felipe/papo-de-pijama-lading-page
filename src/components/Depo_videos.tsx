@@ -124,7 +124,7 @@ function DepoLeft({
       </motion.div>
 
       <motion.div
-        className="flex justify-center items-center text-start font-normal text-[26px]"
+        className="flex justify-center items-center text-start font-normal text-[26px] -mt-16"
         variants={fadeIn("right", "spring", 0.6, 1)}
       >
         <h3>{text}</h3>
@@ -153,7 +153,7 @@ function DepoRigth({
       className="flex text-[26px] w-full gap-20"
     >
       <motion.div
-        className="flex justify-center items-center text-end font-normal text-[28px]"
+        className="flex justify-center items-center text-end font-normal text-[28px] -mt-16"
         variants={fadeIn("left", "spring", 0.6, 1)}
       >
         <h3>{text}</h3>
