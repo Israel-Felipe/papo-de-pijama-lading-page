@@ -28,7 +28,7 @@ export default function Welcome() {
       <motion.header
         initial="hidden"
         whileInView="show"
-        viewport={{ amount: 0.25 }}
+        viewport={{ once: true, amount: 0.25 }}
         variants={textTransition(0.4)}
         className="relative w-auto h-auto mt-32 lg:mt-20 max-w-screen-xl"
       >
@@ -49,7 +49,7 @@ export default function Welcome() {
         </motion.p>
 
         <motion.p
-          variants={fadeIn("let", "tween", 0.4, 1)}
+          variants={fadeIn("left", "tween", 0.4, 1)}
           className="relative flex justify-center text-center
           text-[30px] font-bold text-[#943A49]
         px-8 sm:px-16 md:px-12 md:leading-[52px] z-50 mt-10"
@@ -72,6 +72,7 @@ function Topics({ number, text }: { number: string; text: string }) {
     <motion.div
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.6)}
       className="flex mt-10 gap-6 items-center justify-start text-[26px] font-medium"
     >

@@ -83,3 +83,39 @@ export const Depos_content = [
     cidade: "Curitiba / PR",
   },
 ];
+
+export const Comparative_devos_content = [
+  {
+    text: "Leitura bíblica rasa",
+  },
+  {
+    text: "Todo dia um tema diferente",
+  },
+  {
+    text: "Você lê e esquece o que estudou durante o dia",
+  },
+  {
+    text: "Você não conhece as leitoras",
+  },
+  {
+    text: "Não consegue aplicar no dia a dia",
+  },
+];
+
+export const Comparative_papo_content = [
+  {
+    text: "Estudo bíblico profundo e dividido ao longo da semana",
+  },
+  {
+    text: "Tema é aprofundado ao longo de uma semana",
+  },
+  {
+    text: "Você fixa o assunto e leva para o seu dia e sua vida",
+  },
+  {
+    text: "Você caminha junto com outras leitoras",
+  },
+  {
+    text: "Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar!",
+  },
+];

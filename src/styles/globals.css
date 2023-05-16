@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #f4e1ce;
+  background-color: #f4e1ce; /* #f4e1ce */
   color: #751133;
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
@@ -19,4 +19,8 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #e47a5c;
+}
+
+html {
+  scroll-behavior: smooth;
 }

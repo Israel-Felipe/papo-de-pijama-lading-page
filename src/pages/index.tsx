@@ -3,6 +3,8 @@ import Welcome from "../components/Welcome";
 import Video from "../components/Video";
 import Depo_videos from "../components/Depo_videos";
 import Depo_images from "../components/Depo_images";
+import Trilha_semanal from "../components/Trilha_semanal";
+import Comparative from "../components/Comparative";
 
 export default function Home() {
   return (
@@ -21,6 +23,8 @@ export default function Home() {
         <Video />
         <Depo_videos />
         <Depo_images />
+        <Trilha_semanal />
+        <Comparative />
       </main>
     </>
   );

@@ -12,6 +12,7 @@ export default function Video() {
         <motion.div
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
           className="w-3/5 h-auto m-auto"
         >
           <Image
@@ -39,11 +40,11 @@ export default function Video() {
         <div className="relative w-[65%] h-auto m-auto mt-10 z-10">
           <Image
             src={sombra}
-            className={`absolute left-1/2 transform -translate-x-1/2 top-20 w-[97%] h-auto -z-10
+            className={`absolute left-1/2 transform -translate-x-1/2 top-[90%] w-[95%] h-auto -z-10
           }`}
             alt="sombra"
           />
-          <a href="#">
+          <a href="#" className="w-full">
             <button
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full h-24 py-2 px-4 rounded-full text-white font-bold text-[26px] z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
@@ -68,13 +69,11 @@ function Blocs({ image, title }: { image: StaticImageData; title: string }) {
     <motion.div
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.4)}
       className="gap-6 items-center justify-center text-[26px] font-medium w-44"
     >
-      <motion.div
-        variants={textTransition(0.2)}
-        className="relative flex justify-center"
-      >
+      <motion.div className="relative flex justify-center">
         <Image
           src={image}
           alt={title}

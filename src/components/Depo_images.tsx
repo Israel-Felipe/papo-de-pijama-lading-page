@@ -31,6 +31,7 @@ export default function DepoImages() {
         <motion.div
           initial="hidden"
           whileInView="show"
+          viewport={{ once: true, amount: 0.25 }}
           variants={fadeIn("right", "spring", 0.4, 1)}
           className="flex justify-around m-auto gap-6"
         >
@@ -49,19 +50,20 @@ export default function DepoImages() {
         <motion.div
           initial="hidden"
           whileInView="show"
-          className="relative flex w-full justify-center items-center mt-12 w-[60%] h-auto m-auto z-10"
+          viewport={{ once: true, amount: 0.25 }}
+          className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-10"
           variants={textTransition(0.6)}
         >
           <Image
             src={sombra}
-            className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] w-[97%] h-auto -z-10
+            className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] w-[96%] h-auto -z-10
           }`}
             alt="sombra"
           />
-          <a href="#">
+          <a href="#" className="w-full">
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] h-24 py-2 px-4 rounded-full font-bold text-[34px] z-10
-            transition duration-200 transform hover:scale-110 active:scale-100 w-[780px]"
+            transition duration-200 transform hover:scale-110 active:scale-100 w-full"
             >
               QUERO SER UMA TAGARELA!
             </button>
@@ -99,8 +101,9 @@ function BlocsDepos({
       <motion.div
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
         className="absolute bottom-0 flex gap-4 bg-white bg-opacity-70 w-full p-4 rounded-lg"
-        variants={textTransition(0.3)}
+        variants={textTransition(0.6)}
       >
         <div>
           <Image

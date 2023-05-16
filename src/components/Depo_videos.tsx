@@ -27,23 +27,22 @@ export default function DepoVideos() {
       <motion.nav
         initial="hidden"
         whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
         className="relative w-auto h-auto mt-28 max-w-screen-xl text-[44px] font-bold"
       >
-        <motion.p
-          variants={fadeIn("right", "spring", 0.4, 1)}
+        <p
           className="relative flex justify-center text-center
           text-white
           px-8 z-50"
         >
           O que as tagarelas estão falando sobre o
-        </motion.p>
-        <motion.p
-          variants={fadeIn("left", "tween", 0.4, 1)}
+        </p>
+        <p
           className="relative flex justify-center text-center
           px-8 z-50 mb-20"
         >
           Método Papo de Pijama
-        </motion.p>
+        </p>
 
         <nav className="flex flex-col gap-32">
           <DepoLeft
@@ -95,6 +94,7 @@ function DepoLeft({
     <motion.div
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.6)}
       className="flex text-[26px] w-full"
     >
@@ -124,7 +124,10 @@ function DepoLeft({
       </motion.div>
 
       <motion.div className="flex justify-center items-center text-start font-normal text-[26px] bg-white bg-opacity-50 rounded-r-3xl p-16 -ml-4">
-        <motion.h3 className="ml-4" variants={textTransition(0.6)}>
+        <motion.h3
+          className="ml-4 text-[#323232]"
+          variants={textTransition(0.6)}
+        >
           {text}
         </motion.h3>
       </motion.div>
@@ -147,12 +150,15 @@ function DepoRigth({
     <motion.div
       initial="hidden"
       whileInView="show"
-      viewport={{ amount: 0.25 }}
+      viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.4)}
       className="flex text-[26px] w-full gap-20"
     >
       <motion.div className="flex justify-center items-center text-end font-normal text-[26px] bg-white bg-opacity-50 rounded-l-3xl p-16 -mr-24">
-        <motion.h3 className="mr-4" variants={textTransition(0.6)}>
+        <motion.h3
+          className="mr-4 text-[#323232]"
+          variants={textTransition(0.6)}
+        >
           {text}
         </motion.h3>
       </motion.div>
