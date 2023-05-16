@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
+import { textTransition, fadeIn } from "../utils/Transition";
 import { topicsWelcome_content } from "../utils/Contents";
 import Image from "next/image";
 import wallpaper from "../images/wallpaper-folhas2.png";
@@ -7,7 +7,7 @@ import logo from "../images/logo.png";
 
 export default function Welcome() {
   return (
-    <motion.header className="relative flex justify-center h-screen">
+    <motion.header className="relative flex justify-center ">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
@@ -57,7 +57,7 @@ export default function Welcome() {
           Assistindo a aula introdutória você vai aprender 3 coisas:
         </motion.p>
 
-        <nav className="mt-20">
+        <nav className="my-[6.5rem]">
           {topicsWelcome_content.map((content, i) => (
             <Topics number={content.number} text={content.text} key={i} />
           ))}

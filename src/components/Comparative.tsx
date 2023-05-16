@@ -11,16 +11,16 @@ import faixa from "../images/faixa.svg";
 
 export default function Comparative() {
   return (
-    <motion.header className="relative flex justify-center h-[1000px] bg-[#FEF4E6] z-0 mt-[500px] p-[100px]">
+    <motion.header className="relative flex justify-center h-[1150px] bg-[#FEF4E6] z-0 p-[100px]">
       <motion.div
-        initial={{ x: "0%", rotate: "0deg" }}
-        animate={{ x: "75%", rotate: "-20deg", scale: 1.5 }}
+        initial={{ x: "0%", y: "0%", rotate: "0deg" }}
+        animate={{ x: "200%", y: "-40%", rotate: "30deg", scale: 1.5 }}
         transition={{
-          duration: 45,
+          duration: 50,
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="absolute left-44 bottom-10 -z-50"
+        className="absolute left-44 bottom-20 -z-50"
       >
         <Image
           src={flor}
@@ -29,6 +29,7 @@ export default function Comparative() {
           alt="flor"
         />
       </motion.div>
+
       <nav className="relative bg-[#F8F0E7] bg-opacity-80 w-3/5 rounded-3xl py-[50px]">
         <Image
           src={faixa}

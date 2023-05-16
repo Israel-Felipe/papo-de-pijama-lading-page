@@ -51,7 +51,7 @@ export default function DepoImages() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-10"
+          className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-50"
           variants={textTransition(0.6)}
         >
           <Image
@@ -70,8 +70,6 @@ export default function DepoImages() {
           </a>
         </motion.div>
       </motion.nav>
-
-      <motion.div className="bg-blue-300 w-full"></motion.div>
     </motion.header>
   );
 }

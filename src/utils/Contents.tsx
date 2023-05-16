@@ -98,7 +98,10 @@ export const Comparative_devos_content = [
     text: "Você não conhece as leitoras",
   },
   {
-    text: "Não consegue aplicar no dia a dia",
+    text: "Não te ensinam a aplicar no dia a dia",
+  },
+  {
+    text: "O conteúdo é limitado ao próprio material",
   },
 ];
 
@@ -116,6 +119,9 @@ export const Comparative_papo_content = [
     text: "Você caminha junto com outras leitoras",
   },
   {
-    text: "Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar!",
+    text: "Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar",
+  },
+  {
+    text: "Vai além do material, possuindo encontros ao vivo, comunidade material extra",
   },
 ];

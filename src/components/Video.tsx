@@ -7,7 +7,7 @@ import sombra from "../images/sombra.svg";
 
 export default function Video() {
   return (
-    <motion.header className="relative flex justify-center h-screen bg-[#FEF4E6] z-0">
+    <motion.header className="relative flex justify-center  bg-[#FEF4E6] z-0">
       <nav className="relative w-auto h-auto mt-12 max-w-screen-xl w-full">
         <motion.div
           initial="hidden"
@@ -54,7 +54,7 @@ export default function Video() {
           </a>
         </div>
 
-        <motion.div className="flex justify-around w-3/5 m-auto mt-16">
+        <motion.div className="flex justify-around w-3/5 m-auto my-[4.5rem]">
           {blocsVideo_content.map((content, i) => (
             <Blocs image={content.image} title={content.title} key={i} />
           ))}

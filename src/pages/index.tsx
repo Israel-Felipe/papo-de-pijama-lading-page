@@ -5,6 +5,7 @@ import Depo_videos from "../components/Depo_videos";
 import Depo_images from "../components/Depo_images";
 import Trilha_semanal from "../components/Trilha_semanal";
 import Comparative from "../components/Comparative";
+import Dia_a_dia from "../components/Dia_a_dia";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <Depo_images />
         <Trilha_semanal />
         <Comparative />
+        <Dia_a_dia />
       </main>
     </>
   );

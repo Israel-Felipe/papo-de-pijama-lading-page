@@ -6,7 +6,7 @@ import trilha from "../images/trilha.png";
 
 export default function Trilha_semanal() {
   return (
-    <motion.header className="relative flex justify-center h-screen">
+    <motion.header className="relative flex justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
@@ -17,7 +17,7 @@ export default function Trilha_semanal() {
       >
         <Image
           src={wallpaper}
-          className={`w-screen h-[1500px]
+          className={`w-screen h-auto
           }`}
           alt="wallpaper"
         />
@@ -28,7 +28,7 @@ export default function Trilha_semanal() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         variants={textTransition(0.4)}
-        className="relative w-auto h-auto mt-32 lg:mt-20 max-w-screen-xl"
+        className="relative w-auto h-auto mt-20 max-w-screen-xl"
       >
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 1)}
@@ -69,7 +69,7 @@ export default function Trilha_semanal() {
         >
           <Image
             src={trilha}
-            className={`w-full h-auto
+            className={`w-[90%] h-auto m-auto my-16
           }`}
             alt="trilha"
           />
