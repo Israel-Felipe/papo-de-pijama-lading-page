@@ -3,9 +3,9 @@ import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import { Depos_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
 
-import foto from "../images/foto-video.png";
-import sombra from "../images/sombra.svg";
-import wallpaper from "../images/sombra_planta.svg";
+import foto from "/public/images/foto-video.png";
+import sombra from "/public/images/sombra.svg";
+import wallpaper from "/public/images/sombra_planta.svg";
 
 export default function DepoImages() {
   return (

@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { textTransition, fadeIn } from "../utils/Transition";
 import { topicsWelcome_content } from "../utils/Contents";
 import Image from "next/image";
-import wallpaper from "../images/wallpaper-folhas2.png";
-import logo from "../images/logo.png";
+import wallpaper from "/public/images/wallpaper-folhas2.png";
+import logo from "/public/images/logo.png";
 
 export default function Welcome() {
   return (

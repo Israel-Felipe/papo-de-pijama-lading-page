@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
-import wallpaper from "../images/wallpaper-depo-videos.png";
-import balon1 from "../images/balon1.svg";
-import balon2 from "../images/balon2.svg";
+import wallpaper from "/public/images/wallpaper-depo-videos.png";
+import balon1 from "/public/images/balon1.svg";
+import balon2 from "/public/images/balon2.svg";
 
 export default function DepoVideos() {
   return (
-    <motion.header className="relative flex justify-center h-auto z-0 mb-40 bg-[#EC9D74]">
+    <motion.header className="relative flex justify-center h-auto z-0 pb-40 bg-[#EC9D74] overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}

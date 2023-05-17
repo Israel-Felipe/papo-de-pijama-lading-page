@@ -1,16 +1,16 @@
-import relogio from "../images/relogio.svg";
-import suporte from "../images/suporte.svg";
-import garantia from "../images/garantia.svg";
-import depo1 from "../images/depo1.png";
-import foto1 from "../images/foto1.png";
-import depo2 from "../images/depo2.png";
-import foto2 from "../images/foto2.png";
-import depo3 from "../images/depo3.png";
-import foto3 from "../images/foto3.png";
-import depo4 from "../images/depo4.png";
-import foto4 from "../images/foto4.png";
-import depo5 from "../images/depo5.png";
-import foto5 from "../images/foto5.png";
+import relogio from "/public/images/relogio.svg";
+import suporte from "/public/images/suporte.svg";
+import garantia from "/public/images/garantia.svg";
+import depo1 from "/public/images/depo1.png";
+import foto1 from "/public/images/foto1.png";
+import depo2 from "/public/images/depo2.png";
+import foto2 from "/public/images/foto2.png";
+import depo3 from "/public/images/depo3.png";
+import foto3 from "/public/images/foto3.png";
+import depo4 from "/public/images/depo4.png";
+import foto4 from "/public/images/foto4.png";
+import depo5 from "/public/images/depo5.png";
+import foto5 from "/public/images/foto5.png";
 
 export const topicsWelcome_content = [
   {

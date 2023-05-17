@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
-import wallpaper from "../images/sombra_trilha.png";
-import trilha from "../images/trilha.png";
+import wallpaper from "/public/images/sombra_trilha.png";
+import trilha from "/public/images/trilha.png";
 
 export default function Trilha_semanal() {
   return (
-    <motion.header className="relative flex justify-center">
+    <motion.header className="relative flex justify-center overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}

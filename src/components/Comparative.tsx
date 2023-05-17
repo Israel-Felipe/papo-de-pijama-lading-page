@@ -5,9 +5,9 @@ import {
   Comparative_papo_content,
 } from "../utils/Contents";
 import Image from "next/image";
-import flor from "../images/flor.png";
-import topic from "../images/topic.svg";
-import faixa from "../images/faixa.svg";
+import flor from "/public/images/flor.png";
+import topic from "/public/images/topic.svg";
+import faixa from "/public/images/faixa.svg";
 
 export default function Comparative() {
   return (
@@ -78,7 +78,7 @@ function Topics({ text }: { text: string }) {
   return (
     <div className="flex items-center h-28 gap-6 mt-3">
       <Image src={topic} className={`w-[24px]`} alt="topic" />
-      <p className="text-[#323232] text-[24px]">{text}</p>
+      <p className="text-[#323232] text-[1.25rem]">{text}</p>
     </div>
   );
 }

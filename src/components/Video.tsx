@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import { blocsVideo_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
-import foto from "../images/foto-video.png";
-import sombra from "../images/sombra.svg";
+import foto from "/public/images/foto-video.png";
+import sombra from "/public/images/sombra.svg";
 
 export default function Video() {
   return (
