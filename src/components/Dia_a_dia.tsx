@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { FaSpinner } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
@@ -5,6 +8,18 @@ import wallpaper from "/public/images/wallpaper_woman.png";
 import celular from "/public/images/celular.png";
 
 export default function Dia_a_dia() {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsLoaded(true);
+    }
+  }, [inView]);
+
   return (
     <motion.header className="relative flex flex-col items-center justify-center overflow-hidden pb-10">
       <motion.div
@@ -50,13 +65,29 @@ export default function Dia_a_dia() {
             className={`absolute top-10 left-16 w-2/3`}
             alt="celular"
           />
-          <div className="w-[400px] h-[98%] absolute top-14 left-10 rounded-[5rem] overflow-hidden -z-10">
-            <iframe
-              src="https://player.vimeo.com/video/827673289?h=0eb6e6a68c&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;player_id=0&amp;app_id=58479"
-              width="100%"
-              height="100%"
-              title="video_celular"
-            ></iframe>
+          <div
+            ref={ref}
+            className="w-[400px] h-[98%] absolute top-14 left-10 rounded-[5rem] overflow-hidden -z-10"
+          >
+            {!isLoaded && (
+              <div className="flex flex-col items-center justify-center w-full h-full">
+                <span className="text-3xl text-gray-500 mb-4">
+                  Carregando...
+                </span>
+                <FaSpinner
+                  className="animate-spin text-gray-500 mt-6"
+                  size={40}
+                />
+              </div>
+            )}
+            {isLoaded && (
+              <iframe
+                src="https://player.vimeo.com/video/827673289?h=0eb6e6a68c&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;player_id=0&amp;app_id=58479"
+                width="100%"
+                height="100%"
+                title="video_celular"
+              ></iframe>
+            )}
           </div>
         </div>
       </nav>
