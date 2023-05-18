@@ -71,7 +71,7 @@ export default function Dia_a_dia() {
           >
             {!isLoaded && (
               <div className="flex flex-col items-center justify-center w-full h-full">
-                <span className="text-3xl text-gray-500 mb-4">
+                <span className="text-3 xl text-gray-500 mb-4">
                   Carregando...
                 </span>
                 <FaSpinner

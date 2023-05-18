@@ -7,6 +7,7 @@ import Trilha_semanal from "../components/Trilha_semanal";
 import Comparative from "../components/Comparative";
 import Dia_a_dia from "../components/Dia_a_dia";
 import Comunidade from "../components/Comunidade";
+import Ao_vivo from "../components/Ao_vivo";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <Comparative />
         <Dia_a_dia />
         <Comunidade />
+        <Ao_vivo />
       </main>
     </>
   );
