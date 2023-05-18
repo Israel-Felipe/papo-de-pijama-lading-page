@@ -8,6 +8,7 @@ import Comparative from "../components/Comparative";
 import Dia_a_dia from "../components/Dia_a_dia";
 import Comunidade from "../components/Comunidade";
 import Ao_vivo from "../components/Ao_vivo";
+import Bonus from "../components/Bonus";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
         <Dia_a_dia />
         <Comunidade />
         <Ao_vivo />
+        <Bonus />
       </main>
     </>
   );

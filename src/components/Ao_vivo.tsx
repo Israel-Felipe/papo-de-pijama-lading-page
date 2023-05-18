@@ -8,11 +8,16 @@ import ao_vivo from "/public/images/ao_vivo.png";
 
 export default function Ao_vivo() {
   return (
-    <motion.header className="relative flex justify-center  bg-[#943A49] z-0 p-20">
+    <motion.header
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className="flex justify-center  bg-[#943A49] z-0 p-20"
+    >
       <nav className="w-auto h-auto mt-12 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-center items-center">
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 1)}
-          className="relative flex justify-center text-center
+          className="flex justify-center text-center
           text-[42px] font-bold text-[#E4795B]
          "
           style={{ textShadow: "1px 1px #FEF4E6" }}
@@ -22,7 +27,7 @@ export default function Ao_vivo() {
 
         <motion.p
           variants={fadeIn("left", "tween", 0.4, 1)}
-          className="relative flex justify-center text-center
+          className="flex justify-center text-center
           text-[30px] font-bold w-3/5 leading-lg mt-6"
         >
           Um ambiente para Fortalecer a fé, ser Ouvida, Aprofundar-se e ser
@@ -31,7 +36,7 @@ export default function Ao_vivo() {
 
         <motion.p
           variants={fadeIn("left", "tween", 0.4, 1)}
-          className="relative flex justify-center text-center
+          className="flex justify-center text-center
           text-[30px] font-medium w-3/4 leading-lg mt-6"
         >
           "que nos animemos uns aos outros por meio da fé que vocês e eu temos”
@@ -40,7 +45,7 @@ export default function Ao_vivo() {
 
         <motion.p
           variants={fadeIn("left", "tween", 0.4, 1)}
-          className="relative flex justify-center text-start
+          className="flex justify-center text-start
           text-[22px] w-3/4 leading-lg mt-10"
         >
           Na carta aos Romanos, o Apóstolo Paulo expressa o seu desejo de
@@ -59,11 +64,11 @@ export default function Ao_vivo() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="w-3/5 h-auto m-auto mt-16 bg-[#E4795B] p-8 rounded-[3.5rem]"
+          className="w-3/5 h-auto m-auto mt-16 bg-[#E4795B] p-6  rounded-[3.5rem]"
         >
           <Image
             src={ao_vivo}
-            className={`
+            className={`hover:scale-125
           }`}
             alt="encontro on-line"
           />

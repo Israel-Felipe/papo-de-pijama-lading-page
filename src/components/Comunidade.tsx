@@ -48,7 +48,7 @@ export default function Comunidade() {
               <Image
                 src={icon_conversa}
                 alt="conversa"
-                className="top-0 left-0 z-50 w-[150px] m-auto lg:m-0"
+                className="top-0 left-0 z-50 w-[140px] m-auto lg:m-0"
               />
               <div
                 className="absolute w-[200px] h-[200px]
@@ -70,7 +70,7 @@ export default function Comunidade() {
               <Image
                 src={icon_note}
                 alt="icon_note"
-                className="top-0 left-0 z-50 w-[150px] m-auto lg:m-0"
+                className="top-0 left-0 z-50 w-[180px] m-auto lg:m-0"
               />
               <div
                 className="absolute w-[200px] h-[200px]
