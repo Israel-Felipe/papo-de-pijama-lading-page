@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import Image from "next/image";
-import foto from "/public/images/foto-video.png";
 import sombra from "/public/images/sombra.svg";
 import ao_vivo from "/public/images/ao_vivo.png";
 
@@ -64,7 +63,7 @@ export default function Ao_vivo() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="w-3/5 h-auto m-auto mt-16 bg-[#E4795B] p-6  rounded-[3.5rem]"
+          className="w-3/5 h-auto m-auto mt-16 bg-[#E4795B] p-6 rounded-[3.5rem]"
         >
           <Image
             src={ao_vivo}
@@ -81,7 +80,10 @@ export default function Ao_vivo() {
           }`}
             alt="sombra"
           />
-          <a href="#" className="w-full">
+          <a
+            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            className="w-full"
+          >
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6]
               w-full h-24 py-2 px-4 rounded-full

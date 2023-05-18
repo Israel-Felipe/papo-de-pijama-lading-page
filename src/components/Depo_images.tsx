@@ -60,7 +60,10 @@ export default function DepoImages() {
           }`}
             alt="sombra"
           />
-          <a href="#" className="w-full">
+          <a
+            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            className="w-full"
+          >
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] h-24 py-2 px-4 rounded-full font-bold text-[34px] z-10
             transition duration-200 transform hover:scale-110 active:scale-100 w-full"

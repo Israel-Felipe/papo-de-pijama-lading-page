@@ -9,6 +9,7 @@ import Dia_a_dia from "../components/Dia_a_dia";
 import Comunidade from "../components/Comunidade";
 import Ao_vivo from "../components/Ao_vivo";
 import Bonus from "../components/Bonus";
+import Quemsou from "../components/Quemsou";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <Comunidade />
         <Ao_vivo />
         <Bonus />
+        <Quemsou />
       </main>
     </>
   );

@@ -44,7 +44,10 @@ export default function Video() {
           }`}
             alt="sombra"
           />
-          <a href="#" className="w-full">
+          <a
+            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            className="w-full"
+          >
             <button
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full h-24 py-2 px-4 rounded-full text-white font-bold text-[26px] z-10
             transition duration-200 transform hover:scale-110 active:scale-100"

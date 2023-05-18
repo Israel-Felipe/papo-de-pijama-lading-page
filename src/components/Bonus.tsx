@@ -81,7 +81,10 @@ export default function Bonus() {
             mesmo se não souber desenhar!
           </motion.p>
 
-          <a href="#" className="w-full flex items-end justify-end mt-16">
+          <a
+            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            className="w-full flex items-end justify-end mt-16"
+          >
             <button
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] text-white
               w-[90%] h-16 py-2 px-4 rounded-full
