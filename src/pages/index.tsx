@@ -10,6 +10,7 @@ import Comunidade from "../components/Comunidade";
 import Ao_vivo from "../components/Ao_vivo";
 import Bonus from "../components/Bonus";
 import Quemsou from "../components/Quemsou";
+import Oferta from "../components/Oferta";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <Ao_vivo />
         <Bonus />
         <Quemsou />
+        <Oferta />
       </main>
     </>
   );

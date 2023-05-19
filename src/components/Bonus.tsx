@@ -48,7 +48,7 @@ export default function Bonus() {
             className="flex justify-center text-end text-[52px] font-bold text-[#E4795B]"
             style={{
               textShadow:
-                "0px 0px 5px #FEF4E6, 0px 0px 5px #FEF4E6, 0px 0px 5px #FEF4E6, 0px 0px 5px #FEF4E6",
+                "0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6",
             }}
           >
             Bônus especial
