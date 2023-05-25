@@ -7,7 +7,7 @@ import balon2 from "/public/images/balon2.svg";
 
 export default function DepoVideos() {
   return (
-    <motion.header className="relative flex justify-center h-auto z-0 pb-40 bg-[#EC9D74] overflow-hidden">
+    <motion.header className="relative flex justify-center h-auto z-0 pb-40 bg-[#EC9D74] n">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}

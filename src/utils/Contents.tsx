@@ -125,3 +125,41 @@ export const Comparative_papo_content = [
     text: "Vai além do material, possuindo encontros ao vivo, comunidade material extra",
   },
 ];
+
+export const FAQ_content = [
+  {
+    title: "1. Quanto tempo de acesso eu terei ao método?",
+    text: "Ao adquirir o Método Papo de Pijama você terá 1 ano de acesso a 52 estudos exclusivos seguindo a metodologia do papo de pijama. No mínimo 12 encontros do Pijama ao Vivo e acompanhamento em grupo na Comunidade das tagarelas!",
+  },
+
+  {
+    title: "2. Eu já faço devocional, esse método vai me ajudar?",
+    text: "O Método Papo de Pijama é único e já foi testado por mais de 100 mulheres que o fizeram nesse formato de acompanhamento, encontros ao vivo e material exclusivo.<br /> Muitas relataram que o Papo de Pijama é realmente muito diferente daquilo que elas já viram e que funcionou como um verdadeiro Estudo Bíblico. Eu não posso te prometer que você terá resultados se não praticar e se comprometer com o processo. Mas eu garanto que eu vou estar ao seu lado para trilhar essa jornada junto contigo!",
+  },
+
+  {
+    title: "3. Eu não tenho o hábito de ler a bíblia, o Papo vai me ensinar?",
+    text: "Você sabia que, segundo muitos neurocientistas que estudam a consolidação de um hábito, a maioria destaca que o caminhar com pessoas que estão buscando o mesmo que você é essencial? Não é em vão que o Método Papo de Pijama tem como fundamento a convivência em comunidade! A vida de fé é viver com irmãos e irmãs na fé e não poderia ser diferente nessa nossa jornada de Pijama! Por isso, o Método Papo de Pijama será seu guia para conseguir começar HOJE mesmo esse novo hábito tão importante na sua vida!",
+  },
+
+  {
+    title: "4. Quando posso começar a participar?",
+    text: "Hoje mesmo! Clicando em qualquer um dos botões dessa página, você será conduzida para a página de pagamento. Basta você efetuar o pagamento e o acesso será encaminhado automaticamente pelo sistema no seu Email de cadastro!<br /><br />*Apenas pagamentos em boleto que não possuem acesso imediato a plataforma.",
+  },
+
+  {
+    title: "5. É só para mulheres?",
+    text: "Sim! Todo o conceito, os materiais e os encontros do Papo de Pijama foram pensados a partir dos desafios, objetivos e especificidades da mulher. Por isso, todo o método é destinado apenas para Mulheres, na faixa etária da adolescência até a vida adulta.<br /><br />Caso você seja homem, e esteja lendo essas perguntas, aproveite para presentear uma mulher que marcou sua vida!",
+  },
+
+  {
+    title: "6. Qual é a denominação religiosa do Papo de Pijama?",
+    text: "Toda a equipe do Papo de Pijama é cristã e membros ativos de uma igreja local. Isso significa que reconhecemos e declaramos Jesus Cristo como o único e suficiente salvador! Nosso método e material, entretanto, é interdenominacional, ou seja, não é destinado apenas para uma igreja em específico, mas é dedicado para quem quer conhecer mais ao Senhor a partir da Bíblia Sagrada!",
+  },
+
+  {
+    title:
+      "7. Não tenho muito tempo. Preciso fazer o devocional todos os dias?",
+    text: "Você sabia que muitas mulheres desistem de seus estudos da Palavra por conta da pressão que impõem sobre elas mesmas e as altas expectativas de NUNCA falhar? Isso gera um ciclo de frustação que te leva a deixar de lado essa prática. Nós queremos que esse tempo não seja um fardo. E assim como começar a fazer academia se inicia devagar, assim também pode ser sua jornada de pijama com Deus.<br />Nós acreditamos que vida com Deus vai além de uma leitura devocional. Contudo, o estudo e o tempo de reflexão de um texto bíblico é essencial na vida de uma mulher cristã.  Sabemos que cada fase da vida possui os seus próprios desafios e obstáculos, dessa forma o método foi construído de forma que você consiga encaixar os passos do estudo ao longo de sua semana, sejam 7 dias na semana, ou de acordo com sua organização pessoal.",
+  },
+];

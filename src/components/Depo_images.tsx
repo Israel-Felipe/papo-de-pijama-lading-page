@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
+import { textTransition, fadeIn } from "../utils/Transition";
 import { Depos_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
 
-import foto from "/public/images/foto-video.png";
 import sombra from "/public/images/sombra.svg";
 import wallpaper from "/public/images/sombra_planta.svg";
 

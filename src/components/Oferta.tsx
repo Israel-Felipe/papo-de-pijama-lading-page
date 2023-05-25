@@ -1,9 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
+import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
 import sombra from "/public/images/sombra.svg";
-import ao_vivo from "/public/images/ao_vivo.png";
 
 export default function Oferta() {
   return (
@@ -62,19 +61,13 @@ export default function Oferta() {
         </div>
 
         <div className="relative w-[55%] h-auto m-auto mt-10 z-10">
-          <Image
-            src={sombra}
-            className={`absolute left-1/2 transform -translate-x-1/2 top-[90%] w-[95%] h-auto -z-10
-          }`}
-            alt="sombra"
-          />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
             className="w-full"
           >
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#751133] text-[#751133] active:text-[#FEF4E6]
-              w-full h-24 py-2 px-4 rounded-full
+              w-full h-20 py-2 px-4 rounded-full
               font-bold  text-[26px] z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
             >
