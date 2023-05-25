@@ -13,7 +13,7 @@ export default function FAQ() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="flex justify-center bg-gradient-to-br from-[#E4795B] via-[#E4795B] to-[#EBA695] z-0 p-10"
+      className="flex justify-center bg-[#E4795B] z-0 p-28"
     >
       <nav className="w-auto h-auto mt-0 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-start items-start">
         <header className="w-full h-auto flex justify-between items-center">
@@ -60,8 +60,9 @@ export default function FAQ() {
 
           <div className="relative w-[60%] h-auto m-auto z-10">
             <a
-              href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+              href="https://api.whatsapp.com/send?phone=5547999060823&text=Oii%20Paola!%20Eu%20tenho%20d%C3%BAvida%20sobre%20o%20M%C3%A9todo%20Papo%20de%20Pijama...%20pode%20me%20ajudar?%20:)"
               className="w-full"
+              target="_blank"
             >
               <button
                 className=" bg-[#00BF63] hover:bg-[#029B51] active:bg-[#006233]

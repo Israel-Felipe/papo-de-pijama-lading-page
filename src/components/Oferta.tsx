@@ -26,7 +26,7 @@ export default function Oferta() {
           O QUE VOCÊ VAI TER ACESSO?
         </motion.p>
 
-        <div className="bg-[#751133] w-1/2 h-auto rounded-3xl mt-10 flex flex-col p-12 justify-center items-center">
+        <div className="bg-[#751133] w-1/2 h-auto rounded-3xl mt-10 flex flex-col p-16 justify-center items-center">
           <ul className="list-disc ml-4 text-2xl font-medium leading-9">
             <li>
               Estudo semanal com a metodologia Papo de Pijama, totalizando 52

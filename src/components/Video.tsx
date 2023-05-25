@@ -30,7 +30,7 @@ export default function Video() {
                 width: "100%",
                 height: "100%",
               }}
-              src="https://www.youtube-nocookie.com/embed/wh5fqGcKn98"
+              src="https://www.youtube.com/embed/tqorirMBzvg"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             ></iframe>

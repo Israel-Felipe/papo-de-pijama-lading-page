@@ -46,32 +46,24 @@ export default function DepoVideos() {
 
         <nav className="flex flex-col gap-32">
           <DepoLeft
-            video={
-              "https://www.youtube-nocookie.com/embed/rY4eHXTQ3Fo?controls=0"
-            }
-            name={"Patricia"}
-            age={"30 anos"}
-            text={
-              "O devocional Papo de Pijama me aproximou de Deus e melhorou meu tempo e convívio com as pessoas. Estou muito feliz por ter começado a lê-lo!"
-            }
+            video={"https://www.youtube.com/embed/az02QaBV6zM?controls=0"}
+            name={"Renata,"}
+            age={"Belo Horizonte - MG"}
+            text={`" O papo de pijama veio no momento certo, ele me ajudou a ter mais intimidade com Deus e uma responsabilidade diária de buscar a Deus".`}
           />
 
           <DepoRigth
-            video={"https://www.youtube.com/embed/bOAgVyVUyfk?controls=0"}
-            name={"Thaysa"}
-            age={"35 anos"}
-            text={
-              "O devocional Papo de Pijama tem sido uma benção na minha vida espiritual. Tenho aprendido muito e me sentido mais próxima de Deus."
-            }
+            video={"https://www.youtube.com/embed/mo1AwVwqWPo?controls=0"}
+            name={"Patricia,"}
+            age={"Atlanta, USA"}
+            text={`"A Paty é legal e mais coisinhas aqui a ter mais intimidade com Deus e uma responsabilidade diária de buscar a Deus "`}
           />
 
           <DepoLeft
-            video={"https://www.youtube.com/embed/l-sPK6Ee8Yk?controls=0"}
-            name={"Renata"}
-            age={"26 anos"}
-            text={
-              "O devocional Papo de Pijama tem transformado minha vida espiritual. Estou lendo a Bíblia diariamente e me aproximando mais de Deus. Recomendo muito!"
-            }
+            video={"https://www.youtube.com/embed/zt9N7rBaVSo?controls=0"}
+            name={"Jana,"}
+            age={"Joinville - SC"}
+            text={`"Cada vez sinto que Deus fala mais e mais de uma forma extraordinário que só fazendo o Papo de Pijama para experimentar" .`}
           />
         </nav>
       </motion.nav>

@@ -90,7 +90,7 @@ function BlocsDepos({
   cidade: string;
 }) {
   return (
-    <nav className="relative w-96 h-[550px] w-[800px] bg-white bg-opacity-90 rounded-lg hover:scale-110">
+    <nav className="relative w-96 h-auto w-[800px] hover:scale-110">
       <Image
         src={image}
         className={`w-full h-auto rounded-lg
@@ -98,7 +98,7 @@ function BlocsDepos({
         alt="depoimento"
       />
 
-      <motion.div
+      {/*  <motion.div
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -118,7 +118,7 @@ function BlocsDepos({
           <p>{idade}</p>
           <p>{cidade}</p>
         </div>
-      </motion.div>
+      </motion.div> */}
     </nav>
   );
 }

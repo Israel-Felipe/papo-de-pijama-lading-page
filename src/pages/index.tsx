@@ -12,6 +12,7 @@ import Bonus from "../components/Bonus";
 import Quemsou from "../components/Quemsou";
 import Oferta from "../components/Oferta";
 import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
         <Quemsou />
         <Oferta />
         <FAQ />
+        <Footer />
       </main>
     </>
   );

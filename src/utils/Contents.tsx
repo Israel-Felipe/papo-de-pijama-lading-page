@@ -25,7 +25,7 @@ export const topicsWelcome_content = [
 
   {
     number: "3",
-    text: "Um guia para seres constante no teu estudo diário da palavra.",
+    text: "Um guia para ser constante na sua prática devocional.",
   },
 ];
 
@@ -95,7 +95,7 @@ export const Comparative_devos_content = [
     text: "Você lê e esquece o que estudou durante o dia",
   },
   {
-    text: "Você não conhece as leitoras",
+    text: "Você faz o devocional sozinha",
   },
   {
     text: "Não te ensinam a aplicar no dia a dia",
@@ -116,13 +116,13 @@ export const Comparative_papo_content = [
     text: "Você fixa o assunto e leva para o seu dia e sua vida",
   },
   {
-    text: "Você caminha junto com outras leitoras",
+    text: "Você é inserida e acolhida numa comunidade exclusiva",
   },
   {
     text: "Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar",
   },
   {
-    text: "Vai além do material, possuindo encontros ao vivo, comunidade material extra",
+    text: "Vai além do material, possuindo encontros ao vivo, comunidade, material extra e muito mais!",
   },
 ];
 

@@ -29,16 +29,25 @@ export default function Comunidade() {
       <nav className="flex m-20 z-50 w-full h-full max-w-screen-xl">
         <div className="w-1/2 m-auto">
           <p className=" w-full text-[3rem] font-bold mt-8">
-            VOCÊ NÃO PRECISA <br />
-            FAZER ISSO SOZINHA!
+            SOZINHA VOCÊ NÃO
+            <br />
+            VAI TÃO LONGE!
           </p>
-          <p className=" w-full text-[1.5rem] font-medium mt-10">
-            Caminhe com mulheres que estão buscando serem mais parecidas com
-            Jesus e viver a vontade de Deus no seu dia a dia!
+          <p className=" w-full text-[1.4rem] font-medium mt-10">
+            Jesus não enviou seus discípulos sozinhos! Mas os enviou para
+            caminhar juntos!
             <br />
             <br />
-            No Método Papo de Pijama, além do material de estudo, você também
-            terá acesso a:
+            A vida de fé possui uma dimensão comunitária muito importante para
+            se desenvolver, praticarmos o amor e sermos carregadas.
+            <br />
+            <br />
+            É muito importante caminhar com mulheres que estão buscando serem
+            mais parecidas com Jesus e viver a vontade de Deus no seu dia a dia!
+            <br />
+            <br />
+            Para isso, no Método Papo de Pijama, além do material de estudo,
+            você também terá acesso a:
           </p>
         </div>
 
