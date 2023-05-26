@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import Image from "next/image";
 import book from "/public/images/old_book.png";
 import icon_conversa from "/public/images/icon_conversa.svg";

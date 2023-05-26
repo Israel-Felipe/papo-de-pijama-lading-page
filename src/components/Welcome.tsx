@@ -7,10 +7,10 @@ import logo from "/public/images/logo.png";
 export default function Welcome() {
   return (
     <header className="relative flex justify-center">
-      <div className="absolute lg:-top-40">
+      <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`lg:w-screen w-auto lg:h-auto h-[40rem] filter opacity-30 blur-[8px]`}
+          className={`lg:w-screen w-auto lg:h-auto h-full filter opacity-30 blur-[8px] object-cover`}
           alt="wallpaper"
         />
       </div>

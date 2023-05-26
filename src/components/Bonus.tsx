@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
 import wallpaper from "/public/images/wallpaper_biblej.png";
 import biblej1 from "/public/images/biblej1.png";
@@ -7,65 +5,50 @@ import biblej2 from "/public/images/biblej2.png";
 
 export default function Bonus() {
   return (
-    <motion.header className="relative flex flex-col justify-center items-center overflow-hidden p-20 h-auto">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 100 }}
-        transition={{
-          duration: 2,
-        }}
-        className="absolute"
-      >
+    <header className="relative flex flex-col justify-center items-center overflow-hidden lg:p-20 h-auto">
+      <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-screen filter opacity-20`}
+          className={`w-auto h-full lg:w-screen lg:h-auto filter opacity-20 object-cover`}
           alt="wallpaper"
         />
-      </motion.div>
+      </div>
 
-      <nav className="flex z-50 max-w-screen-xl">
-        <div className="w-1/2">
+      <nav className="flex flex-col lg:flex-row z-50 max-w-screen-xl w-[90%] lg:w-auto mt-16 lg:mt-0">
+        <div className="lg:w-1/2 flex flex-col w-[100%]">
           <Image
             src={biblej1}
             alt="bible jorning images"
-            className="w-[85%] top-0 left-0 z-50 m-auto lg:m-0 hover:scale-125"
+            className="w-[85%] z-50 hover:scale-125 hidden lg:block"
           />
           <Image
             src={biblej2}
             alt="bible jorning images"
-            className="w-[85%] top-0 left-0 z-50 m-auto lg:m-0 hover:scale-125"
+            className="lg:w-[85%] z-50 lg:hover:scale-125"
           />
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="w-1/2 flex flex-col items-end mt-20"
-        >
-          <motion.p
-            variants={fadeIn("right", "spring", 0.4, 1)}
-            className="flex justify-center text-end text-[52px] font-bold text-[#E4795B]"
+        <div className="lg:w-1/2 flex flex-col lg:items-end lg:mt-20 mt-6">
+          <p
+            className="flex justify-center lg:text-end lg:text-6xl text-[2.5rem] lg:leading-normal leading-normal font-bold text-[#E4795B]"
             style={{
               textShadow:
                 "0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6",
             }}
           >
             Bônus especial
-          </motion.p>
+          </p>
 
-          <motion.p
-            variants={fadeIn("left", "tween", 0.4, 1)}
-            className="flex justify-center text-end
-          text-[38px] w-4/5 font-medium leading-lg italic"
+          <p
+            className="flex justify-end lg:text-end text-center
+          lg:text-4xl text-2xl w-full font-medium leading-normal italic"
           >
             Templates para Bible Journaling
-          </motion.p>
+          </p>
 
-          <motion.p
-            variants={fadeIn("left", "tween", 0.4, 1)}
-            className="flex justify-center text-end
-          text-[26px] w-full leading-lg mt-10"
+          <p
+            className="flex justify-center lg:justify-end lg:text-end
+          lg:text-[1.7rem] w-[90%] leading-normal mt-10 m-auto lg:m-0 lg:my-10"
           >
             E se junto disso tudo você ainda pudesse expressar os seus estudos
             da bíblia em forma de desenho?
@@ -79,23 +62,23 @@ export default function Bonus() {
             Para isso, você vai receber de bônus ao 12 templates exclusivos
             criados a partir de nossos estudos para você ter essa experiência
             mesmo se não souber desenhar!
-          </motion.p>
+          </p>
 
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            className="w-full flex items-end justify-end mt-16"
+            className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-8 lg:mb-0"
           >
             <button
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] text-white
-              w-[90%] h-16 py-2 px-4 rounded-full
-              font-bold text-2xl z-10
+              w-[95%] h-16 py-2 px-2 rounded-full
+              font-bold lg:text-2xl text-md z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
             >
               EU QUERO GARANTIR MEU BÔNUS!
             </button>
           </a>
-        </motion.div>
+        </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }

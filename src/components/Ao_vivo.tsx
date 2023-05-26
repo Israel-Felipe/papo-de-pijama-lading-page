@@ -51,7 +51,7 @@ export default function Ao_vivo() {
         <div className="lg:w-3/5 h-auto m-auto lg:mt-16 mt-10 bg-[#E4795B] lg:p-6 rounded-[3.5rem]">
           <Image
             src={ao_vivo}
-            className={`hover:scale-125
+            className={`lg:hover:scale-125
           }`}
             alt="encontro on-line"
           />

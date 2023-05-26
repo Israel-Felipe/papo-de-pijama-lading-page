@@ -14,13 +14,13 @@ export default function Comparative() {
     <header className="relative flex justify-center h-auto bg-[#FEF4E6] z-0 lg:py-16 py-8 overflow-hidden">
       <motion.div
         initial={{ x: "0%", y: "0%", rotate: "0deg" }}
-        animate={{ x: "200%", y: "-40%", rotate: "30deg", scale: 1.5 }}
+        animate={{ x: "100%", y: "-20%", rotate: "30deg", scale: 1.5 }}
         transition={{
           duration: 50,
           repeat: Infinity,
           repeatType: "reverse",
         }}
-        className="absolute left-44 bottom-20 -z-50"
+        className="absolute lg:left-44 lg:bottom-20 -left-96 -z-50"
       >
         <Image
           src={flor}

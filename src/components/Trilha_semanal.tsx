@@ -5,10 +5,10 @@ import trilha from "/public/images/trilha.png";
 export default function Trilha_semanal() {
   return (
     <header className="relative flex justify-center overflow-hidden">
-      <div className="absolute">
+      <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`lg:w-screen lg:h-auto w-auto h-screen
+          className={`w-auto h-full lg:w-screen lg:h-auto object-cover
           }`}
           alt="wallpaper"
         />

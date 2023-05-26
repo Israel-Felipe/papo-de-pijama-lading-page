@@ -69,7 +69,7 @@ function BlocsDepos({
   cidade: string;
 }) {
   return (
-    <nav className="relative w-auto h-[100%] hover:scale-110">
+    <nav className="relative w-auto h-[100%] lg:hover:scale-110">
       <Image
         src={image}
         className={`w-full h-auto rounded-lg`}

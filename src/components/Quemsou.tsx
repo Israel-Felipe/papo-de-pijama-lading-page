@@ -1,29 +1,20 @@
-import { motion } from "framer-motion";
-import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
 import wallpaper from "/public/images/wallpaper_quemsou.png";
 import foto from "/public/images/foto_paola.jpg";
 
 export default function Quemsou() {
   return (
-    <motion.header className="relative flex flex-col justify-center items-center overflow-hidden p-36 h-auto">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 100 }}
-        transition={{
-          duration: 2,
-        }}
-        className="absolute"
-      >
+    <header className="relative flex flex-col justify-center items-center overflow-hidden lg:p-36 h-auto">
+      <div className="absolute">
         <Image
           src={wallpaper}
-          className={`w-screen filter opacity-30`}
+          className={`w-screen filter opacity-30 hidden lg:block`}
           alt="wallpaper"
         />
-      </motion.div>
+      </div>
 
-      <nav className="flex items-center justify-center z-50 max-w-screen-xl">
-        <div className="w-1/2 flex items-center justify-center">
+      <nav className="flex flex-col-reverse lg:flex-row items-center justify-center z-50 max-w-screen-xl">
+        <div className="lg:w-1/2 w-full flex items-center justify-center mt-8 mb-10">
           <div className="w-4/5 h-auto m-auto bg-[#E4795B] p-2 rounded-[3.5rem]">
             <Image
               src={foto}
@@ -33,23 +24,14 @@ export default function Quemsou() {
           </div>
         </div>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="w-1/2 flex flex-col items-start"
-        >
-          <motion.p
-            variants={fadeIn("right", "spring", 0.4, 1)}
-            className="flex justify-center text-start text-[2.7rem] font-bold text-[#E4795B]"
-          >
+        <div className="lg:w-1/2 w-[90%] flex flex-col items-center lg:items-start mt-14 lg:mt-0">
+          <p className="flex justify-center lg:text-start text-center lg:text-[2.7rem] text-[2.3rem] font-bold text-[#E4795B]">
             Quem é a Paola Milbauer?
-          </motion.p>
+          </p>
 
-          <motion.p
-            variants={fadeIn("left", "tween", 0.4, 1)}
+          <p
             className="flex justify-center text-start
-          text-[1.4rem] w-full mt-8 font-medium leading-9"
+          lg:text-[1.4rem] lg:w-full w-[90%] mt-8 font-medium leading-relaxed"
           >
             Muito prazer! Eu sou a Paola Milbauer, cristã por redenção e teóloga
             por formação!
@@ -67,9 +49,9 @@ export default function Quemsou() {
             e umas com as outras por meio do Ministério Papo de Pijama, das
             ministrações itinerantes em retiros e eventos para mulheres nas mais
             diversas cidades do Brasil e também em meus canais na internet!
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
