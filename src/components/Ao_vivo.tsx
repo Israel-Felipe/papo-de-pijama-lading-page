@@ -66,6 +66,7 @@ export default function Ao_vivo() {
           />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            target="_blank"
             className="w-full"
           >
             <button

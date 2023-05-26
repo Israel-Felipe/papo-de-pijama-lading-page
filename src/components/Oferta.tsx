@@ -41,18 +41,19 @@ export default function Oferta() {
           <div className="flex items-center justify-center font-bold gap-2 mt-2">
             <p className="text-2xl">12x</p>
             <div className="relative">
-              <p className="text-[#F8F0E7] text-5xl">R$ 34,83</p>
+              <p className="text-[#F8F0E7] lg:text-5xl text-4xl">R$ 34,83</p>
             </div>
           </div>
 
-          <div className="flex items-center justify-center font-bold gap-2 mt-1">
-            <p className="text-xl">OU R$ 347,00 À VISTA</p>
+          <div className="flex items-center justify-center text-center font-bold gap-2 mt-1">
+            <p className="lg:text-xl text-lg">OU R$ 347,00 À VISTA</p>
           </div>
         </div>
 
         <div className="relative lg:w-[55%] w-[90%] h-auto m-auto mt-10 z-10">
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            target="_blank"
             className="w-full"
           >
             <button
