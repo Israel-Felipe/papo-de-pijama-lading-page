@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaSpinner } from "react-icons/fa";
-import { motion } from "framer-motion";
-import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
 import wallpaper from "/public/images/wallpaper_woman.png";
-import celular from "/public/images/celular.png";
 
 export default function Dia_a_dia() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -21,31 +18,21 @@ export default function Dia_a_dia() {
   }, [inView]);
 
   return (
-    <motion.header className="relative flex flex-col items-center justify-center overflow-hidden pb-10">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 100 }}
-        transition={{
-          duration: 2,
-        }}
-        className="absolute"
-      >
+    <header className="relative flex flex-col items-center justify-center overflow-hidden pb-10">
+      <div className="absolute">
         <Image
           src={wallpaper}
-          className={`w-screen filter opacity-20`}
+          className={`w-screen hidden lg:block filter opacity-20`}
           alt="wallpaper"
         />
-      </motion.div>
+      </div>
 
-      <nav className="flex m-20 z-50 max-w-screen-xl">
-        <div className="w-2/3">
-          <p className=" w-full text-[3rem] font-bold mt-8">
-            CONHECENDO
-            <br />E FAZENDO A <br />
-            VONTADE DO PAI
-            <br /> NO SEU DIA A DIA
+      <nav className="flex flex-col lg:flex-row lg:m-20 z-50 max-w-screen-xl lg:ml-40">
+        <div className="lg:w-3/4 flex flex-col justify-center items-center lg:items-start">
+          <p className=" w-4/5 lg:w-1/2 lg:text-5xl text-3xl lg:leading-tight font-bold mt-8">
+            CONHECENDO E FAZENDO A VONTADE DO PAI NO SEU DIA A DIA
           </p>
-          <p className=" w-full text-[1.5rem] font-medium mt-10">
+          <p className=" w-4/5 lg:text-[1.5rem] font-medium mt-10">
             Toda semana você terá acesso a um estudo temático para meditar ao
             longo dos 7 passos descritos acima!
             <br />
@@ -59,52 +46,43 @@ export default function Dia_a_dia() {
           </p>
         </div>
 
-        <div className="relative flex items-center -mr-80 w-2/3">
-          <Image
-            src={celular}
-            className={`absolute top-10 left-16 w-2/3`}
-            alt="celular"
-          />
-          <div
-            ref={ref}
-            className="w-[400px] h-[98%] absolute top-14 left-10 rounded-[5rem] overflow-hidden -z-10"
-          >
-            {!isLoaded && (
-              <div className="flex flex-col items-center justify-center w-full h-full">
-                <span className="text-3 xl text-gray-500 mb-4">
-                  Carregando...
-                </span>
-                <FaSpinner
-                  className="animate-spin text-gray-500 mt-6"
-                  size={40}
-                />
-              </div>
-            )}
-            {isLoaded && (
-              <iframe
-                src="https://player.vimeo.com/video/827673289?h=0eb6e6a68c&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;player_id=0&amp;app_id=58479"
-                width="100%"
-                height="100%"
-                title="video_celular"
-              ></iframe>
-            )}
-          </div>
+        <div
+          ref={ref}
+          className="flex items-center justify-center mt-8 lg:mt-0 w-auto"
+        >
+          {!isLoaded && (
+            <div className="flex flex-col items-center justify-center w-full h-full">
+              <span className="text-3xl text-gray-500 mb-4">Carregando...</span>
+              <FaSpinner
+                className="animate-spin text-gray-500 mt-6"
+                size={40}
+              />
+            </div>
+          )}
+          {isLoaded && (
+            <iframe
+              src="https://player.vimeo.com/video/830669354?h=9d2f66a051&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;player_id=0&amp;app_id=58479"
+              allow="autoplay; fullscreen; picture-in-picture"
+              title="video-celular"
+              className="rounded-[13%] w-auto h-[613.333px]"
+            ></iframe>
+          )}
         </div>
       </nav>
       <a
         href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-        className="w-full max-w-screen-xl flex justify-center items-center mt-10 z-50"
+        className="w-full max-w-screen-xl flex justify-center items-center mt-10 lg:mt-0 z-50"
       >
         <button
-          className="w-4/5 h-24 py-2 px-4 rounded-full 
+          className="w-4/5 lg:h-24 h-20 py-2 px-4 rounded-full 
           bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133]
           text-[#751133] hover:text-white active:text-white
-          font-bold text-[36px] z-10
+          font-bold lg:text-4xl text-lg z-10
           transition duration-200 transform hover:scale-110 active:scale-100"
         >
-          EU QUERO VIVER A VONTADE DE DEUS
+          EU QUERO VIVER A VONTADE DE DEUS!
         </button>
       </a>
-    </motion.header>
+    </header>
   );
 }
