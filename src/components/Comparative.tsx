@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { textTransition } from "../utils/Transition";
 import {
   Comparative_devos_content,
   Comparative_papo_content,

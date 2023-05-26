@@ -1,19 +1,12 @@
-import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import { blocsVideo_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
 import sombra from "/public/images/sombra.svg";
 
 export default function Video() {
   return (
-    <motion.header className="relative flex justify-center  bg-[#FEF4E6] z-0 overflow-hidden ">
+    <header className="relative flex justify-center  bg-[#FEF4E6] z-0 overflow-hidden ">
       <nav className="relative w-auto h-auto lg:mt-12 max-w-screen-xl w-full">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="lg:w-3/5 h-auto m-auto"
-        >
+        <div className="lg:w-3/5 h-auto m-auto">
           <div
             style={{
               position: "relative",
@@ -34,7 +27,7 @@ export default function Video() {
               className="lg:rounded-2xl"
             ></iframe>
           </div>
-        </motion.div>
+        </div>
 
         <div className="relative lg:w-[65%] w-[95%] h-auto m-auto mt-10 z-10">
           <Image
@@ -57,39 +50,28 @@ export default function Video() {
           </a>
         </div>
 
-        <motion.div className="flex justify-around lg:w-3/5 m-auto lg:my-[4.5rem] my-[2rem]">
+        <div className="flex justify-around lg:w-3/5 m-auto lg:my-[4.5rem] my-[2rem]">
           {blocsVideo_content.map((content, i) => (
             <Blocs image={content.image} title={content.title} key={i} />
           ))}
-        </motion.div>
+        </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
 
 function Blocs({ image, title }: { image: StaticImageData; title: string }) {
   return (
-    <motion.div
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      variants={textTransition(0.4)}
-      className="gap-6 lg:text-xl text-sm font-medium lg:w-44 w-32"
-    >
-      <motion.div className="relative flex justify-center">
+    <div className="gap-6 lg:text-xl text-sm font-medium lg:w-44 w-32">
+      <div className="relative flex justify-center">
         <Image
           src={image}
           alt={title}
           className="flex justify-center items-center z-50 lg:w-20 w-12 m-auto"
         />
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={textTransition(0.6)}
-        className="text-center font-bold"
-      >
-        {title}
-      </motion.div>
-    </motion.div>
+      <div className="text-center font-bold">{title}</div>
+    </div>
   );
 }
