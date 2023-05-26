@@ -2,26 +2,24 @@ import { motion } from "framer-motion";
 import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import { blocsVideo_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
-import foto from "/public/images/foto-video.png";
 import sombra from "/public/images/sombra.svg";
 
 export default function Video() {
   return (
     <motion.header className="relative flex justify-center  bg-[#FEF4E6] z-0">
-      <nav className="relative w-auto h-auto mt-12 max-w-screen-xl w-full">
+      <nav className="relative w-auto h-auto lg:mt-12 max-w-screen-xl w-full">
         <motion.div
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
-          className="w-3/5 h-auto m-auto"
+          className="lg:w-3/5 h-auto m-auto"
         >
-          <Image
-            src={foto}
-            className={`w-screen h-auto
-          }`}
-            alt="wallpaper"
-          />
-          {/* <div style={{ position: "relative", paddingBottom: "56.25%" }}>
+          <div
+            style={{
+              position: "relative",
+              paddingBottom: "56.25%",
+            }}
+          >
             <iframe
               style={{
                 position: "absolute",
@@ -30,14 +28,15 @@ export default function Video() {
                 width: "100%",
                 height: "100%",
               }}
-              src="https://www.youtube.com/embed/tqorirMBzvg"
-              title="YouTube video player"
+              src="https://www.youtube.com/embed/tqorirMBzvg?controls=1"
+              title="O segredo do Pijama para a Intimidade com Deus"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              className="lg:rounded-2xl"
             ></iframe>
-          </div> */}
+          </div>
         </motion.div>
 
-        <div className="relative w-[65%] h-auto m-auto mt-10 z-10">
+        <div className="relative lg:w-[65%] w-4/5 h-auto m-auto mt-10 z-10">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-[90%] w-[95%] h-auto -z-10
@@ -49,7 +48,7 @@ export default function Video() {
             className="w-full"
           >
             <button
-              className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full h-24 py-2 px-4 rounded-full text-white font-bold text-[26px] z-10
+              className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full h-24 lg:py-2 px-4 rounded-full text-white font-bold lg:text-3xl text-sm z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
             >
               QUERO SER ÍNTIMA DE DEUS NO DIA A DIA!

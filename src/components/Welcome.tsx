@@ -7,22 +7,23 @@ import logo from "/public/images/logo.png";
 
 export default function Welcome() {
   return (
-    <motion.header className="relative flex justify-center ">
+    <motion.header className="relative flex justify-center">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 100 }}
         transition={{
           duration: 2,
         }}
-        className="absolute -top-40"
+        className="absolute lg:-top-40"
       >
-        <Image
-          src={wallpaper}
-          className={`w-screen h-auto 
-          filter opacity-30 blur-[8px]
-          }`}
-          alt="wallpaper"
-        />
+        <WallpaperImage />
+        <WallpaperImage className="scale-y-[-1] lg:hidden" />
+        <WallpaperImage className="lg:hidden" />
+        <WallpaperImage className="scale-y-[-1] lg:hidden" />
+        <WallpaperImage className="lg:hidden" />
+        <WallpaperImage className="scale-y-[-1] lg:hidden" />
+        <WallpaperImage className="lg:hidden" />
+        <WallpaperImage className="scale-y-[-1] lg:hidden" />
       </motion.div>
 
       <motion.header
@@ -30,19 +31,19 @@ export default function Welcome() {
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         variants={textTransition(0.4)}
-        className="relative w-auto h-auto mt-32 lg:mt-20 max-w-screen-xl"
+        className="relative w-auto h-auto mt-10 lg:mt-20 max-w-screen-xl"
       >
         <Image
           src={logo}
-          className={`w-60 h-auto m-auto
+          className={`lg:w-60 w-32 h-auto m-auto
           }`}
           alt="logo"
         />
         <motion.p
           variants={fadeIn("right", "spring", 0.4, 1)}
           className="relative flex justify-center text-center
-          text-[38px] font-bold
-        px-8 sm:px-16 md:px-12 md:leading-[52px] z-50 mt-16"
+          lg:text-4xl text-[1.2rem] font-bold
+        px-8 sm:px-16 md:px-12 leading-[2rem] lg:leading-[3.5rem] z-50 lg:mt-16 mt-6"
         >
           Entenda como é possível desfrutar intimidade com Deus no dia a dia e
           ser uma mulher segundo a vontade do Pai.
@@ -51,13 +52,13 @@ export default function Welcome() {
         <motion.p
           variants={fadeIn("left", "tween", 0.4, 1)}
           className="relative flex justify-center text-center
-          text-[30px] font-bold text-[#943A49]
-        px-8 sm:px-16 md:px-12 md:leading-[52px] z-50 mt-10"
+          lg:text-3xl text-lg font-bold text-[#943A49]
+        px-8 sm:px-16 md:px-12 z-50 mt-6"
         >
           Assistindo a aula introdutória você vai aprender 3 coisas:
         </motion.p>
 
-        <nav className="my-[6.5rem]">
+        <nav className="lg:my-[6.5rem] my-8 px-6">
           {topicsWelcome_content.map((content, i) => (
             <Topics number={content.number} text={content.text} key={i} />
           ))}
@@ -74,10 +75,10 @@ function Topics({ number, text }: { number: string; text: string }) {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.6)}
-      className="flex mt-10 gap-6 items-center justify-start text-[26px] font-medium"
+      className="flex lg:mt-10 mt-8 gap-4 items-center justify-start lg:text-2xl text-sm font-medium"
     >
-      <div className="flex justify-center items-center rounded-full text-center w-10 h-10 border border-[#751133]">
-        <h1 className="flex items-center justify-center text-[14px]">
+      <div className="flex justify-center items-center rounded-full text-center border border-[#751133]">
+        <h1 className="flex items-center justify-center lg:text-lg lg:w-10 lg:h-10 w-6 h-6">
           {number}
         </h1>
       </div>
@@ -85,5 +86,15 @@ function Topics({ number, text }: { number: string; text: string }) {
         <h1 className="flex items-center justify-center">{text}</h1>
       </div>
     </motion.div>
+  );
+}
+
+function WallpaperImage({ className }: { className?: string }) {
+  return (
+    <Image
+      src={wallpaper}
+      className={`lg:w-screen lg:h-auto w-max h-auto filter opacity-30 blur-[8px] ${className}`}
+      alt="wallpaper"
+    />
   );
 }
