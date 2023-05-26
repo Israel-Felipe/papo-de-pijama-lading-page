@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-import { textTransition, fadeIn } from "../utils/Transition";
 import { Depos_content } from "../utils/Contents";
 import Image, { StaticImageData } from "next/image";
 
@@ -8,32 +6,19 @@ import wallpaper from "/public/images/sombra_planta.svg";
 
 export default function DepoImages() {
   return (
-    <motion.header className="relative flex flex-col justify-center items-center h-auto bg-[#943A49] z-0 overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 100 }}
-        transition={{
-          duration: 2,
-        }}
-        className="absolute object-contain"
-      >
+    <header className="relative flex flex-col justify-center items-center h-auto bg-[#943A49] z-0 overflow-hidden">
+      <div className="absolute object-contain">
         <Image
           src={wallpaper}
-          className={`w-screen h-auto
+          className={`w-screen h-auto hidden lg:block
           filter opacity-30 blur-[8px]
           }`}
           alt="wallpaper"
         />
-      </motion.div>
+      </div>
 
-      <motion.nav className="relative h-auto max-w-screen-xl w-full mt-14 mb-12">
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          variants={fadeIn("right", "spring", 0.4, 1)}
-          className="flex flex-col lg:flex-row justify-around items-center m-auto lg:gap-6 gap-14 px-6 lg:px-0 w-[90%]"
-        >
+      <nav className="relative h-auto max-w-screen-xl w-full mt-14 mb-12">
+        <div className="flex flex-col lg:flex-row justify-around items-center m-auto lg:gap-6 gap-14 px-6 lg:px-0 w-[90%]">
           {Depos_content.map((content, i) => (
             <BlocsDepos
               image={content.image}
@@ -44,12 +29,9 @@ export default function DepoImages() {
               key={i}
             />
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div
-          className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-50"
-          variants={textTransition(0.6)}
-        >
+        <div className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-50">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] lg:w-[96%] w-[85%] h-auto -z-10
@@ -67,9 +49,9 @@ export default function DepoImages() {
               QUERO SER UMA TAGARELA!
             </button>
           </a>
-        </motion.div>
-      </motion.nav>
-    </motion.header>
+        </div>
+      </nav>
+    </header>
   );
 }
 
@@ -94,7 +76,7 @@ function BlocsDepos({
         alt="depoimento"
       />
 
-      {/*  <motion.div
+      {/*  <div
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
@@ -114,7 +96,7 @@ function BlocsDepos({
           <p>{idade}</p>
           <p>{cidade}</p>
         </div>
-      </motion.div> */}
+      </div> */}
     </nav>
   );
 }
