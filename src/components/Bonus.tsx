@@ -59,9 +59,9 @@ export default function Bonus() {
             artísticas.
             <br />
             <br />
-            Para isso, você vai receber de bônus ao 12 templates exclusivos
-            criados a partir de nossos estudos para você ter essa experiência
-            mesmo se não souber desenhar!
+            Para isso, você vai receber de bônus no mínimo 12 templates
+            exclusivos criados a partir de nossos estudos para você ter essa
+            experiência mesmo se não souber desenhar!
           </p>
 
           <a

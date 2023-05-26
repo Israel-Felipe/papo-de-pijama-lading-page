@@ -2,25 +2,18 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FiChevronRight } from "react-icons/fi";
-import { textTransition, fadeIn } from "../utils/Transition";
 import Image from "next/image";
 import faq from "/public/images/faq.svg";
 import { FAQ_content } from "../utils/Contents";
 
 export default function FAQ() {
   return (
-    <motion.header
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="flex justify-center bg-[#E4795B] z-0 p-28 overflow-hidden"
-    >
-      <nav className="w-auto h-auto mt-0 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-start items-start">
-        <header className="w-full h-auto flex justify-between items-center">
-          <motion.p
-            variants={fadeIn("right", "spring", 0.4, 1)}
+    <header className="flex justify-center bg-[#E4795B] z-0 lg:p-28 pt-40 lg:pt-0">
+      <nav className="w-auto h-auto mt-0 max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-start items-center lg:items-start">
+        <header className="lg:w-full w-[90%] h-auto flex justify-between items-center">
+          <p
             className="flex justify-center text-center
-          text-[42px] font-bold text-[#FEF4E6]
+          lg:text-5xl text-4xl font-bold text-[#FEF4E6] mb-10 lg:mb-0 leading-normal
          "
             style={{
               textShadow:
@@ -28,37 +21,32 @@ export default function FAQ() {
             }}
           >
             FAQ - DÚVIDAS FREQUENTES
-          </motion.p>
+          </p>
 
           <Image
             src={faq}
-            className={`w-52 h-auto
+            className={`w-52 h-auto hidden lg:block
           }`}
             alt="faq"
           />
         </header>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="flex flex-col gap-8"
-        >
+        <div className="flex flex-col lg:gap-8 gap-4 w-[90%] lg:w-full">
           {FAQ_content.map((content, i) => (
             <BlocsFAQ title={content.title} text={content.text} key={i} />
           ))}
-        </motion.div>
+        </div>
 
-        <div className="w-full flex flex-col justify-center items-center mt-24 gap-8">
-          <h1 className="text-5xl font-bold text-center underline">
+        <div className="lg:w-full w-[90%] flex flex-col justify-center items-center mt-24 gap-8">
+          <h1 className="lg:text-5xl text-4xl font-bold text-center underline">
             A sua dúvida não foi respondida?
           </h1>
-          <h2 className="text-[#751133] text-4xl text-center w-[59%] leading-[3rem]">
+          <h2 className="text-[#751133] lg:text-4xl text-xl text-center lg:w-[59%] lg:leading-[3rem]">
             Entre em contato conosco pelo WhatsApp para tirar as suas dúvidas
             sobre o Método Papo de pijama clicando no botão abaixo:
           </h2>
 
-          <div className="relative w-[60%] h-auto m-auto z-10">
+          <div className="relative lg:w-[60%] h-auto m-auto z-10 mb-12">
             <a
               href="https://api.whatsapp.com/send?phone=5547999060823&text=Oii%20Paola!%20Eu%20tenho%20d%C3%BAvida%20sobre%20o%20M%C3%A9todo%20Papo%20de%20Pijama...%20pode%20me%20ajudar?%20:)"
               className="w-full"
@@ -68,7 +56,7 @@ export default function FAQ() {
                 className=" bg-[#00BF63] hover:bg-[#029B51] active:bg-[#006233]
                 text-[#FEF4E6] active:text-[#FEF4E6]
               w-full h-20 py-2 px-4 rounded-3xl
-              font-bold  text-4xl z-10
+              font-bold lg:text-4xl z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
               >
                 Quero tirar dúvidas no WhatsApp
@@ -77,7 +65,7 @@ export default function FAQ() {
           </div>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
 
@@ -103,10 +91,10 @@ function BlocsFAQ({ title, text }: { title: string; text: string }) {
   return (
     <nav>
       <div
-        className="z-50 relative cursor-pointer flex justify-start items-center"
+        className="z-50 relative cursor-pointer flex lg:justify-start items-center"
         onClick={toggleTextVisibility}
       >
-        <h1 className="bg-[#751133] text-2xl font-bold text-left h-auto inline-block rounded-full py-4 px-12">
+        <h1 className="bg-[#751133] lg:text-2xl text-lg font-bold text-left h-auto lg:rounded-full rounded-3xl py-4 px-12 w-full lg:w-auto">
           {title}
         </h1>
         {!isTextVisible && (
@@ -131,7 +119,7 @@ function BlocsFAQ({ title, text }: { title: string; text: string }) {
           animate={isTextVisible ? "visible" : "hidden"}
           variants={variants}
         >
-          <p className="text-xl text-[#323232] font-medium mt-6 leading-8">
+          <p className="lg:text-xl text-[#323232] font-medium mt-6 lg:leading-loose leading-relaxed">
             {formattedText}
           </p>
         </motion.div>
