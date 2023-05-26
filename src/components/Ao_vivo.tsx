@@ -1,51 +1,40 @@
 /* eslint-disable react/no-unescaped-entities */
-import { motion } from "framer-motion";
-import { textTransition, fadeIn, textContainer } from "../utils/Transition";
 import Image from "next/image";
 import sombra from "/public/images/sombra.svg";
 import ao_vivo from "/public/images/ao_vivo.png";
 
 export default function Ao_vivo() {
   return (
-    <motion.header
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="flex justify-center  bg-[#943A49] z-0 p-20"
-    >
-      <nav className="w-auto h-auto mt-12 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-center items-center">
-        <motion.p
-          variants={fadeIn("right", "spring", 0.4, 1)}
+    <header className="flex justify-center  bg-[#943A49] z-0 lg:p-20">
+      <nav className="w-[90%] h-auto lg:mt-12 max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 lg:mt-0">
+        <p
           className="flex justify-center text-center
-          text-[42px] font-bold text-[#E4795B]
+          text-4xl lg:text-5xl font-bold text-[#E4795B]
          "
           style={{ textShadow: "1px 1px #FEF4E6" }}
         >
           ENCONTROS DO PIJAMA AO VIVO
-        </motion.p>
+        </p>
 
-        <motion.p
-          variants={fadeIn("left", "tween", 0.4, 1)}
+        <p
           className="flex justify-center text-center
-          text-[30px] font-bold w-3/5 leading-lg mt-6"
+          lg:text-3xl text-xl font-bold lg:w-3/5 leading-normal mt-8"
         >
           Um ambiente para Fortalecer a fé, ser Ouvida, Aprofundar-se e ser
           Encorajada!
-        </motion.p>
+        </p>
 
-        <motion.p
-          variants={fadeIn("left", "tween", 0.4, 1)}
+        <p
           className="flex justify-center text-center
-          text-[30px] font-medium w-3/4 leading-lg mt-6"
+          lg:text-2xl lg:w-3/5 text-lg font-medium leading-normal mt-6 italic"
         >
           "que nos animemos uns aos outros por meio da fé que vocês e eu temos”
           Rm 1.12
-        </motion.p>
+        </p>
 
-        <motion.p
-          variants={fadeIn("left", "tween", 0.4, 1)}
+        <p
           className="flex justify-center text-start
-          text-[22px] w-3/4 leading-lg mt-10"
+          lg:text-xl lg:w-3/4 lg:leading-relaxed leading-relaxed mt-10"
         >
           Na carta aos Romanos, o Apóstolo Paulo expressa o seu desejo de
           visitá-los e compartilhar os dons espirituais e fortalecer a fé para
@@ -57,23 +46,18 @@ export default function Ao_vivo() {
           usamos o pijama na frente de qualquer pessoa não é? Apenas de pessoas
           íntimas e próximas com quem podemos dividir nossa vida e crescer
           juntas na fé.
-        </motion.p>
+        </p>
 
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
-          className="w-3/5 h-auto m-auto mt-16 bg-[#E4795B] p-6 rounded-[3.5rem]"
-        >
+        <div className="lg:w-3/5 h-auto m-auto lg:mt-16 mt-10 bg-[#E4795B] lg:p-6 rounded-[3.5rem]">
           <Image
             src={ao_vivo}
             className={`hover:scale-125
           }`}
             alt="encontro on-line"
           />
-        </motion.div>
+        </div>
 
-        <div className="relative w-[55%] h-auto m-auto mt-16 z-10">
+        <div className="relative lg:w-[55%] h-auto m-auto mt-12 z-10 mb-12 lg:mb-0">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-[90%] w-[95%] h-auto -z-10
@@ -86,15 +70,15 @@ export default function Ao_vivo() {
           >
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6]
-              w-full h-24 py-2 px-4 rounded-full
-              font-bold text-[26px] z-10
-            transition duration-200 transform hover:scale-110 active:scale-100"
+              w-full h-24 py-2 px-10 rounded-full
+              font-bold lg:text-2xl text-xl z-10
+            transition duration-200 transform ho  ver:scale-110 active:scale-100"
             >
               EU QUERO VESTIR O PIJAMA DA INTIMIDADE
             </button>
           </a>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }
