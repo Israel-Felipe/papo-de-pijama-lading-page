@@ -26,13 +26,13 @@ export default function DepoImages() {
         />
       </motion.div>
 
-      <motion.nav className="relative h-auto max-w-screen-xl w-full mt-12 mb-12">
+      <motion.nav className="relative h-auto max-w-screen-xl w-full mt-14 mb-12">
         <motion.div
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
           variants={fadeIn("right", "spring", 0.4, 1)}
-          className="flex justify-around m-auto gap-6"
+          className="flex flex-col lg:flex-row justify-around items-center m-auto lg:gap-6 gap-14 px-6 lg:px-0 w-[90%]"
         >
           {Depos_content.map((content, i) => (
             <BlocsDepos
@@ -47,25 +47,22 @@ export default function DepoImages() {
         </motion.div>
 
         <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.25 }}
           className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-50"
           variants={textTransition(0.6)}
         >
           <Image
             src={sombra}
-            className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] w-[96%] h-auto -z-10
+            className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] lg:w-[96%] w-[85%] h-auto -z-10
           }`}
             alt="sombra"
           />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            className="w-full"
+            className="w-full flex justify-center"
           >
             <button
-              className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] h-24 py-2 px-4 rounded-full font-bold text-[34px] z-10
-            transition duration-200 transform hover:scale-110 active:scale-100 w-full"
+              className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] lg:h-24 h-16 py-2 px-4 rounded-full font-bold lg:text-4xl text-md z-10
+            transition duration-200 transform hover:scale-110 active:scale-100 lg:w-full w-[90%]"
             >
               QUERO SER UMA TAGARELA!
             </button>
@@ -90,11 +87,10 @@ function BlocsDepos({
   cidade: string;
 }) {
   return (
-    <nav className="relative w-96 h-auto w-[800px] hover:scale-110">
+    <nav className="relative w-auto h-[100%] hover:scale-110">
       <Image
         src={image}
-        className={`w-full h-auto rounded-lg
-          }`}
+        className={`w-full h-auto rounded-lg`}
         alt="depoimento"
       />
 

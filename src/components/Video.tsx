@@ -28,7 +28,7 @@ export default function Video() {
                 width: "100%",
                 height: "100%",
               }}
-              src="https://www.youtube.com/embed/tqorirMBzvg?controls=1"
+              src="https://www.youtube.com/embed/iv8EnSe4oT4"
               title="O segredo do Pijama para a Intimidade com Deus"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               className="lg:rounded-2xl"
@@ -79,7 +79,7 @@ function Blocs({ image, title }: { image: StaticImageData; title: string }) {
         <Image
           src={image}
           alt={title}
-          className="flex justify-center items-center z-50 lg:w-20 w-14 m-auto"
+          className="flex justify-center items-center z-50 lg:w-20 w-12 m-auto"
         />
       </motion.div>
 

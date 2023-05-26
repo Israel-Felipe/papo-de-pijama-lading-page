@@ -48,6 +48,13 @@ export const blocsVideo_content = [
 
 export const Depos_content = [
   {
+    image: depo4,
+    foto: foto4,
+    name: "Pedrinha Santista",
+    idade: "54 anos",
+    cidade: "Curitiba / PR",
+  },
+  {
     image: depo1,
     foto: foto1,
     name: "Laura Christine",
@@ -62,25 +69,18 @@ export const Depos_content = [
     cidade: "Salvador / BH",
   }, */
   {
-    image: depo3,
-    foto: foto3,
-    name: "Antoniela",
-    idade: "24 anos",
-    cidade: "Rio do Sul / SC",
-  },
-  {
-    image: depo4,
-    foto: foto4,
-    name: "Pedrinha Santista",
-    idade: "54 anos",
-    cidade: "Curitiba / PR",
-  },
-  {
     image: depo5,
     foto: foto5,
     name: "Pedrinha Santista",
     idade: "54 anos",
     cidade: "Curitiba / PR",
+  },
+  {
+    image: depo3,
+    foto: foto3,
+    name: "Antoniela",
+    idade: "24 anos",
+    cidade: "Rio do Sul / SC",
   },
 ];
 
