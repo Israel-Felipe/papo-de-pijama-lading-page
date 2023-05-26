@@ -94,7 +94,7 @@ function BlocsFAQ({ title, text }: { title: string; text: string }) {
         className="z-50 relative cursor-pointer flex lg:justify-start items-center"
         onClick={toggleTextVisibility}
       >
-        <h1 className="bg-[#751133] lg:text-2xl text-lg font-bold text-left h-auto lg:rounded-full rounded-3xl py-4 px-12 w-full lg:w-auto">
+        <h1 className="bg-[#751133] lg:text-2xl text-lg font-bold text-left h-auto lg:rounded-full rounded-3xl py-4 lg:px-12 px-8 w-full lg:w-auto">
           {title}
         </h1>
         {!isTextVisible && (

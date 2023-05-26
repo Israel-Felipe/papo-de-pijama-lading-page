@@ -6,7 +6,7 @@ export default function Oferta() {
       <nav className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center">
         <p
           className="flex justify-center text-center
-          lg:text-5xl text-4xl font-bold text-[#FEF4E6]
+          lg:text-5xl text-4xl font-bold text-[#FEF4E6] w-[90%] lg:w-auto
          "
           style={{
             textShadow:
