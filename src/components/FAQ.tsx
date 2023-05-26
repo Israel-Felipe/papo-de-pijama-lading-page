@@ -13,7 +13,7 @@ export default function FAQ() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
-      className="flex justify-center bg-[#E4795B] z-0 p-28"
+      className="flex justify-center bg-[#E4795B] z-0 p-28 overflow-hidden"
     >
       <nav className="w-auto h-auto mt-0 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-start items-start">
         <header className="w-full h-auto flex justify-between items-center">

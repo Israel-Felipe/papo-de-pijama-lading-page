@@ -6,7 +6,7 @@ import sombra from "/public/images/sombra.svg";
 
 export default function Video() {
   return (
-    <motion.header className="relative flex justify-center  bg-[#FEF4E6] z-0">
+    <motion.header className="relative flex justify-center  bg-[#FEF4E6] z-0 overflow-hidden ">
       <nav className="relative w-auto h-auto lg:mt-12 max-w-screen-xl w-full">
         <motion.div
           initial="hidden"

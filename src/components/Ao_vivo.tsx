@@ -5,7 +5,7 @@ import ao_vivo from "/public/images/ao_vivo.png";
 
 export default function Ao_vivo() {
   return (
-    <header className="flex justify-center  bg-[#943A49] z-0 lg:p-20">
+    <header className="flex justify-center  bg-[#943A49] z-0 lg:p-20 overflow-hidden ">
       <nav className="w-[90%] h-auto lg:mt-12 max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 lg:mt-0">
         <p
           className="flex justify-center text-center

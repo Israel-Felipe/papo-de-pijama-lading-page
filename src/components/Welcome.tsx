@@ -1,4 +1,3 @@
-import { textTransition, fadeIn } from "../utils/Transition";
 import { topicsWelcome_content } from "../utils/Contents";
 import Image from "next/image";
 import wallpaper from "/public/images/wallpaper-folhas2.png";
@@ -6,7 +5,7 @@ import logo from "/public/images/logo.png";
 
 export default function Welcome() {
   return (
-    <header className="relative flex justify-center">
+    <header className="relative flex justify-center overflow-hidden ">
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}

@@ -1,22 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-import { motion } from "framer-motion";
-import { textTransition, fadeIn } from "../utils/Transition";
-import Image from "next/image";
-import sombra from "/public/images/sombra.svg";
 
 export default function Oferta() {
   return (
-    <motion.header
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.25 }}
-      className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 p-20"
-    >
-      <nav className="w-auto h-auto mt-12 max-w-screen-xl w-full text-[#FEF4E6] flex flex-col justify-center items-center">
-        <motion.p
-          variants={fadeIn("right", "spring", 0.4, 1)}
+    <header className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
+      <nav className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center">
+        <p
           className="flex justify-center text-center
-          text-[42px] font-bold text-[#FEF4E6]
+          lg:text-5xl text-4xl font-bold text-[#FEF4E6]
          "
           style={{
             textShadow:
@@ -24,10 +14,10 @@ export default function Oferta() {
           }}
         >
           O QUE VOCÊ VAI TER ACESSO?
-        </motion.p>
+        </p>
 
-        <div className="bg-[#751133] w-1/2 h-auto rounded-3xl mt-10 flex flex-col p-16 justify-center items-center">
-          <ul className="list-disc ml-4 text-2xl font-medium leading-9">
+        <div className="bg-[#751133] lg:w-1/2 w-[90%] h-auto rounded-3xl mt-10 flex flex-col lg:p-16 p-8 justify-center items-center">
+          <ul className="list-disc ml-4 lg:text-2xl text-lg font-medium lg:leading-10">
             <li>
               Estudo semanal com a metodologia Papo de Pijama, totalizando 52
               temas bíblicos e 365 estudos!
@@ -60,7 +50,7 @@ export default function Oferta() {
           </div>
         </div>
 
-        <div className="relative w-[55%] h-auto m-auto mt-10 z-10">
+        <div className="relative lg:w-[55%] w-[90%] h-auto m-auto mt-10 z-10">
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
             className="w-full"
@@ -68,7 +58,7 @@ export default function Oferta() {
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#751133] text-[#751133] active:text-[#FEF4E6]
               w-full h-20 py-2 px-4 rounded-full
-              font-bold  text-[26px] z-10
+              font-bold  text-xl lg:text-2xl z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
             >
               EU QUERO TER ACESSO AO PAPO DE PIJAMA!
@@ -76,6 +66,6 @@ export default function Oferta() {
           </a>
         </div>
       </nav>
-    </motion.header>
+    </header>
   );
 }

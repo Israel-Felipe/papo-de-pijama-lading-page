@@ -5,7 +5,7 @@ import balon2 from "/public/images/balon2.svg";
 
 export default function DepoVideos() {
   return (
-    <header className="relative flex justify-center h-auto z-0 lg:pb-40 pb-14 bg-[#EC9D74] px-2">
+    <header className="relative flex justify-center h-auto z-0 lg:pb-40 pb-14 bg-[#EC9D74] px-2 overflow-hidden">
       <div className="absolute">
         <Image
           src={wallpaper}
