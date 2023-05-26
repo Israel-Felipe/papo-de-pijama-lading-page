@@ -16,14 +16,11 @@ export default function Welcome() {
         }}
         className="absolute lg:-top-40"
       >
-        <WallpaperImage />
-        <WallpaperImage className="scale-y-[-1] lg:hidden" />
-        <WallpaperImage className="lg:hidden" />
-        <WallpaperImage className="scale-y-[-1] lg:hidden" />
-        <WallpaperImage className="lg:hidden" />
-        <WallpaperImage className="scale-y-[-1] lg:hidden" />
-        <WallpaperImage className="lg:hidden" />
-        <WallpaperImage className="scale-y-[-1] lg:hidden" />
+        <Image
+          src={wallpaper}
+          className={`lg:w-screen w-auto lg:h-auto h-[40rem] filter opacity-30 blur-[8px]`}
+          alt="wallpaper"
+        />
       </motion.div>
 
       <motion.header
@@ -93,7 +90,7 @@ function WallpaperImage({ className }: { className?: string }) {
   return (
     <Image
       src={wallpaper}
-      className={`lg:w-screen lg:h-auto w-max h-auto filter opacity-30 blur-[8px] ${className}`}
+      className={`lg:w-screen w-full h-auto filter opacity-30 blur-[8px] ${className}`}
       alt="wallpaper"
     />
   );

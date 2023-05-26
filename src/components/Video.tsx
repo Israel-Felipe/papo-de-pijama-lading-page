@@ -36,7 +36,7 @@ export default function Video() {
           </div>
         </motion.div>
 
-        <div className="relative lg:w-[65%] w-4/5 h-auto m-auto mt-10 z-10">
+        <div className="relative lg:w-[65%] w-[95%] h-auto m-auto mt-10 z-10">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-[90%] w-[95%] h-auto -z-10
@@ -48,7 +48,7 @@ export default function Video() {
             className="w-full"
           >
             <button
-              className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full h-24 lg:py-2 px-4 rounded-full text-white font-bold lg:text-3xl text-sm z-10
+              className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full lg:h-24 h-16 lg:py-2 px-4 rounded-full text-white font-bold lg:text-3xl text-sm z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
             >
               QUERO SER ÍNTIMA DE DEUS NO DIA A DIA!
@@ -56,7 +56,7 @@ export default function Video() {
           </a>
         </div>
 
-        <motion.div className="flex justify-around w-3/5 m-auto my-[4.5rem]">
+        <motion.div className="flex justify-around lg:w-3/5 m-auto lg:my-[4.5rem] my-[2rem]">
           {blocsVideo_content.map((content, i) => (
             <Blocs image={content.image} title={content.title} key={i} />
           ))}
@@ -73,19 +73,19 @@ function Blocs({ image, title }: { image: StaticImageData; title: string }) {
       whileInView="show"
       viewport={{ once: true, amount: 0.25 }}
       variants={textTransition(0.4)}
-      className="gap-6 items-center justify-center text-[26px] font-medium w-44"
+      className="gap-6 lg:text-xl text-sm font-medium lg:w-44 w-32"
     >
       <motion.div className="relative flex justify-center">
         <Image
           src={image}
           alt={title}
-          className="flex justify-center items-center z-50 w-20 m-auto lg:m-0"
+          className="flex justify-center items-center z-50 lg:w-20 w-14 m-auto"
         />
       </motion.div>
 
       <motion.div
         variants={textTransition(0.6)}
-        className="flex justify-center items-center text-center font-bold text-[20px]"
+        className="text-center font-bold"
       >
         {title}
       </motion.div>
