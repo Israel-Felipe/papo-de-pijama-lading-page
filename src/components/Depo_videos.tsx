@@ -105,7 +105,7 @@ function DepoRigth({
 }) {
   return (
     <div className="lg:flex-row w-full flex flex-col-reverse">
-      <div className="flex justify-center items-center text-center lg:text-end font-normal lg:text-[1.6rem] text-[1.2rem] bg-white bg-opacity-50 rounded-r-3xl rounded-l-3xl lg:rounded-r-none lg:p-16 p-8 lg:-mr-24 -mt-8 lg:-mt-0">
+      <div className="flex justify-center items-center text-center lg:text-end font-normal lg:text-[1.3rem] text-[1.2rem] bg-white bg-opacity-50 rounded-r-3xl rounded-l-3xl lg:rounded-r-none lg:p-16 p-8 lg:-mr-24 -mt-8 lg:-mt-0">
         <h3 className="lg:mr-20 text-[#323232] mt-6 lg:mt-0">{text}</h3>
       </div>
 
