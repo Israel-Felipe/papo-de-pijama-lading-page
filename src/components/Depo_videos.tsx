@@ -40,7 +40,7 @@ export default function DepoVideos() {
           <DepoRigth
             video={"https://www.youtube.com/embed/mo1AwVwqWPo?controls=0"}
             name={"Patricia, Atlanta (USA)"}
-            text={`"A Paty é legal e mais coisinhas aqui a ter mais intimidade com Deus e uma responsabilidade diária de buscar a Deus".`}
+            text={`"Eu sempre tive como meta ter uma vida devocional ativa, mas o método convencional nunca me prendia. Fazia um mês, e logo depois parava […] minha vida com Deus mudou, a maneira como fazíamos o devocional, todo o acompanhamento e os assuntos reais do cotidiano transformaram meu relacionamento com Deus".`}
           />
 
           <DepoLeft
