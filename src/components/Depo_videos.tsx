@@ -1,7 +1,8 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import wallpaper from "/public/images/wallpaper-depo-videos.png";
-import balon1 from "/public/images/balon1.svg";
-import balon2 from "/public/images/balon2.svg";
+import balon1 from "/public/images/balon1.png";
+import balon2 from "/public/images/balon2.png";
+import balon3 from "/public/images/balon3.png";
 
 export default function DepoVideos() {
   return (
@@ -35,18 +36,21 @@ export default function DepoVideos() {
             video={"https://www.youtube.com/embed/az02QaBV6zM?controls=0"}
             name={"Renata, Belo Horizonte - MG"}
             text={`"O papo de pijama veio no momento certo, ele me ajudou a ter mais intimidade com Deus e uma responsabilidade diária de buscar a Deus".`}
+            balon={balon1}
           />
 
           <DepoRigth
             video={"https://www.youtube.com/embed/mo1AwVwqWPo?controls=0"}
             name={"Patricia, Atlanta (USA)"}
             text={`"Eu sempre tive como meta ter uma vida devocional ativa, mas o método convencional nunca me prendia. Fazia um mês, e logo depois parava […] minha vida com Deus mudou, a maneira como fazíamos o devocional, todo o acompanhamento e os assuntos reais do cotidiano transformaram meu relacionamento com Deus".`}
+            balon={balon2}
           />
 
           <DepoLeft
             video={"https://www.youtube.com/embed/zt9N7rBaVSo?controls=0"}
             name={"Janaina, Joinville - SC"}
             text={`"Cada vez sinto que Deus fala mais e mais de uma forma extraordinário que só fazendo o Papo de Pijama para experimentar".`}
+            balon={balon3}
           />
         </div>
       </nav>
@@ -58,10 +62,12 @@ function DepoLeft({
   video,
   name,
   text,
+  balon,
 }: {
   video: string;
   name: string;
   text: string;
+  balon: StaticImageData;
 }) {
   return (
     <div className="lg:flex w-full">
@@ -78,13 +84,6 @@ function DepoLeft({
           alt={name}
           className="absolute lg:-bottom-20 lg:-right-16 lg:w-52 w-32 -bottom-12 -right-4 transform rotate-[16deg] lg:rotate-0"
         />
-
-        <p
-          className="absolute lg:bottom-4 lg:-right-10 bottom-2 -right-0
-        lg:text-[20px] text-[12.5px] lg:-rotate-[8deg] rotate-[8deg] text-white font-normal lg:w-40 w-24 text-center"
-        >
-          {name}
-        </p>
       </div>
 
       <div className="flex justify-center items-center text-center lg:text-start font-normal lg:text-[1.6rem] text-[1.2rem] bg-white bg-opacity-50 rounded-r-3xl rounded-l-3xl lg:rounded-l-none lg:p-16 p-8 lg:-ml-6 -mt-6 lg:-mt-0">
@@ -98,10 +97,12 @@ function DepoRigth({
   video,
   name,
   text,
+  balon,
 }: {
   video: string;
   name: string;
   text: string;
+  balon: StaticImageData;
 }) {
   return (
     <div className="lg:flex-row w-full flex flex-col-reverse">
@@ -122,12 +123,6 @@ function DepoRigth({
           className="absolute lg:-bottom-20 lg:-left-20 -bottom-10 -right-4
           lg:w-52 w-32"
         />
-        <p
-          className="absolute lg:bottom-4 lg:-left-10 bottom-4 right-0
-        lg:text-[20px] text-[13px] rotate-[8deg] text-white font-normal lg:w-36 w-24 text-center"
-        >
-          {name}
-        </p>
       </div>
     </div>
   );
