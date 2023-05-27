@@ -5,10 +5,10 @@ import foto from "/public/images/foto_paola.jpg";
 export default function Quemsou() {
   return (
     <header className="relative flex flex-col justify-center items-center overflow-hidden lg:p-36 h-auto">
-      <div className="absolute">
+      <div className="absolute  h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-screen filter opacity-30 hidden lg:block`}
+          className={`w-auto h-full lg:w-screen object-cover filter opacity-30 hidden lg:block`}
           alt="wallpaper"
         />
       </div>

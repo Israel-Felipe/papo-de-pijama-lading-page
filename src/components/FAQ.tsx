@@ -46,7 +46,7 @@ export default function FAQ() {
             sobre o Método Papo de pijama clicando no botão abaixo:
           </h2>
 
-          <div className="relative lg:w-[60%] h-auto m-auto z-10 mb-12">
+          <div className="relative lg:w-[70%] h-auto m-auto z-10 mb-12">
             <a
               href="https://api.whatsapp.com/send?phone=5547999060823&text=Oii%20Paola!%20Eu%20tenho%20d%C3%BAvida%20sobre%20o%20M%C3%A9todo%20Papo%20de%20Pijama...%20pode%20me%20ajudar?%20:)"
               className="w-full"

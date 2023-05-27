@@ -138,7 +138,7 @@ export const FAQ_content = [
   },
 
   {
-    title: "3. Eu não tenho o hábito de ler a bíblia, o Papo vai me ensinar?",
+    title: "3. Eu não tenho o hábito de ler a Bíblia, o Papo vai me ensinar?",
     text: "Você sabia que, segundo muitos neurocientistas que estudam a consolidação de um hábito, a maioria destaca que o caminhar com pessoas que estão buscando o mesmo que você é essencial? Não é em vão que o Método Papo de Pijama tem como fundamento a convivência em comunidade! A vida de fé é viver com irmãos e irmãs na fé e não poderia ser diferente nessa nossa jornada de Pijama! Por isso, o Método Papo de Pijama será seu guia para conseguir começar HOJE mesmo esse novo hábito tão importante na sua vida!",
   },
 

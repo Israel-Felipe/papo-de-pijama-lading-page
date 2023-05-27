@@ -18,11 +18,11 @@ export default function Dia_a_dia() {
   }, [inView]);
 
   return (
-    <header className="relative flex flex-col items-center justify-center overflow-hidden pb-10">
-      <div className="absolute">
+    <header className="relative flex flex-col items-center justify-center overflow-hidden">
+      <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-screen hidden lg:block filter opacity-20`}
+          className={`w-auto h-full lg:w-screen object-cover filter opacity-20`}
           alt="wallpaper"
         />
       </div>
@@ -79,7 +79,7 @@ export default function Dia_a_dia() {
           bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133]
           text-[#751133] hover:text-white active:text-white
           font-bold lg:text-4xl text-lg z-10
-          transition duration-200 transform hover:scale-110 active:scale-100"
+          transition duration-200 transform hover:scale-110 active:scale-100 mb-10"
         >
           EU QUERO VIVER A VONTADE DE DEUS!
         </button>

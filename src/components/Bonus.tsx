@@ -9,7 +9,7 @@ export default function Bonus() {
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-auto h-full lg:w-screen lg:h-auto filter opacity-20 object-cover`}
+          className={`w-auto h-full lg:w-screen object-cover filter opacity-20`}
           alt="wallpaper"
         />
       </div>
