@@ -24,6 +24,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1, user-scalable=no"
         />
+        <link rel="icon" href="/images/favicon.ico.svg" />
       </Head>
 
       <main className="min-h-xl m-auto flex-col justify-center items-start">
