@@ -30,7 +30,7 @@ export default function Bonus() {
 
         <div className="lg:w-1/2 flex flex-col lg:items-end lg:mt-20 mt-6">
           <p
-            className="flex justify-center lg:text-end lg:text-6xl text-[2.5rem] lg:leading-normal leading-normal font-bold text-[#E4795B] text-centergit"
+            className="flex justify-center lg:text-end lg:text-6xl text-[2.5rem] lg:leading-normal leading-normal font-bold text-[#E4795B] text-center"
             style={{
               textShadow:
                 "0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6, 0px 0px 4px #FEF4E6",
