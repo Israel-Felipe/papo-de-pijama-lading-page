@@ -5,7 +5,7 @@ import logo from "/public/images/logo.png";
 
 export default function Welcome() {
   return (
-    <header className="relative flex justify-center overflow-hidden ">
+    <header className="relative flex justify-center overflow-hidden">
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
@@ -24,7 +24,7 @@ export default function Welcome() {
         <p
           className="relative flex justify-center text-center
           lg:text-4xl text-[1.2rem] font-bold
-        px-8 sm:px-16 md:px-12 leading-[2rem] lg:leading-[3.5rem] z-50 lg:mt-16 mt-6"
+        px-8 sm:px-16 md:px-12 leading-[2rem] lg:leading-[3.5rem] z-50 lg:mt-16 mt-6 "
         >
           Entenda como é possível desfrutar intimidade com Deus no dia a dia e
           ser uma mulher segundo a vontade do Pai.
