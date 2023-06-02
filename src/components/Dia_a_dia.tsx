@@ -1,21 +1,21 @@
-import React, { useState, useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { FaSpinner } from "react-icons/fa";
-import Image from "next/image";
-import wallpaper from "/public/images/wallpaper_woman.png";
+import React, { useState, useEffect } from 'react'
+import { useInView } from 'react-intersection-observer'
+import { FaSpinner } from 'react-icons/fa'
+import Image from 'next/image'
+import wallpaper from '/public/images/wallpaper_woman.png'
 
 export default function Dia_a_dia() {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false)
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.5,
-  });
+  })
 
   useEffect(() => {
     if (inView) {
-      setIsLoaded(true);
+      setIsLoaded(true)
     }
-  }, [inView]);
+  }, [inView])
 
   return (
     <header className="relative flex flex-col items-center justify-center overflow-hidden">
@@ -27,28 +27,45 @@ export default function Dia_a_dia() {
         />
       </div>
 
-      <nav className="flex flex-col lg:flex-row lg:m-20 z-50 max-w-screen-xl lg:ml-40">
-        <div className="lg:w-3/4 flex flex-col justify-center items-center lg:items-start">
-          <p className=" w-4/5 lg:w-1/2 lg:text-5xl text-3xl lg:leading-tight font-bold mt-8">
-            CONHECENDO E FAZENDO A VONTADE DO PAI NO SEU DIA A DIA
+      <nav className="flex flex-col lg:flex-row lg:m-16 z-50 max-w-screen-xl">
+        <div className="lg:w-[70%] flex flex-col justify-center items-center lg:items-start">
+          <p className=" w-4/5 lg:w-4/5 lg:text-5xl text-3xl lg:leading-tight font-bold mt-8">
+            CONHECER PARA FAZER A VONTADE DE DEUS NO DIA A DIA
           </p>
-          <p className=" w-4/5 lg:text-[1.5rem] font-medium mt-10">
-            Toda semana você terá acesso a um estudo temático para meditar ao
-            longo dos 7 passos descritos acima!
+          <p className=" w-4/5 lg:w-[90%] lg:text-[1.4rem] font-medium mt-10">
+            Você já conseguiu estudar com profundidade no mínimo 52 temas
+            bíblicos?
             <br />
             <br />
-            Dessa forma, você vai conseguir estudar com profundidade e
-            praticidade um tema específico da vida cristã e seus desafios
-            diários a partir da palavra de Deus.
+            Como seria seu crescimento na fé se você conseguisse absorver e
+            guardar no coração o que o Senhor tem para te ensinar?
             <br />
-            <br />E mais do que isso! Você vai conseguir aplicar e testemunhar a
-            transformação do Pai no seu dia a dia.
+            <br />
+            Por muitas vezes, fiz meus devocionais com superficialidade sem
+            gravar ou aprofundar temas importantíssimos para a minha vida com o
+            Senhor.
+            <br />
+            <br />
+            Para fazermos a Vontade do Senhor, é necessário aprendemos a ouvir a
+            sua voz por meio da sua Palavra!
+            <br />
+            <br />
+            Mas com o método Papo de Pijama, pude além de estudar com
+            profundidade temas centrais da fé e do cotidiano da minha vida,
+            gravar em meu coração e experimentar o agir de Deus ouvindo sua voz
+            para além do devocional!
+            <br />
+            <br />
+            Um dos pilares importantes do método Papo de Pijama é te conduzir
+            nessa jornada por meio dos nossos materiais exclusivos que seguem
+            uma metologia que aprofunda os temas bíblicos ao longo de sua
+            semana.
           </p>
         </div>
 
         <div
           ref={ref}
-          className="flex items-center justify-center mt-8 lg:mt-0 w-auto"
+          className="flex items-center justify-center mt-8 lg:mt-0 lg:w-[30%]"
         >
           {!isLoaded && (
             <div className="flex flex-col items-center justify-center w-full h-full">
@@ -85,5 +102,5 @@ export default function Dia_a_dia() {
         </button>
       </a>
     </header>
-  );
+  )
 }
