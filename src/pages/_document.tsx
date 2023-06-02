@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/next-script-for-ga */
-import { Html, Head, Main, NextScript } from "next/document";
-import Image from "next/image";
+import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
@@ -54,22 +54,23 @@ export default function Document() {
       </Head>
 
       <body>
-        <Image
+        <img
           height="1"
           width="1"
-          style={{ display: "none" }}
+          style={{ display: 'none' }}
           src="https://www.facebook.com/tr?id=785607259813837&ev=PageView&noscript=1"
           alt="logo"
         />
+
         <iframe
           src="https://www.googletagmanager.com/ns.html?id=GTM-W6C9W86"
           height="0"
           width="0"
-          style={{ display: "none" }}
+          style={{ display: 'none' }}
         ></iframe>
         <Main />
         <NextScript />
       </body>
     </Html>
-  );
+  )
 }
