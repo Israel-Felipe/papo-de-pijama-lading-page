@@ -22,7 +22,7 @@ export default function Home() {
 
   const handleButtonClick = () => {
     window.location.href =
-      'https://api.whatsapp.com/send?phone=5547999906082&text=Oi%20Paola.%20Eu%20preciso%20de%20ajuda%20para%20saber%20mais%20sobre%20o%20papo%20de%20pijama!'
+      'https://api.whatsapp.com/send?phone=5547999060823&text=Oi%20Paola.%20Eu%20preciso%20de%20ajuda%20para%20saber%20mais%20sobre%20o%20papo%20de%20pijama!'
   }
 
   const handleHideButton = () => {
@@ -58,7 +58,7 @@ export default function Home() {
       </main>
 
       {showButton && (
-        <div className="fixed bottom-4 right-4">
+        <div className="fixed bottom-10 right-6 md:bottom-12 md:right-12">
           <div className="relative">
             <button
               className="p-2 bg-green-500 text-white rounded-full transform hover:-translate-x-1 hover:scale-110"
