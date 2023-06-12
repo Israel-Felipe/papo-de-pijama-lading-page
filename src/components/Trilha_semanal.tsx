@@ -1,6 +1,6 @@
-import Image from "next/image";
-import wallpaper from "/public/images/sombra_trilha.png";
-import trilha from "/public/images/trilha.png";
+import Image from 'next/image'
+import wallpaper from '/public/images/sombra_trilha.png'
+import trilha from '/public/images/trilha.png'
 
 export default function Trilha_semanal() {
   return (
@@ -18,7 +18,7 @@ export default function Trilha_semanal() {
         <p
           className="relative flex justify-center text-center
           lg:text-5xl text-3xl font-bold
-        px-8 leading-10 z-50 lg:mt-16"
+        px-8 leading-10 z-40 lg:mt-16"
         >
           Um plano diário profundo, simples e prático
         </p>
@@ -26,7 +26,7 @@ export default function Trilha_semanal() {
         <p
           className="relative flex justify-start text-start
           lg:text-3xl text-lg font-medium text-[#943A49]
-        px-10 lg:px-12 lg:leading-normal z-50 lg:mt-16 mt-8 tracking-[0.02em]"
+        px-10 lg:px-12 lg:leading-normal z-40 lg:mt-16 mt-8 tracking-[0.02em]"
         >
           Com o método Papo de Pijama você tem uma trilha semanal para
           aprofundar um tema bíblico ao longo da sua semana de forma simples,
@@ -35,7 +35,7 @@ export default function Trilha_semanal() {
         <p
           className="relative flex justify-start text-start
           lg:text-3xl text-lg font-medium text-[#943A49]
-        px-10 lg:px-12 lg:leading-normal z-50 lg:mt-10 mt-8 tracking-[0.02em]"
+        px-10 lg:px-12 lg:leading-normal z-40 lg:mt-10 mt-8 tracking-[0.02em]"
         >
           O tema bíblico da semana possui 7 passos importantes distribuídos ao
           longo da sua semana:
@@ -51,5 +51,5 @@ export default function Trilha_semanal() {
         </div>
       </nav>
     </header>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import Image from "next/image";
-import logo from "/public/images/logo_footer.png";
-import insta from "/public/images/insta.svg";
-import youtube from "/public/images/youtube.svg";
-import twitter from "/public/images/twitter.svg";
+import Image from 'next/image'
+import logo from '/public/images/logo_footer.png'
+import insta from '/public/images/insta.svg'
+import youtube from '/public/images/youtube.svg'
+import twitter from '/public/images/twitter.svg'
 
 export default function Footer() {
   return (
@@ -21,8 +21,8 @@ export default function Footer() {
           <p className="font-bold">Ministério Papo de Pijama</p>
           <p>Paola Milbauer CNPJ: 38.285.769/0001-76</p>
           <p>
-            2023 ©{" "}
-            <a href="https://linktr.ee/israel.felipe" target="_blank">
+            2023 ©{' '}
+            <a href="https://linktr.ee/israel.felipe">
               <span>Israel Felipe Teixeira</span>
             </a>
           </p>
@@ -32,7 +32,6 @@ export default function Footer() {
           <a
             href="https://www.instagram.com/paolamilbauer/"
             className="lg:w-14 w-12 h-auto hover:scale-110"
-            target="_blank"
           >
             <Image src={insta} alt="insta" />
           </a>
@@ -40,7 +39,6 @@ export default function Footer() {
           <a
             href="https://www.youtube.com/@paolamilbauer/"
             className="lg:w-14 w-12 h-auto hover:scale-110"
-            target="_blank"
           >
             <Image src={youtube} alt="youtube" />
           </a>
@@ -48,14 +46,13 @@ export default function Footer() {
           <a
             href="https://twitter.com/paolamilbauer"
             className="lg:w-14 w-12 h-auto hover:scale-110"
-            target="_blank"
           >
             <Image src={twitter} alt="twitter" />
           </a>
         </div>
       </nav>
     </footer>
-  );
+  )
 }
 
 /*  */

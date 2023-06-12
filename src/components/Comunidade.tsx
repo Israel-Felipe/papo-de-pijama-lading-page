@@ -1,21 +1,21 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import book from "/public/images/old_book.png";
-import icon_conversa from "/public/images/icon_conversa.svg";
-import icon_note from "/public/images/icon_note.svg";
+import { motion } from 'framer-motion'
+import Image from 'next/image'
+import book from '/public/images/old_book.png'
+import icon_conversa from '/public/images/icon_conversa.svg'
+import icon_note from '/public/images/icon_note.svg'
 
 export default function Comunidade() {
   return (
     <motion.header className="relative flex justify-center items-center bg-[#FEF4E6] z-0 overflow-hidden">
       <motion.div
-        initial={{ x: "0%", y: "0%", rotate: "0deg" }}
-        animate={{ x: "40%", y: "50%", rotate: "-15deg", scale: 1.2 }}
+        initial={{ x: '0%', y: '0%', rotate: '0deg' }}
+        animate={{ x: '40%', y: '50%', rotate: '-15deg', scale: 1.2 }}
         transition={{
           duration: 40,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute left-0 lg:-top-44 -top-20 -z-50"
+        className="absolute left-0 lg:-top-44 -top-20 -z-40"
       >
         <Image
           src={book}
@@ -25,7 +25,7 @@ export default function Comunidade() {
         />
       </motion.div>
 
-      <nav className="flex flex-col lg:flex-row lg:m-20 z-50 w-full h-full max-w-screen-xl">
+      <nav className="flex flex-col lg:flex-row lg:m-20 z-40 w-full h-full max-w-screen-xl">
         <div className="lg:w-1/2 w-4/5 m-auto">
           <p className="lg:w-[95%] lg:text-[3rem] text-[2rem] font-bold lg:mt-8 mt-14 text-center lg:text-start">
             SOZINHA VOCÊ NÃO VAI TÃO LONGE!
@@ -54,7 +54,7 @@ export default function Comunidade() {
               <Image
                 src={icon_conversa}
                 alt="conversa"
-                className="top-0 left-0 z-50 lg:w-36 w-28 m-auto lg:m-0"
+                className="top-0 left-0 z-40 lg:w-36 w-28 m-auto lg:m-0"
               />
               <div
                 className="absolute lg:w-44 lg:h-44 w-36 h-36
@@ -78,7 +78,7 @@ export default function Comunidade() {
               <Image
                 src={icon_note}
                 alt="icon_note"
-                className="top-0 left-0 z-50 lg:w-36 w-28 m-auto lg:m-0"
+                className="top-0 left-0 z-40 lg:w-36 w-28 m-auto lg:m-0"
               />
               <div
                 className="absolute lg:w-44 lg:h-44 w-36 h-36
@@ -99,5 +99,5 @@ export default function Comunidade() {
         </div>
       </nav>
     </motion.header>
-  );
+  )
 }

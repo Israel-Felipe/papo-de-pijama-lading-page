@@ -1,6 +1,6 @@
-import Image from "next/image";
-import wallpaper from "/public/images/wallpaper_quemsou.png";
-import foto from "/public/images/foto_paola.jpg";
+import Image from 'next/image'
+import wallpaper from '/public/images/wallpaper_quemsou.png'
+import foto from '/public/images/foto_paola.jpg'
 
 export default function Quemsou() {
   return (
@@ -13,7 +13,7 @@ export default function Quemsou() {
         />
       </div>
 
-      <nav className="flex flex-col-reverse lg:flex-row items-center justify-center z-50 max-w-screen-xl">
+      <nav className="flex flex-col-reverse lg:flex-row items-center justify-center z-40 max-w-screen-xl">
         <div className="lg:w-1/2 w-full flex items-center justify-center mt-8 mb-10">
           <div className="w-4/5 h-auto m-auto bg-[#E4795B] p-2 rounded-[3.5rem]">
             <Image
@@ -53,5 +53,5 @@ export default function Quemsou() {
         </div>
       </nav>
     </header>
-  );
+  )
 }

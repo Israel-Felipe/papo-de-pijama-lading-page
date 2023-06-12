@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-import sombra from "/public/images/sombra.svg";
-import ao_vivo from "/public/images/ao_vivo.png";
+import Image from 'next/image'
+import sombra from '/public/images/sombra.svg'
+import ao_vivo from '/public/images/ao_vivo.png'
 
 export default function Ao_vivo() {
   return (
@@ -11,7 +11,7 @@ export default function Ao_vivo() {
           className="flex justify-center text-center
           text-4xl lg:text-5xl font-bold text-[#E4795B]
          "
-          style={{ textShadow: "1px 1px #FEF4E6" }}
+          style={{ textShadow: '1px 1px #FEF4E6' }}
         >
           ENCONTROS DO PIJAMA AO VIVO
         </p>
@@ -66,7 +66,6 @@ export default function Ao_vivo() {
           />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            target="_blank"
             className="w-full"
           >
             <button
@@ -81,5 +80,5 @@ export default function Ao_vivo() {
         </div>
       </nav>
     </header>
-  );
+  )
 }

@@ -10,7 +10,7 @@ export default function Oferta() {
          "
           style={{
             textShadow:
-              "0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133",
+              '0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133',
           }}
         >
           O QUE VOCÊ VAI TER ACESSO?
@@ -53,7 +53,6 @@ export default function Oferta() {
         <div className="relative lg:w-[55%] w-[90%] h-auto m-auto mt-10 z-10">
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            target="_blank"
             className="w-full"
           >
             <button
@@ -68,5 +67,5 @@ export default function Oferta() {
         </div>
       </nav>
     </header>
-  );
+  )
 }

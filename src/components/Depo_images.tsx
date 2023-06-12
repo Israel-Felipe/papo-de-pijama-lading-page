@@ -1,8 +1,8 @@
-import { Depos_content } from "../utils/Contents";
-import Image, { StaticImageData } from "next/image";
+import { Depos_content } from '../utils/Contents'
+import Image, { StaticImageData } from 'next/image'
 
-import sombra from "/public/images/sombra.svg";
-import wallpaper from "/public/images/sombra_planta.svg";
+import sombra from '/public/images/sombra.svg'
+import wallpaper from '/public/images/sombra_planta.svg'
 
 export default function DepoImages() {
   return (
@@ -31,7 +31,7 @@ export default function DepoImages() {
           ))}
         </div>
 
-        <div className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-50">
+        <div className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-40">
           <Image
             src={sombra}
             className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] lg:w-[96%] w-[85%] h-auto -z-10
@@ -40,7 +40,6 @@ export default function DepoImages() {
           />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            target="_blank"
             className="w-full flex justify-center"
           >
             <button
@@ -53,7 +52,7 @@ export default function DepoImages() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
 
 function BlocsDepos({
@@ -63,11 +62,11 @@ function BlocsDepos({
   idade,
   cidade,
 }: {
-  image: StaticImageData;
-  foto: StaticImageData;
-  name: string;
-  idade: string;
-  cidade: string;
+  image: StaticImageData
+  foto: StaticImageData
+  name: string
+  idade: string
+  cidade: string
 }) {
   return (
     <nav className="relative w-auto h-[100%] lg:hover:scale-110">
@@ -99,5 +98,5 @@ function BlocsDepos({
         </div>
       </div> */}
     </nav>
-  );
+  )
 }

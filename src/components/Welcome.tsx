@@ -25,7 +25,7 @@ export default function Welcome() {
         <p
           className="relative flex justify-center text-center
           lg:text-3xl text-[1.2rem] font-bold
-        leading-[2rem] lg:leading-[3rem] z-50 lg:mt-4 mt-6 max-w-[80%]"
+        leading-[2rem] lg:leading-[3rem] z-40 lg:mt-4 mt-6 max-w-[80%]"
         >
           Entenda como é possível desfrutar intimidade com Deus no dia a dia e
           ser uma mulher segundo a vontade do Pai.
@@ -34,7 +34,7 @@ export default function Welcome() {
         <p
           className="relative flex justify-center text-center
           lg:text-2xl text-lg font-bold text-[#943A49]
-        px-8 sm:px-16 md:px-12 z-50 mt-6"
+        px-8 sm:px-16 md:px-12 z-40 mt-6"
         >
           Assistindo a aula introdutória você vai aprender 3 coisas:
         </p>
@@ -79,7 +79,6 @@ export default function Welcome() {
           />
           <a
             href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            target="_blank"
             className="w-full"
           >
             <button
@@ -123,7 +122,7 @@ function Blocs({ image, title }: { image: StaticImageData; title: string }) {
         <Image
           src={image}
           alt={title}
-          className="flex justify-center items-center z-50 lg:w-20 w-12 m-auto"
+          className="flex justify-center items-center z-40 lg:w-20 w-12 m-auto"
         />
       </div>
 

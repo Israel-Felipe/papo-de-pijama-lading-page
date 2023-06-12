@@ -20,13 +20,13 @@ export default function DepoVideos() {
         <p
           className="relative flex justify-center text-center
           text-white
-          px-8 z-50"
+          px-8 z-40"
         >
           O que as tagarelas estão falando sobre o
         </p>
         <p
           className="relative flex justify-center text-center
-          px-8 z-50 lg:mb-20 mb-12"
+          px-8 z-40 lg:mb-20 mb-12"
         >
           Método Papo de Pijama
         </p>

@@ -27,7 +27,7 @@ export default function Dia_a_dia() {
         />
       </div>
 
-      <nav className="flex flex-col lg:flex-row lg:m-16 z-50 max-w-screen-xl">
+      <nav className="flex flex-col lg:flex-row lg:m-16 z-40 max-w-screen-xl">
         <div className="lg:w-[70%] flex flex-col justify-center items-center lg:items-start">
           <p className=" w-4/5 lg:w-4/5 lg:text-5xl text-3xl lg:leading-tight font-bold mt-8">
             CONHECER PARA FAZER A VONTADE DE DEUS NO DIA A DIA
@@ -88,8 +88,7 @@ export default function Dia_a_dia() {
       </nav>
       <a
         href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-        target="_blank"
-        className="w-full max-w-screen-xl flex justify-center items-center mt-10 lg:mt-0 z-50"
+        className="w-full max-w-screen-xl flex justify-center items-center mt-10 lg:mt-0 z-40"
       >
         <button
           className="w-4/5 lg:h-24 h-20 py-2 px-4 rounded-full 

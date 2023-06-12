@@ -1,25 +1,25 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 import {
   Comparative_devos_content,
   Comparative_papo_content,
-} from "../utils/Contents";
-import Image from "next/image";
-import flor from "/public/images/flor.png";
-import topic from "/public/images/topic.svg";
-import faixa from "/public/images/faixa.svg";
+} from '../utils/Contents'
+import Image from 'next/image'
+import flor from '/public/images/flor.png'
+import topic from '/public/images/topic.svg'
+import faixa from '/public/images/faixa.svg'
 
 export default function Comparative() {
   return (
     <header className="relative flex justify-center h-auto bg-[#FEF4E6] z-0 lg:py-16 py-8 overflow-hidden">
       <motion.div
-        initial={{ x: "0%", y: "0%", rotate: "0deg" }}
-        animate={{ x: "100%", y: "-20%", rotate: "30deg", scale: 1.5 }}
+        initial={{ x: '0%', y: '0%', rotate: '0deg' }}
+        animate={{ x: '100%', y: '-20%', rotate: '30deg', scale: 1.5 }}
         transition={{
           duration: 50,
           repeat: Infinity,
-          repeatType: "reverse",
+          repeatType: 'reverse',
         }}
-        className="absolute lg:left-44 lg:bottom-20 -left-96 -z-50"
+        className="absolute lg:left-44 lg:bottom-20 -left-96 -z-40"
       >
         <Image
           src={flor}
@@ -48,7 +48,7 @@ export default function Comparative() {
               DEVOCIONAIS
             </p>
           </div>
-          <div className="bg-[#943A49] rounded-full lg:w-40 lg:h-40 w-16 h-16 flex items-center justify-center z-50">
+          <div className="bg-[#943A49] rounded-full lg:w-40 lg:h-40 w-16 h-16 flex items-center justify-center z-40">
             <p className="font-black lg:text-5xl text-white">VS</p>
           </div>
           <div className=" w-[40%]">
@@ -74,7 +74,7 @@ export default function Comparative() {
         }
       </nav>
     </header>
-  );
+  )
 }
 
 function Topics({ text }: { text: string }) {
@@ -85,5 +85,5 @@ function Topics({ text }: { text: string }) {
         {text}
       </p>
     </div>
-  );
+  )
 }
