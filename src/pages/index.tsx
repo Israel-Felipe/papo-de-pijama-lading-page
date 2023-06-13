@@ -57,7 +57,7 @@ export default function Home() {
         <Footer />
       </main>
 
-      {showButton && (
+      {/*  {showButton && (
         <div className="fixed bottom-10 right-6 md:bottom-12 md:right-12">
           <div className="relative">
             <button
@@ -82,7 +82,7 @@ export default function Home() {
             </button>
           </div>
         </div>
-      )}
+      )} */}
     </>
   )
 }
