@@ -38,10 +38,7 @@ export default function DepoImages() {
           }`}
             alt="sombra"
           />
-          <a
-            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
-            className="w-full flex justify-center"
-          >
+          <a href="#oferta" className="w-full flex justify-center">
             <button
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] lg:h-24 h-16 py-2 px-4 rounded-full font-bold lg:text-4xl text-md z-10
             transition duration-200 transform hover:scale-110 active:scale-100 lg:w-full w-[90%]"

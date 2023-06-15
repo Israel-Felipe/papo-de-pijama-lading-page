@@ -2,7 +2,10 @@
 
 export default function Oferta() {
   return (
-    <header className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
+    <header
+      className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20"
+      id="oferta"
+    >
       <nav className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center">
         <p
           className="flex justify-center text-center

@@ -87,7 +87,7 @@ export default function Dia_a_dia() {
         </div>
       </nav>
       <a
-        href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+        href="#oferta"
         className="w-full max-w-screen-xl flex justify-center items-center mt-10 lg:mt-0 z-40"
       >
         <button

@@ -65,7 +65,7 @@ export default function Bonus() {
           </p>
 
           <a
-            href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+            href="#oferta"
             className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-8 lg:mb-0"
           >
             <button
