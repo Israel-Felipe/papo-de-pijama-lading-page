@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import whats from '/public/images/whats.svg'
 
@@ -29,6 +29,29 @@ export default function Home() {
     setShowButton(false)
   }
 
+  const [showScrollIcon, setShowScrollIcon] = useState(false)
+
+  const handleScroll = () => {
+    const currentPosition =
+      window.pageYOffset || document.documentElement.scrollTop
+
+    const windowHeight = window.innerHeight
+    const pageHeight = document.documentElement.scrollHeight
+    const scrollableDistance = pageHeight - windowHeight
+    const scrollPercentage = (currentPosition / scrollableDistance) * 100
+
+    if (scrollPercentage > 50) {
+      setShowScrollIcon(true)
+    } else {
+      setShowScrollIcon(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
       <Head>
@@ -45,9 +68,9 @@ export default function Home() {
         <Welcome />
         <Depo_videos />
         <Depo_images />
+        <Dia_a_dia />
         <Trilha_semanal />
         <Comparative />
-        <Dia_a_dia />
         <Comunidade />
         <Ao_vivo />
         <Bonus />
@@ -57,8 +80,12 @@ export default function Home() {
         <Footer />
       </main>
 
-      {showButton && (
-        <div className="fixed bottom-10 right-6 md:bottom-12 md:right-12">
+      {showScrollIcon && (
+        <div
+          className={`fixed bottom-10 right-6 md:bottom-12 md:right-12 z-50 ${
+            !showButton && 'hidden'
+          }`}
+        >
           <div className="relative">
             <button
               className="p-2 bg-green-500 text-white rounded-full transform hover:-translate-x-1 hover:scale-110"
