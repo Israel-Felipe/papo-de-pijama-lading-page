@@ -47,7 +47,7 @@ export default function FAQ() {
 
           <div className="relative lg:w-[70%] h-auto m-auto z-10 mb-12">
             <a
-              href="https://api.whatsapp.com/send?phone=5547999906082&text=Oi%20Paola.%20Vi%20a%20página%20do%20Método%20Papo%20de%20Pijama%20e%20quero%20saber%20mais%20sobre%20ele.%20Pode%20me%20ajudar?"
+              href="https://api.whatsapp.com/send?phone=5547999060823&text=Oi%20Paola.%20Vi%20a%20página%20do%20Método%20Papo%20de%20Pijama%20e%20quero%20saber%20mais%20sobre%20ele.%20Pode%20me%20ajudar?"
               className="w-full"
             >
               <button
