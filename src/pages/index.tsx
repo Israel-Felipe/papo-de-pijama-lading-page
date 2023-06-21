@@ -39,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setShowScrollIcon(true)
-    }, 10000)
+    }, 30000)
 
     return () => clearTimeout(timeout)
   }, [])
