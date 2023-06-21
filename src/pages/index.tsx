@@ -36,15 +36,6 @@ export default function Home() {
     setShowButton(false)
   }
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setShowScrollIcon(true)
-    }, 30000)
-
-    return () => clearTimeout(timeout)
-  }, [])
-
-  /* 
   const handleScroll = () => {
     const currentPosition =
       window.pageYOffset || document.documentElement.scrollTop
@@ -65,7 +56,7 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
- */
+
   return (
     <>
       <Head>
