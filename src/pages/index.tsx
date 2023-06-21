@@ -75,10 +75,7 @@ export default function Home() {
         <Ao_vivo />
         <Bonus />
         <Quemsou />
-        <div
-          className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20"
-          id="oferta"
-        >
+        <div className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
           <nav className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center">
             <p
               className="flex justify-center text-center
@@ -88,6 +85,7 @@ export default function Home() {
                 textShadow:
                   '0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133',
               }}
+              id="oferta"
             >
               O QUE VOCÊ VAI TER ACESSO?
             </p>
