@@ -1,25 +1,32 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import whats from '/public/images/whats.svg'
 
 import Head from 'next/head'
-import Welcome from '../components/Welcome'
+import { Welcome } from '../components/Welcome'
 import Depo_videos from '../components/Depo_videos'
-import Depo_images from '../components/Depo_images'
+import { Depo_images } from '../components/Depo_images'
 import Trilha_semanal from '../components/Trilha_semanal'
 import Comparative from '../components/Comparative'
-import Dia_a_dia from '../components/Dia_a_dia'
+import { Dia_a_dia } from '../components/Dia_a_dia'
 import Comunidade from '../components/Comunidade'
-import Ao_vivo from '../components/Ao_vivo'
-import Bonus from '../components/Bonus'
+import { Ao_vivo } from '../components/Ao_vivo'
+import { Bonus } from '../components/Bonus'
 import Quemsou from '../components/Quemsou'
-import Oferta from '../components/Oferta'
 import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 
 export default function Home() {
   const [showButton, setShowButton] = useState(true)
+  const [showScrollIcon, setShowScrollIcon] = useState(false)
 
+  const ofertaRef = useRef<HTMLElement | null>(null)
+
+  const handleOferta = () => {
+    if (ofertaRef.current) {
+      ofertaRef.current.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
   const handleButtonClick = () => {
     window.location.href =
       'https://api.whatsapp.com/send?phone=5547999060823&text=Oi%20Paola.%20Eu%20preciso%20de%20ajuda%20para%20saber%20mais%20sobre%20o%20papo%20de%20pijama!'
@@ -29,8 +36,15 @@ export default function Home() {
     setShowButton(false)
   }
 
-  const [showScrollIcon, setShowScrollIcon] = useState(false)
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setShowScrollIcon(true)
+    }, 10000)
 
+    return () => clearTimeout(timeout)
+  }, [])
+
+  /* 
   const handleScroll = () => {
     const currentPosition =
       window.pageYOffset || document.documentElement.scrollTop
@@ -51,7 +65,7 @@ export default function Home() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
+ */
   return (
     <>
       <Head>
@@ -64,19 +78,22 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico.svg" />
       </Head>
 
-      <main className="min-h-xl m-auto flex-col justify-center items-start scroll-smooth">
-        <Welcome />
+      <main className="min-h-xl m-auto flex-col justify-center items-start">
+        <Welcome handleOferta={handleOferta} />
         <Depo_videos />
-        <Depo_images />
-        <Dia_a_dia />
+        <Depo_images handleOferta={handleOferta} />
+        <Dia_a_dia handleOferta={handleOferta} />
         <Trilha_semanal />
         <Comparative />
         <Comunidade />
-        <Ao_vivo />
-        <Bonus />
+        <Ao_vivo handleOferta={handleOferta} />
+        <Bonus handleOferta={handleOferta} />
         <Quemsou />
         <div className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
-          <nav className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center">
+          <nav
+            className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center"
+            ref={ofertaRef}
+          >
             <p
               className="flex justify-center text-center
             lg:text-5xl text-4xl font-bold text-[#FEF4E6] w-[90%] lg:w-auto
@@ -85,7 +102,6 @@ export default function Home() {
                 textShadow:
                   '0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133, 0px 0px 4px #751133',
               }}
-              id="oferta"
             >
               O QUE VOCÊ VAI TER ACESSO?
             </p>
@@ -147,36 +163,36 @@ export default function Home() {
         <Footer />
       </main>
 
-      {showScrollIcon && (
-        <div
-          className={`fixed bottom-10 right-6 md:bottom-12 md:right-12 z-50 ${
-            !showButton && 'hidden'
-          }`}
-        >
-          <div className="relative">
-            <button
-              className="p-2 bg-green-500 text-white rounded-full transform hover:-translate-x-1 hover:scale-110"
-              onClick={handleButtonClick}
+      <div
+        className={`fixed bottom-10 right-6 md:bottom-12 md:right-12 z-50 transition transform ease-in duration-1000 ${
+          showScrollIcon
+            ? 'transition-transform transform translate-x-100 opacity-100'
+            : 'translate-x-60 transition-transform duration-1000 ease-out opacity-50'
+        }`}
+      >
+        <div className="relative">
+          <button
+            className="p-2 bg-green-500 text-white rounded-full transform hover:-translate-x-1 hover:scale-110"
+            onClick={handleButtonClick}
+          >
+            <Image src={whats} className={`w-14 h-14`} alt="wallpaper" />
+          </button>
+          <button
+            className="p-2 ml-2 bg-red-500 text-white rounded-full absolute bottom-0 right-0 -mb-2 -mr-2"
+            onClick={handleHideButton}
+          >
+            <span className="sr-only">Fechar</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="white"
+              className="w-4 h-4"
             >
-              <Image src={whats} className={`w-14 h-14`} alt="wallpaper" />
-            </button>
-            <button
-              className="p-2 ml-2 bg-red-500 text-white rounded-full absolute bottom-0 right-0 -mb-2 -mr-2"
-              onClick={handleHideButton}
-            >
-              <span className="sr-only">Fechar</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="white"
-                className="w-4 h-4"
-              >
-                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41zM12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z" />
-              </svg>
-            </button>
-          </div>
+              <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41zM12 22C6.48 22 2 17.52 2 12S6.48 2 12 2s10 4.48 10 10-4.48 10-10 10z" />
+            </svg>
+          </button>
         </div>
-      )}
+      </div>
     </>
   )
 }

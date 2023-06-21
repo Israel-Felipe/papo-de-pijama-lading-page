@@ -3,7 +3,11 @@ import Image from 'next/image'
 import sombra from '/public/images/sombra.svg'
 import ao_vivo from '/public/images/ao_vivo.png'
 
-export default function Ao_vivo() {
+interface Ao_vivoProps {
+  handleOferta: () => void
+}
+
+export const Ao_vivo: React.FC<Ao_vivoProps> = ({ handleOferta }) => {
   return (
     <header className="flex justify-center  bg-[#943A49] z-0 lg:p-20 overflow-hidden ">
       <nav className="w-[90%] h-auto lg:mt-12 max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 lg:mt-0">
@@ -64,8 +68,9 @@ export default function Ao_vivo() {
           }`}
             alt="sombra"
           />
-          <a href="#oferta" className="w-full">
+          <a className="w-full">
             <button
+              onClick={handleOferta}
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6]
               w-full h-24 py-2 px-10 rounded-full
               font-bold lg:text-2xl text-xl z-10

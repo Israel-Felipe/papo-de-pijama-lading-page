@@ -3,7 +3,11 @@ import wallpaper from '/public/images/wallpaper_biblej.png'
 import biblej1 from '/public/images/biblej1.png'
 import biblej2 from '/public/images/biblej2.png'
 
-export default function Bonus() {
+interface BonusProps {
+  handleOferta: () => void
+}
+
+export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
   return (
     <header className="relative flex flex-col justify-center items-center overflow-hidden lg:p-20 h-auto">
       <div className="absolute h-full w-full">
@@ -64,11 +68,9 @@ export default function Bonus() {
             experiência mesmo se não souber desenhar!
           </p>
 
-          <a
-            href="#oferta"
-            className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-8 lg:mb-0"
-          >
+          <a className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-8 lg:mb-0">
             <button
+              onClick={handleOferta}
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] text-white
               w-[95%] h-16 py-2 px-2 rounded-full
               font-bold lg:text-2xl text-md z-10

@@ -4,7 +4,11 @@ import logo from '/public/images/logo.png'
 import Image, { StaticImageData } from 'next/image'
 import sombra from '/public/images/sombra.svg'
 
-export default function Welcome() {
+interface WelcomeProps {
+  handleOferta: () => void
+}
+
+export const Welcome: React.FC<WelcomeProps> = ({ handleOferta }) => {
   return (
     <header className="relative flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute h-full w-full">
@@ -77,14 +81,14 @@ export default function Welcome() {
           }`}
             alt="sombra"
           />
-          <a href="#oferta" className="w-full">
-            <button
-              className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full lg:h-24 h-16 lg:py-2 px-4 rounded-full text-white font-bold lg:text-3xl text-sm z-10
+
+          <button
+            onClick={handleOferta}
+            className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] w-full lg:h-24 h-16 lg:py-2 px-4 rounded-full text-white font-bold lg:text-3xl text-sm z-10
             transition duration-200 transform hover:scale-110 active:scale-100"
-            >
-              QUERO SER ÍNTIMA DE DEUS NO DIA A DIA!
-            </button>
-          </a>
+          >
+            QUERO SER ÍNTIMA DE DEUS NO DIA A DIA!
+          </button>
         </div>
 
         <div className="flex justify-around lg:w-3/5 m-auto lg:my-[4.5rem] my-[2rem]">

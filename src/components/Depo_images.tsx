@@ -4,7 +4,11 @@ import Image, { StaticImageData } from 'next/image'
 import sombra from '/public/images/sombra.svg'
 import wallpaper from '/public/images/sombra_planta.png'
 
-export default function DepoImages() {
+interface DepoImages {
+  handleOferta: () => void
+}
+
+export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
   return (
     <header className="relative flex flex-col justify-center items-center h-auto bg-[#943A49] z-0 overflow-hidden">
       <div className="absolute object-contain">
@@ -37,8 +41,9 @@ export default function DepoImages() {
           }`}
             alt="sombra"
           />
-          <a href="#oferta" className="w-full flex justify-center">
+          <a className="w-full flex justify-center">
             <button
+              onClick={handleOferta}
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] lg:h-24 h-16 py-2 px-4 rounded-full font-bold lg:text-4xl text-md z-10
             transition duration-200 transform hover:scale-110 active:scale-100 lg:w-full w-[90%]"
             >
