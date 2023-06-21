@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import book from '/public/images/old_book.png'
 import icon_conversa from '/public/images/icon_conversa.svg'
-import icon_note from '/public/images/icon_note.svg'
+import icon_note from '/public/images/icon_note.png'
 
 export default function Comunidade() {
   return (

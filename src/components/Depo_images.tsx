@@ -2,7 +2,7 @@ import { Depos_content } from '../utils/Contents'
 import Image, { StaticImageData } from 'next/image'
 
 import sombra from '/public/images/sombra.svg'
-import wallpaper from '/public/images/sombra_planta.svg'
+import wallpaper from '/public/images/sombra_planta.png'
 
 export default function DepoImages() {
   return (
@@ -22,7 +22,6 @@ export default function DepoImages() {
           {Depos_content.map((content, i) => (
             <BlocsDepos
               image={content.image}
-              foto={content.foto}
               name={content.name}
               idade={content.idade}
               cidade={content.cidade}
@@ -54,13 +53,11 @@ export default function DepoImages() {
 
 function BlocsDepos({
   image,
-  foto,
   name,
   idade,
   cidade,
 }: {
   image: StaticImageData
-  foto: StaticImageData
   name: string
   idade: string
   cidade: string
