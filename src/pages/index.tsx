@@ -3,7 +3,7 @@ import Image from 'next/image'
 import whats from '/public/images/whats.svg'
 
 import Head from 'next/head'
-import { Welcome } from '../components/Welcome'
+import Welcome from '../components/Welcome'
 import Depo_videos from '../components/Depo_videos'
 import { Depo_images } from '../components/Depo_images'
 import Trilha_semanal from '../components/Trilha_semanal'
@@ -70,7 +70,7 @@ export default function Home() {
       </Head>
 
       <main className="min-h-xl m-auto flex-col justify-center items-start">
-        <Welcome handleOferta={handleOferta} />
+        <Welcome />
         <Depo_videos />
         <Depo_images handleOferta={handleOferta} />
         <Dia_a_dia handleOferta={handleOferta} />
