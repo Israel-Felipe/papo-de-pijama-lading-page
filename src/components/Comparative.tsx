@@ -10,7 +10,7 @@ import faixa from '/public/images/faixa.svg'
 
 export default function Comparative() {
   return (
-    <header className="relative flex justify-center h-auto bg-[#FEF4E6] z-0 lg:py-16 py-8 overflow-hidden">
+    <header className="relative flex justify-center h-auto bg-[#FEF4E6] z-0 lg:p-16 p-8 overflow-hidden">
       <motion.div
         initial={{ x: '0%', y: '0%', rotate: '0deg' }}
         animate={{ x: '100%', y: '-20%', rotate: '30deg', scale: 1.5 }}

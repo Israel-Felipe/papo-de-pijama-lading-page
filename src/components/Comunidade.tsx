@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import book from '/public/images/old_book.png'
 import icon_conversa from '/public/images/icon_conversa.svg'
 import icon_note from '/public/images/icon_note.png'
 
@@ -16,14 +15,7 @@ export default function Comunidade() {
           repeatType: 'reverse',
         }}
         className="absolute left-0 lg:-top-44 -top-20 -z-40"
-      >
-        <Image
-          src={book}
-          className={`w-[750px] h-auto filter opacity-30 blur-[1px] origin-center transform -rotate-[20deg]
-          }`}
-          alt="book"
-        />
-      </motion.div>
+      ></motion.div>
 
       <nav className="flex flex-col lg:flex-row lg:m-20 z-40 w-full h-full max-w-screen-xl">
         <div className="lg:w-1/2 w-4/5 m-auto">

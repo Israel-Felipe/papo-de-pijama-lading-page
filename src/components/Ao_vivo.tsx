@@ -10,12 +10,12 @@ interface Ao_vivoProps {
 export const Ao_vivo: React.FC<Ao_vivoProps> = ({ handleOferta }) => {
   return (
     <header className="flex justify-center  bg-[#943A49] z-0 lg:p-20 overflow-hidden ">
-      <nav className="w-[90%] h-auto lg:mt-12 max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 lg:mt-0">
+      <nav className="w-[90%] h-auto max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 lg:mt-0">
         <p
           className="flex justify-center text-center
           text-4xl lg:text-5xl font-bold text-[#E4795B]
          "
-          style={{ textShadow: '1px 1px #FEF4E6' }}
+          style={{ textShadow: '0px 0px 10px rgba(49, 49, 49, 0.685)' }}
         >
           ENCONTROS DO PIJAMA AO VIVO
         </p>
@@ -74,7 +74,7 @@ export const Ao_vivo: React.FC<Ao_vivoProps> = ({ handleOferta }) => {
               className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6]
               w-full h-24 py-2 px-10 rounded-full
               font-bold lg:text-2xl text-xl z-10
-            transition duration-200 transform ho  ver:scale-110 active:scale-100"
+            transition duration-200 transform ho  ver:scale-105 active:scale-100"
             >
               EU QUERO VESTIR O PIJAMA DA INTIMIDADE
             </button>

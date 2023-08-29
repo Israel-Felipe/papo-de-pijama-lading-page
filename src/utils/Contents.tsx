@@ -88,10 +88,10 @@ export const Comparative_devos_content = [
     text: 'Você faz o devocional sozinha',
   },
   {
-    text: 'Não te ensinam a aplicar no dia a dia',
+    text: 'Não consegue aplicar no dia a dia',
   },
   {
-    text: 'O conteúdo é limitado ao próprio material',
+    text: 'O material é limitado ao próprio material',
   },
 ]
 
@@ -103,16 +103,10 @@ export const Comparative_papo_content = [
     text: 'Tema é aprofundado ao longo de uma semana',
   },
   {
-    text: 'Você fixa o assunto e leva para o seu dia e sua vida',
-  },
-  {
-    text: 'Você é inserida e acolhida numa comunidade exclusiva',
+    text: 'Você fixa o assunto e leva para o seu dia e sua vida!',
   },
   {
     text: 'Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar',
-  },
-  {
-    text: 'Vai além do material, possuindo encontros ao vivo, comunidade, material extra e muito mais!',
   },
 ]
 

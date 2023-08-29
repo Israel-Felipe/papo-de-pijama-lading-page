@@ -4,7 +4,10 @@ import whats from '/public/images/whats.svg'
 
 import Head from 'next/head'
 import { Welcome } from '../components/Welcome'
-import Depo_videos from '../components/Depo_videos'
+import { Depo_videos } from '../components/Depo_videos'
+import Lista from '../components/Lista'
+import Pijama from '../components/Pijama'
+import Esferas from '../components/Esferas'
 import { Depo_images } from '../components/Depo_images'
 import Trilha_semanal from '../components/Trilha_semanal'
 import Comparative from '../components/Comparative'
@@ -17,8 +20,8 @@ import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 
 export default function Home() {
-  const [showButton, setShowButton] = useState(true)
   const [showScrollIcon, setShowScrollIcon] = useState(false)
+  const [hideWhats, setHideWhats] = useState(false)
 
   const ofertaRef = useRef<HTMLElement | null>(null)
 
@@ -33,7 +36,8 @@ export default function Home() {
   }
 
   const handleHideButton = () => {
-    setShowButton(false)
+    setShowScrollIcon(false)
+    setHideWhats(true)
   }
 
   const handleScroll = () => {
@@ -69,20 +73,23 @@ export default function Home() {
         <link rel="icon" href="/images/favicon.ico.svg" />
       </Head>
 
-      <main className="min-h-xl m-auto flex-col justify-center items-start">
+      <main className="min-h-xl m-auto flex-col justify-center items-center bg-[#FEF4E6]">
         <Welcome handleOferta={handleOferta} />
-        <Depo_videos />
-        <Depo_images handleOferta={handleOferta} />
+        <Depo_videos handleOferta={handleOferta} />
+        {/* <Lista /> */}
+        <Pijama />
+        <Esferas />
         <Dia_a_dia handleOferta={handleOferta} />
-        <Trilha_semanal />
+        <Depo_images handleOferta={handleOferta} />
+        {/*         <Trilha_semanal /> */}
         <Comparative />
-        <Comunidade />
+        {/*         <Comunidade /> */}
         <Ao_vivo handleOferta={handleOferta} />
         <Bonus handleOferta={handleOferta} />
         <Quemsou />
         <div className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
           <nav
-            className="w-auto h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center"
+            className="h-auto mt-12 max-w-screen-xl lg:w-full w-[90%] text-[#FEF4E6] flex flex-col justify-center items-center"
             ref={ofertaRef}
           >
             <p
@@ -142,7 +149,7 @@ export default function Home() {
                   className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#751133] text-[#751133] active:text-[#FEF4E6]
                 w-full h-20 py-2 px-4 rounded-full
                 font-bold  text-xl lg:text-2xl z-10
-              transition duration-200 transform hover:scale-110 active:scale-100"
+              transition duration-200 transform hover:scale-105 active:scale-100"
                 >
                   EU QUERO TER ACESSO AO PAPO DE PIJAMA!
                 </button>
@@ -159,7 +166,8 @@ export default function Home() {
           showScrollIcon
             ? 'transition-transform transform translate-x-100 opacity-100'
             : 'translate-x-60 transition-transform duration-1000 ease-out opacity-50'
-        }`}
+        }
+        ${hideWhats ? 'hidden' : ''}`}
       >
         <div className="relative">
           <button

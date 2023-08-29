@@ -21,7 +21,10 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
         />
       </div>
 
-      <nav className="relative h-auto max-w-screen-xl w-full mt-14 mb-12">
+      <nav className="relative h-auto max-w-screen-xl w-full mb-12 px-16">
+        <p className="lg:text-4xl text-3xl lg:leading-tight font-bold text-center mt-20 mb-10 text-[#FFF]">
+          O que estão falando sobre o Devocional
+        </p>
         <div className="flex flex-col lg:flex-row justify-around items-center m-auto lg:gap-6 gap-14 px-6 lg:px-0 w-[90%]">
           {Depos_content.map((content, i) => (
             <BlocsDepos
@@ -34,22 +37,14 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
           ))}
         </div>
 
-        <div className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-40">
-          <Image
-            src={sombra}
-            className={`absolute left-1/2 transform -translate-x-1/2 top-[95%] lg:w-[96%] w-[85%] h-auto -z-10
-          }`}
-            alt="sombra"
-          />
-          <a className="w-full flex justify-center">
-            <button
-              onClick={handleOferta}
-              className=" bg-[#FEF4E6] hover:bg-[#E4AC80] active:bg-[#E4795B] text-[#751133] active:text-[#FEF4E6] lg:h-24 h-16 py-2 px-4 rounded-full font-bold lg:text-4xl text-md z-10
-            transition duration-200 transform hover:scale-110 active:scale-100 lg:w-full w-[90%]"
-            >
-              QUERO SER UMA TAGARELA!
-            </button>
-          </a>
+        <div className="relative flex justify-center items-center mt-12 h-auto m-auto z-40">
+          <button
+            onClick={handleOferta}
+            className=" bg-[#FEF4E6] text-[#751133] hover:bg-[#E4AC80] active:bg-[#E4795B] lg:h-24 h-20 py-2 px-20 rounded-full font-bold lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-100 mb-8"
+            style={{ boxShadow: '0px 11px 24px -10px #313131ab' }}
+          >
+            Eu preciso desse Plano Semanal Estruturado
+          </button>
         </div>
       </nav>
     </header>
@@ -58,9 +53,6 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
 
 function BlocsDepos({
   image,
-  name,
-  idade,
-  cidade,
 }: {
   image: StaticImageData
   name: string

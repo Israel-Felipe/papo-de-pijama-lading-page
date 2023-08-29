@@ -74,7 +74,7 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] text-white
               w-[95%] h-16 py-2 px-2 rounded-full
               font-bold lg:text-2xl text-md z-10
-            transition duration-200 transform hover:scale-110 active:scale-100"
+            transition duration-200 transform hover:scale-105 active:scale-100"
             >
               EU QUERO GARANTIR MEU BÔNUS!
             </button>

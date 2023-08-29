@@ -55,7 +55,7 @@ export default function FAQ() {
                 text-[#FEF4E6] active:text-[#FEF4E6]
               w-full h-20 py-2 px-4 rounded-3xl
               font-bold lg:text-4xl z-10
-            transition duration-200 transform hover:scale-110 active:scale-100"
+            transition duration-200 transform hover:scale-105 active:scale-100"
               >
                 Quero tirar dúvidas no WhatsApp
               </button>
