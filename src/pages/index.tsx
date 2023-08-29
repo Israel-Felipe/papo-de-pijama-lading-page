@@ -3,11 +3,16 @@ import Image from 'next/image'
 import whats from '/public/images/whats.svg'
 
 import Head from 'next/head'
+<<<<<<< HEAD
 import { Welcome } from '../components/Welcome'
 import { Depo_videos } from '../components/Depo_videos'
 import Lista from '../components/Lista'
 import Pijama from '../components/Pijama'
 import Esferas from '../components/Esferas'
+=======
+import Welcome from '../components/Welcome'
+import Depo_videos from '../components/Depo_videos'
+>>>>>>> faa85adfc48bede103644c16b8cddcfaee01802c
 import { Depo_images } from '../components/Depo_images'
 import Trilha_semanal from '../components/Trilha_semanal'
 import Comparative from '../components/Comparative'
