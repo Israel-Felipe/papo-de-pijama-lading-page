@@ -28,14 +28,14 @@ export const Welcome: React.FC<WelcomeProps> = ({ handleOferta }) => {
         />
       </div>
 
-      <header className="relative w-auto h-auto mt-10 lg:mt-10 max-w-screen-xl flex flex-col items-center w-[70%]">
-        <Image
+      <header className="relative w-auto h-screen max-w-screen-xl flex flex-col items-center justify-center w-[70%] pb-40">
+        {/* <Image
           src={logo}
           className={`lg:w-44 w-32 h-auto m-auto
           }`}
           alt="logo"
-        />
-        <p
+        /> */}
+        {/* <p
           className="relative flex justify-center text-center
           lg:text-[2.2rem] text-[1.2rem] font-[600]
         leading-[2rem] lg:leading-[3rem] z-40 lg:mt-4 mt-6 max-w-[90%]"
@@ -50,10 +50,17 @@ export const Welcome: React.FC<WelcomeProps> = ({ handleOferta }) => {
           <b>intimidade com Deus no seu dia a dia</b>, para crescer na fé e
           experimentar a presença de Deus diariamente através do{' '}
           <b>paradigma do pijama</b>.
+        </p> */}
+        <p className="font-bold text-2xl lg:text-5xl text-center uppercase w-[80%] lg:w-full">
+          Página temporariamente desativada
+        </p>
+        <p className="text-md lg:text-3xl text-center w-[80%] lg:w-full mt-6">
+          Fique ligada nas redes sociais, pois em breve teremos novidades
+          incríveis!
         </p>
       </header>
 
-      <nav className="relative w-full h-auto max-w-screen-xl my-[3rem]">
+      {/* <nav className="relative w-full h-auto max-w-screen-xl my-[3rem]">
         <div className="lg:w-3/5 h-auto m-auto">
           <div
             style={{
@@ -98,7 +105,7 @@ export const Welcome: React.FC<WelcomeProps> = ({ handleOferta }) => {
           <Image src={pagamento} className={`w-[40%] mb-4`} alt="pagamento" />
           <Image src={garantia} className={`w-[35%] `} alt="garantia" />
         </div>
-      </nav>
+      </nav> */}
     </header>
   )
 }

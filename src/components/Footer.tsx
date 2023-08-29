@@ -6,7 +6,7 @@ import twitter from '/public/images/twitter.svg'
 
 export default function Footer() {
   return (
-    <footer className="flex justify-center bg-[#E4AC80] w-full h-auto p-6">
+    <footer className="absolute bottom-0 flex justify-center bg-[#E4AC80] w-full h-auto p-6">
       <nav className="w-[90%] h-auto max-w-screen-xl flex flex-col-reverse lg:flex-row justify-between">
         <div className="w-40">
           <Image

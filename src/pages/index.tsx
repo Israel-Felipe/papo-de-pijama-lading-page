@@ -75,16 +75,16 @@ export default function Home() {
 
       <main className="min-h-xl m-auto flex-col justify-center items-center bg-[#FEF4E6]">
         <Welcome handleOferta={handleOferta} />
-        <Depo_videos handleOferta={handleOferta} />
+        {/* <Depo_videos handleOferta={handleOferta} /> */}
         {/* <Lista /> */}
-        <Pijama />
+        {/* <Pijama />
         <Esferas />
         <Dia_a_dia handleOferta={handleOferta} />
-        <Depo_images handleOferta={handleOferta} />
+        <Depo_images handleOferta={handleOferta} /> */}
         {/*         <Trilha_semanal /> */}
-        <Comparative />
+        {/*   <Comparative /> */}
         {/*         <Comunidade /> */}
-        <Ao_vivo handleOferta={handleOferta} />
+        {/* <Ao_vivo handleOferta={handleOferta} />
         <Bonus handleOferta={handleOferta} />
         <Quemsou />
         <div className="flex justify-center bg-gradient-to-br from-[#EBA695] via-[#E4795B] to-[#E4795B] z-0 lg:p-20">
@@ -157,11 +157,11 @@ export default function Home() {
             </div>
           </nav>
         </div>
-        <FAQ />
+        <FAQ />*/}
         <Footer />
       </main>
 
-      <div
+      {/* <div
         className={`fixed bottom-10 right-6 md:bottom-12 md:right-12 z-50 transition transform ease-in duration-1000 ${
           showScrollIcon
             ? 'transition-transform transform translate-x-100 opacity-100'
@@ -191,7 +191,7 @@ export default function Home() {
             </svg>
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
