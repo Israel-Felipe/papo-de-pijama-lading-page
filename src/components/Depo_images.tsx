@@ -49,7 +49,7 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
         <div className="flex justify-center items-center mt-12 h-auto z-40 w-full">
           <button
             onClick={handleOferta}
-            className="bg-[#E98D2A] hover:bg-[#FFA74D] active:bg-[#B5711E] text-[#5E0616] py-3 px-12 rounded-full font-bold lg:text-3xl text-xl z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8 max-w-[90%]"
+            className="bg-[#E98D2A] hover:bg-[#FFA74D] active:bg-[#B5711E] text-[#5E0616] py-3 px-12 rounded-full font-bold lg:text-3xl text-md z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8 max-w-[90%] uppercase"
             onMouseOver={(e: React.MouseEvent<HTMLButtonElement>) =>
               (e.currentTarget.style.boxShadow = 'none')
             }
@@ -58,9 +58,7 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
                 '-6px 8px 2px 0px rgba(94, 6, 22, 0.8)')
             }
           >
-            Eu quero fazer parte do
-            <br />
-            Clube de Devoção!
+            <b>Quero fazer parte do Clube de Devoção!</b>
           </button>
         </div>
       </nav>

@@ -87,10 +87,10 @@ export const Depo_videos: React.FC<DepoImages> = ({ handleOferta }) => {
         <div className="relative flex justify-center items-center mt-12 h-auto z-40">
           <button
             onClick={handleOferta}
-            className=" bg-[#B52446] hover:bg-[#FD3665] active:bg-[#B52446] text-[#fff] py-4 px-6 md:px-32 rounded-full font-extrabold lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8"
+            className="bg-[#B52446] hover:bg-[#FD3665] active:bg-[#B52446] text-[#fff] py-4 px-6 md:px-32 rounded-full lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8"
             style={{ boxShadow: '0px 11px 24px -10px #313131ab' }}
           >
-            QUERO PARTICIPAR DO CLUBE
+            <b>QUERO PARTICIPAR DO CLUBE</b>
           </button>
         </div>
       </nav>

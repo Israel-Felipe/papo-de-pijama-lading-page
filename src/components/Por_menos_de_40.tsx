@@ -65,8 +65,8 @@ export default function Por_menos_de_40() {
             <div className="flex flex-col justify-center gap-2">
               <p className="text-xl md:text-2xl font-bold">Encontros Ao Vivo</p>
               <p className="text-md md:text-xl">
-                2 Encontros ao vivo para aprofundamento bíblico/teológico e
-                tira-dúvidas
+                Todos os meses temos encontros para aprofundamento
+                bíblico/teológico e tira-dúvidas
               </p>
             </div>
           </div>

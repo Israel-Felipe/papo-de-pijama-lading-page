@@ -8,7 +8,7 @@ import topic from '/public/images/topic.svg'
 
 export default function Comparative() {
   return (
-    <header className="relative flex justify-center h-auto bg-[#FEF4E6] overflow-hidden">
+    <header className="relative hidden md:flex justify-center h-auto bg-[#FEF4E6] overflow-hidden">
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}

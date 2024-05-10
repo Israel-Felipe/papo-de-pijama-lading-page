@@ -18,7 +18,7 @@ export const Dia_a_dia: React.FC<Dia_a_diaProps> = ({ handleOferta }) => {
         />
       </div>
 
-      <nav className="flex flex-col lg:m-16 mt-16 z-40 max-w-screen-xl md:px-16 md:w-[90%] w-[85%]">
+      <nav className="flex flex-col lg:m-16 mt-16 z-40 max-w-screen-xl md:px-16 md:w-[90%] w-[90%]">
         <div>
           <div className="flex flex-col justify-center items-center lg:items-start text-center">
             <p className="lg:text-6xl text-4xl font-extrabold mt-16 mb-14 md:mb-16 md:ml-10">
@@ -41,9 +41,9 @@ export const Dia_a_dia: React.FC<Dia_a_diaProps> = ({ handleOferta }) => {
                 </p>
                 <button
                   onClick={handleOferta}
-                  className=" bg-[#5E0616] text-[#FEF4E6] py-2 rounded-full lg:text-xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-100 mt-4 md:w-3/4 px-6 m-auto"
+                  className="bg-[#5E0616] hover:bg-[#FD3665] active:bg-[#5E0616] text-[#fff] py-4 px-4 rounded-full lg:text-xl text-md z-10 transition duration-200 transform hover:scale-105 active:scale-100 mt-4 md:w-3/4 m-auto uppercase"
                 >
-                  Quero papear de pijama também!
+                  <b>Quero papear de pijama também!</b>
                 </button>
               </div>
             </div>

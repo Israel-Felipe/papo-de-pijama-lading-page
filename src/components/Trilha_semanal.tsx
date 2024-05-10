@@ -21,8 +21,19 @@ export default function Trilha_semanal() {
           lg:text-5xl text-2xl font-bold
         md:px-8 z-40 !leading-snug"
         >
-          Estude a Bíblia de forma profunda, simples e prática com o material
-          exclusivo do método <b>Papo de Pijama</b>
+          Estude a Bíblia de forma{' '}
+          <span className="text-[#E98D2A]">
+            <b>profunda</b>
+          </span>
+          ,{' '}
+          <span className="text-[#E98D2A]">
+            <b>simples</b>
+          </span>{' '}
+          e{' '}
+          <span className="text-[#E98D2A]">
+            <b>prática</b>
+          </span>{' '}
+          com o material exclusivo do método <b>Papo de Pijama</b>
         </p>
 
         <p
