@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import wallpaper from '/public/images/sombra_trilha.png'
+import material1 from '/public/images/material1.jpeg'
+import material2 from '/public/images/material2.jpeg'
 import trilha from '/public/images/trilha.png'
 
 export default function Trilha_semanal() {
@@ -25,7 +27,7 @@ export default function Trilha_semanal() {
         </p>
 
         <p
-          className="text-start md:text-center tracking-wide 
+          className="hidden md:block text-start md:text-center tracking-wide 
           lg:text-3xl text-lg font-medium text-[#943A49]
         lg:leading-normal z-40 lg:mt-10 mt-8"
         >
@@ -35,6 +37,21 @@ export default function Trilha_semanal() {
           permitirá que você <u>aprofunde</u> o entendimento do texto e,
           consequentemente, <u>aplique</u> seus ensinamentos em sua vida!
         </p>
+
+        <div className="relative flex md:hidden w-full md:h-[60vh] h-[30vh] mt-20 mb-20">
+          <Image
+            src={material1}
+            className={
+              'absolute max-w-[60%] h-auto rounded-2xl -top-8 transform -rotate-6'
+            }
+            alt="material 1"
+          />
+          <Image
+            src={material2}
+            className={'absolute w-[90%] h-auto rounded-2xl top-40 right-0'}
+            alt="material 2"
+          />
+        </div>
 
         <p
           className="text-center

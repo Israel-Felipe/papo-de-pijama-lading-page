@@ -141,7 +141,7 @@ export default function Home() {
               className="flex justify-center text-center
             lg:text-2xl text-lg md:font-bold text-[#FFFFFF] w-[90%] md:w-[70%] mt-6"
             >
-              Se, durante os primeiros 7 dias, você decidir que o Club não
+              Se, durante os primeiros 7 dias, você decidir que o Clube não
               atende às suas expectativas, basta cancelar sua compra na
               plataforma e solicitar o reembolso.
             </p>

@@ -21,7 +21,7 @@ export default function Comparative() {
       <nav className="relative w-[90%] lg:w-[850px] py-16 md:py-24 text-[#5E0616]">
         <div className="border-[#943A49] border-dotted border-[2px] rounded-[50px] w-full lg:h-16 h-12 flex justify-around items-center">
           <div className=" w-[40%]">
-            <p className="font-bold lg:text-5xl text-lg text-center">
+            <p className="font-bold lg:text-5xl text-xl text-center">
               Devocionais
             </p>
           </div>
@@ -29,7 +29,7 @@ export default function Comparative() {
             <p className="font-black lg:text-5xl">Vs</p>
           </div>
           <div className=" w-[47%]">
-            <p className="font-bold lg:text-5xl text-lg text-center tracking-tight">
+            <p className="font-bold lg:text-5xl text-xl text-center tracking-tight">
               Papo de Pijama
             </p>
           </div>

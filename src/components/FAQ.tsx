@@ -20,13 +20,9 @@ export default function FAQ() {
       <nav className="relative w-[85%] md:w-[80%] h-auto mt-0 max-w-screen-xl text-[#FEF4E6] flex flex-col justify-start items-center lg:items-start pt-12 md:pt-28 pb-16">
         <div className="lg:w-full w-[90%] h-auto flex justify-between items-center mb-10">
           <p
-            className="flex justify-center text-center
+            className="flex justify-center text-center w-full
           lg:text-5xl text-4xl font-bold text-[#FEF4E6] leading-normal
          "
-            style={{
-              textShadow:
-                '0px 0px 3px #751133, 0px 0px 3px #751133, 0px 0px 3px #751133, 0px 0px 3px #751133',
-            }}
           >
             FAQ - DÚVIDAS FREQUENTES
           </p>

@@ -39,7 +39,7 @@ export default function Sobre_o_material() {
           </div>
         </div>
 
-        <div className="relative flex w-full md:h-[60vh] h-[30vh]">
+        <div className="hidden relative md:flex w-full md:h-[60vh] h-[30vh]">
           <Image
             src={material1}
             className={

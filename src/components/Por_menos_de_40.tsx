@@ -23,7 +23,7 @@ export default function Por_menos_de_40() {
           lg:text-5xl text-3xl font-extrabold
         px-8 z-40 !leading-snug"
         >
-          POR MENOS DE R$ 40,00/MÊS
+          POR APENAS R$30,00/MÊS
         </p>
 
         <p

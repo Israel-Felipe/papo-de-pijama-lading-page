@@ -13,7 +13,7 @@ export default function Quemsou() {
         />
       </div>
 
-      <nav className="flex flex-col lg:col items-center md:items-start justify-center z-40 max-w-screen-xl w-[85%]">
+      <nav className="flex flex-col lg:col items-center md:items-start justify-center z-40 max-w-screen-xl w-[85%] pb-16">
         <div className="w-[90%] md:w-auto flex md:justify-between justify-center items-center mt-12 md:mt-0 gap-3 md:gap-0">
           <div className="relative w-[75%] lg:w-[54%] flex flex-col justify-center items-center lg:items-start">
             <p

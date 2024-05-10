@@ -16,7 +16,7 @@ export default function Ao_vivo() {
           alt="wallpaper"
         />
       </div>
-      <nav className="relative w-[85%] h-auto max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-20 md:mt-24">
+      <nav className="relative w-[85%] h-auto max-w-screen-xl lg:w-full text-[#FEF4E6] flex flex-col justify-center items-center mt-16 md:mt-24">
         <p
           className="flex justify-center text-center text-4xl lg:text-7xl font-bold"
           style={{ textShadow: '1px 1px 4px rgba(0, 0, 0, 0.3)' }}

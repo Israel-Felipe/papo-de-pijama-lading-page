@@ -50,7 +50,7 @@ export default function Welcome() {
   }
 
   return (
-    <header className="min-h-[50vh] relative flex flex-col items-center justify-center overflow-hidden">
+    <header className="h-screen relative flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
@@ -59,11 +59,11 @@ export default function Welcome() {
         />
       </div>
 
-      <div className="md:h-screen max-w-screen-xl flex flex-col items-center justify-center z-10 py-14 md:py-0">
+      <div className="h-screen max-w-screen-xl flex flex-col items-center justify-center z-10 py-14 md:py-0">
         <div className="flex flex-col items-center justify-center">
           <Image
             src={logo}
-            className={`md:max-w-[300px] w-[35%] h-auto m-auto
+            className={`md:max-w-[300px] w-[55%] h-auto m-auto
           }`}
             alt="logo"
           />

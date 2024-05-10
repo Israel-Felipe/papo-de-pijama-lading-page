@@ -24,8 +24,8 @@ export const Depo_videos: React.FC<DepoImages> = ({ handleOferta }) => {
 
         <div className="max-w-[80%] md:max-w-[900px] md:px-20 bg-[#E98D2A] flex items-center justify-center p-3 rounded-3xl md:mt-4">
           <p className="text-center lg:text-4xl text-[#FFFFFF]">
-            Veja o que as participantes falam sobre o <br />
-            <b>Clube de Devoção Papo de Pijama</b>
+            Veja o que as participantes falam sobre o
+            <b> Clube de Devoção Papo de Pijama</b>
           </p>
         </div>
 
