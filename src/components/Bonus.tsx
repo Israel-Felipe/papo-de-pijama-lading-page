@@ -83,7 +83,7 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
                   '-4px 7px 4px 0px rgba(94, 6, 22, 0.6)')
               }
             >
-              EU QUERO GARANTIR MEU BÔNUS!
+              QUERO GARANTIR MEU BÔNUS!
             </button>
           </a>
         </div>
