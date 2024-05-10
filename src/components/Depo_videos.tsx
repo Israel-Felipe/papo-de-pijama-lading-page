@@ -1,95 +1,138 @@
-import Image, { StaticImageData } from 'next/image'
-import { topicsWelcome_content, blocsVideo_content } from '../utils/Contents'
-import wallpaper from '/public/images/wallpaper-depo-videos.png'
+import { Depos_content } from '../utils/Contents'
+import Image from 'next/image'
+import wallpaper from '/public/images/fundos/laranja-rosa.png'
 
-interface DepoVideos {
+interface DepoImages {
   handleOferta: () => void
 }
 
-export const Depo_videos: React.FC<DepoVideos> = ({ handleOferta }) => {
+export const Depo_videos: React.FC<DepoImages> = ({ handleOferta }) => {
   return (
-    <header className="relative flex justify-center h-auto z-0 lg:pb-4 pb-14 bg-[#EC9D74] px-2 overflow-hidden">
-      <div className="absolute">
+    <header className="relative flex flex-col justify-center items-center h-auto bg-[#E89D9B] z-0 overflow-hidden">
+      <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-screen h-auto hidden lg:block
-          }`}
+          className={`w-auto h-full lg:w-screen object-cover filter z-0`}
           alt="wallpaper"
         />
       </div>
 
-      <nav className="relative w-[100%] h-auto mt-16 max-w-screen-xl lg:text-[2.5rem] text-[1.5rem] font-bold p-12">
-        <p
-          className="relative text-center
-          px-8 z-40 lg:mb-20 mb-12 uppercase"
-        >
-          Veja o que minhas alunas experimentaram ao vestir o{' '}
-          <u>pijama de intimidade</u>
+      <nav className="relative h-auto max-w-screen-xl w-full mb-12 flex flex-col items-center justify-center">
+        <p className="lg:text-5xl text-3xl font-extrabold text-center mt-16 mb-6 text-[#FFFFFF]">
+          VOCÊ NÃO ESTÁ SOZINHA
         </p>
 
-        <div className="flex justify-between flex-wrap lg:gap-6 gap-14">
-          <Depo
-            video={'https://www.youtube.com/embed/az02QaBV6zM?controls=0'}
+        <div className="max-w-[80%] md:max-w-[900px] md:px-20 bg-[#E98D2A] flex items-center justify-center p-3 rounded-3xl md:mt-4">
+          <p className="text-center lg:text-4xl text-[#FFFFFF]">
+            Veja o que as participantes falam sobre o <br />
+            <b>Clube de Devoção Papo de Pijama</b>
+          </p>
+        </div>
+
+        <div className="flex flex-col lg:flex-row justify-center items-start lg:px-0 mt-12 md:mt-14 gap-6 md:gap-6">
+          <BlocsDepos
+            video={
+              'https://player.vimeo.com/video/944671998?h=9d2f66a051&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            }
+            name="Esther Costa"
+            citacao=""
           />
-          <Depo
+          <BlocsDepos
+            video={
+              'https://player.vimeo.com/video/944675312?&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            }
+            name="Isa Polastri"
+            citacao=""
+          />
+          <BlocsDepos
+            video={
+              'https://player.vimeo.com/video/944678098?&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            }
+            name="Jamilles"
+            citacao=""
+          />
+          <BlocsDepos
+            video={
+              'https://player.vimeo.com/video/944679548?&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+            }
+            name="Adri Beppler"
+            citacao=""
+          />
+          {/* <BlocsDepos
+            video={'https://www.youtube.com/  embed/az02QaBV6zM?controls=0'}
+            name="Renata Barbosa Lucas"
+            idade="29 anos"
+            citacao="O Papo de Pijama me ensinou a ter mais intimidade com Deus e encontrá-lo no meu dia a dia"
+          /> */}
+          {/* <BlocsDepos
             video={'https://www.youtube.com/embed/mo1AwVwqWPo?controls=0'}
+            name="Nome da mulher"
+            idade="34 anos"
+            citacao="Alguma frase do vídeo ou algo assim...."
           />
-          <Depo
+          <BlocsDepos
             video={'https://www.youtube.com/embed/zt9N7rBaVSo?controls=0'}
+            name="Nome da mulher"
+            idade="22 anos"
+            citacao="Alguma frase do vídeo ou algo assim...."
           />
-          <Depo
+          <BlocsDepos
             video={'https://www.youtube.com/embed/az02QaBV6zM?controls=0'}
-          />
+            name="Nome da mulher"
+            idade="24 anos"
+            citacao="Precisa pegar o link certo desse video!"
+          /> */}
         </div>
-        <div className="relative flex w-full justify-center items-center mt-12 w-2/3 h-auto m-auto z-40">
-          <a className="w-full flex justify-center">
-            <button
-              onClick={handleOferta}
-              className="lg:h-24 h-20 py-2 px-10 rounded-full 
-             bg-[#751133] hover:bg-[#943a49] active:bg-[#751133]
-             text-white hover:text-white active:text-white
-             font-bold lg:text-3xl text-lg z-10
-             transition duration-200 transform hover:scale-105 active:scale-100 mb-8"
-              style={{ boxShadow: '0px 11px 24px -10px #313131ab' }}
-            >
-              VOU VESTIR O PIJAMA DA INTIMIDADE COM O PAI
-            </button>
-          </a>
+
+        <div className="relative flex justify-center items-center mt-12 h-auto z-40">
+          <button
+            onClick={handleOferta}
+            className=" bg-[#B52446] hover:bg-[#FD3665] active:bg-[#B52446] text-[#fff] py-4 px-6 md:px-32 rounded-full font-extrabold lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8"
+            style={{ boxShadow: '0px 11px 24px -10px #313131ab' }}
+          >
+            QUERO PARTICIPAR DO CLUBE
+          </button>
         </div>
-        {/* <div className="flex justify-around lg:w-3/5 m-auto lg:my-[3.5rem] my-[2rem]">
-          {blocsVideo_content.map((content, i) => (
-            <Blocs image={content.image} title={content.title} key={i} />
-          ))}
-        </div> */}
       </nav>
     </header>
   )
 }
 
-function Depo({ video }: { video: string }) {
+function BlocsDepos({
+  video,
+  name,
+  citacao,
+}: {
+  video: string
+  name: string
+  citacao: string
+}) {
   return (
-    <div className="relative flex w-auto mb-4">
-      <iframe
-        src={video}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        className="lg:w-[559.998px] lg:h-[315px] w-[100%] h-[240px] lg:rounded-3xl rounded-t-3xl"
-      ></iframe>
-    </div>
-  )
-}
-
-function Blocs({ image, title }: { image: StaticImageData; title: string }) {
-  return (
-    <div className="gap-6 lg:text-xl text-sm font-medium lg:w-44 w-32">
-      <div className="relative flex justify-center">
-        <Image
-          src={image}
-          alt={title}
-          className="flex justify-center items-center z-40 lg:w-20 w-12 m-auto"
-        />
+    <nav className="w-auto h-[100%] flex flex-col items-center">
+      <div className="z-50 mb-4 overflow-hidden">
+        {/* <iframe
+          src={video}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          className="lg:w-[250px] lg:h-[240px] w-[100%] h-[240px] rounded-3xl rounded-t-3xl"
+        ></iframe> */}
+        <iframe
+          src={video}
+          allow="autoplay; fullscreen; picture-in-picture"
+          title="Depoimento Esther Costa"
+          className="w-[260px] h-[462px] rounded-[10px]"
+        ></iframe>
       </div>
 
-      <div className="text-center font-bold">{title}</div>
-    </div>
+      <div className="hidden w-[85%] gap-4 bg-[#FFFFFF] bg-opacity-[0.35] p-4 py-10 rounded-lg -mt-6">
+        <div className="flex flex-col justify-center">
+          <p className="text-xl">
+            <b>{name}</b>
+          </p>
+          {/* <p className="mt-3">
+            <i>{citacao}</i>
+          </p> */}
+        </div>
+      </div>
+    </nav>
   )
 }

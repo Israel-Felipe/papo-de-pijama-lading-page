@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import wallpaper from '/public/images/wallpaper_woman.png'
-import trilha from '/public/images/trilha.png'
-import flecha from '/public/images/flecha.svg'
+import wallpaper from '/public/images/fundos/rever-aulas.png'
+import notebook_rever from '/public/images/notebook-rever.png'
+import celular_rever from '/public/images/clubeDevocao/celular.svg'
 
 interface Dia_a_diaProps {
   handleOferta: () => void
@@ -13,52 +13,62 @@ export const Dia_a_dia: React.FC<Dia_a_diaProps> = ({ handleOferta }) => {
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-auto h-full lg:w-screen object-cover filter opacity-20`}
+          className={`w-auto h-full lg:w-screen lg:h-auto object-cover`}
           alt="wallpaper"
         />
       </div>
 
-      <nav className="flex flex-col lg:m-16 z-40 max-w-screen-xl px-16">
+      <nav className="flex flex-col lg:m-16 mt-16 z-40 max-w-screen-xl md:px-16 md:w-[90%] w-[85%]">
         <div>
-          <div className="flex flex-col justify-center items-center lg:items-start">
-            <p className="lg:text-5xl text-3xl lg:leading-tight font-bold mt-8">
-              Você recebe um{' '}
-              <span className="text-[#E4795B]">plano semanal estruturado</span>{' '}
-              com estudos profundos, simples e práticos
+          <div className="flex flex-col justify-center items-center lg:items-start text-center">
+            <p className="lg:text-6xl text-4xl font-extrabold mt-16 mb-14 md:mb-16 md:ml-10">
+              Você pode rever as aulas sempre que precisar!
             </p>
-            <p className="lg:text-[1.6rem] font-medium mt-10">
-              Ao ingressar no Método Papo de Pijama, você terá acesso a um
-              material devocional exclusivo da metodologia, organizado em um{' '}
-              <u>plano semanal estruturado</u> que abrange as três esferas da
-              intimidade: <b>Interpretar, Guardar e Aplicar</b>.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-start justify-center mt-16">
-          <div className="flex flex-col items-center justify-center lg:w-[70%]">
-            <p className="lg:text-4xl text-3xl lg:leading-tight font-bold text-center text-[#E4795B]">
-              Plano Semanal Estruturado
-            </p>
-            <div className="bg-[#E2CEB6] bg-opacity-[40%] rounded-[20px] w-[80%] p-4 mt-4 relative">
-              <Image
-                src={flecha}
-                className={`absolute -top-8 -right-16`}
-                alt="flecha"
-              />
-              <Image src={trilha} className={``} alt="trilha" />
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="flex items-center justify-center md:w-2/5 w-[80%] h-full">
+                <Image
+                  src={notebook_rever}
+                  className={`w-auto`}
+                  alt="aulas gravadas"
+                />
+              </div>
+              <div className="flex flex-col md:w-1/2 w-[90%] mt-6 md:mt-0">
+                <p className="lg:text-[1.6rem] text-lg text-center md:text-start !leading-normal font-medium">
+                  Nossos encontros são verdadeiras aulas de espiritualidade e
+                  interpretação bíblica com convidadas especiais! Por isso, eles
+                  ficam gravados em nossa plataforma para você poder acessar
+                  sempre que precisar retornar algum assunto estudado.
+                </p>
+                <button
+                  onClick={handleOferta}
+                  className=" bg-[#5E0616] text-[#FEF4E6] py-2 rounded-full lg:text-xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-100 mt-4 md:w-3/4 px-6 m-auto"
+                >
+                  Quero papear de pijama também!
+                </button>
+              </div>
             </div>
-            <p className="lg:text-4xl text-3xl lg:leading-tight font-bold w-[60%] text-center mt-6">
-              Acesse em qualquer lugar ou imprima para poder riscar!
-            </p>
-          </div>
-          <div className="flex items-center justify-center lg:w-[30%]">
-            <iframe
-              src="https://player.vimeo.com/video/830669354?h=9d2f66a051&amp;badge=0&amp;autopause=0&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;player_id=0&amp;app_id=58479"
-              allow="autoplay; fullscreen; picture-in-picture"
-              title="video-celular"
-              className="rounded-[13%] w-auto h-[613.333px]"
-            ></iframe>
+
+            <div className="flex flex-col md:flex-row items-center mt-10 md:mt-16">
+              <div className="flex flex-col md:w-1/2 w-[90%] md:ml-10">
+                <p className="lg:text-6xl text-3xl font-extrabold mt-8 mb-6 text-[#fff]">
+                  Comunidade das tagarelas
+                </p>
+                <p className="bg-[#E98D2A] lg:text-[1.6rem] font-medium mb-6 text-[#fff]">
+                  <i>Seu lugar para desabafar, perguntar e dividir!</i>
+                </p>
+                <p className="lg:text-[1.6rem] text-lg font-medium text-[#fff] !leading-normal">
+                  Nesse grupo, você poderá tagarelar com outras mulheres que
+                  estão na mesma jornada de intimidade com Deus, compartilhando
+                  suas dificuldades, suas dúvidas, motivos de oração e muito
+                  mais! Ao fazer parte do <b>Clube Papo de Pijama</b>, você terá
+                  acesso a um espaço especial: a <b>Comunidade das Tagarelas</b>
+                  .
+                </p>
+              </div>
+              <div className="flex items-center justify-center w-[60%] md:w-[40%] mt-6 md:mt-10 mb-14 md:mb-0 h-full">
+                <Image src={celular_rever} className={`w-auto`} alt="celular" />
+              </div>
+            </div>
           </div>
         </div>
       </nav>

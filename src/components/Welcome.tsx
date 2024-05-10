@@ -1,64 +1,82 @@
-import wallpaper from '/public/images/wallpaper-folhas2.png'
-import logo from '/public/images/logo.png'
-import garantia from '/public/images/garantias.svg'
-import pagamento from '/public/images/pagamentos.svg'
+import wallpaper from '/public/images/fundos/welcome.jpg'
+import logo from '/public/images/logo/logo-clara.png'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
-interface WelcomeProps {
-  handleOferta: () => void
-}
+export default function Welcome() {
+  const [wordIndex, setWordIndex] = useState(0)
+  const words = ['simples', 'profunda', 'prática']
 
-export const Welcome: React.FC<WelcomeProps> = ({ handleOferta }) => {
-  const [showButton, setShowButton] = useState(false)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setWordIndex((prevIndex) => (prevIndex + 1) % words.length)
+    }, 2000) // Mude o valor do intervalo conforme necessário
 
-  const handleVideoPlay = () => {
-    setTimeout(() => {
-      setShowButton(true)
-    }, 10000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const typingEffect = (word) => {
+    const typingSpeed = 100 // Velocidade de digitação (em milissegundos)
+    const [text, setText] = useState('')
+
+    useEffect(() => {
+      let isMounted = true
+      let index = 0
+
+      const typeInterval = setInterval(() => {
+        if (isMounted && index <= word.length) {
+          setText(word.slice(0, index))
+          index++
+        } else {
+          clearInterval(typeInterval)
+          const deleteInterval = setInterval(() => {
+            if (isMounted && index >= 0) {
+              setText(word.slice(0, index))
+              index--
+            } else {
+              clearInterval(deleteInterval)
+            }
+          }, typingSpeed)
+        }
+      }, typingSpeed)
+
+      return () => {
+        isMounted = false
+        clearInterval(typeInterval)
+      }
+    }, [word])
+
+    return text
   }
 
   return (
-    <header className="relative flex flex-col items-center justify-center overflow-hidden">
+    <header className="min-h-[50vh] relative flex flex-col items-center justify-center overflow-hidden">
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-auto h-full lg:w-screen object-cover filter opacity-30 blur-[8px]`}
+          className={`w-auto h-full lg:w-screen object-cover filter z-0`}
           alt="wallpaper"
         />
       </div>
 
-      <header className="relative w-auto h-screen max-w-screen-xl flex flex-col items-center justify-center w-[70%] pb-40">
-        {/* <Image
-          src={logo}
-          className={`lg:w-44 w-32 h-auto m-auto
+      <div className="md:h-screen max-w-screen-xl flex flex-col items-center justify-center z-10 py-14 md:py-0">
+        <div className="flex flex-col items-center justify-center">
+          <Image
+            src={logo}
+            className={`md:max-w-[300px] w-[35%] h-auto m-auto
           }`}
-          alt="logo"
-        /> */}
-        {/* <p
-          className="relative flex justify-center text-center
-          lg:text-[2.2rem] text-[1.2rem] font-[600]
-        leading-[2rem] lg:leading-[3rem] z-40 lg:mt-4 mt-6 max-w-[90%]"
-        >
-          Deus está presente em todos os lugares.
-          <br />
-          Porque temos dificuldades de enxergá-lo no dia a dia?
-        </p>
-
-        <p className="relative text-center lg:text-[1.7rem] lg:leading-[2.6rem] text-md font-medium text-[#943A49] px-8 sm:px-16 md:px-12 z-40 mt-6 max-w-[95%]">
-          <u>Assista a vídeo aula</u> para entender como desenvolver{' '}
-          <b>intimidade com Deus no seu dia a dia</b>, para crescer na fé e
-          experimentar a presença de Deus diariamente através do{' '}
-          <b>paradigma do pijama</b>.
-        </p> */}
-        <p className="font-bold text-2xl lg:text-5xl text-center uppercase w-[80%] lg:w-full">
-          Página temporariamente desativada
-        </p>
-        <p className="text-md lg:text-3xl text-center w-[80%] lg:w-full mt-6">
-          Fique ligada nas redes sociais, pois em breve teremos novidades
-          incríveis!
-        </p>
-      </header>
+            alt="logo"
+          />
+          <p className="text-center lg:max-w-[800px] max-w-[70%] lg:text-5xl text-2xl font-bold !leading-normal lg:mt-10 mt-6">
+            Desfrute de
+            <span className="md:text-[#B52548]"> intimidade com Deus </span>
+            no dia a dia de forma{' '}
+            <span className="bg-[#FF9E9C]">
+              {typingEffect(words[wordIndex])}{' '}
+            </span>
+          </p>
+        </div>
+      </div>
 
       {/* <nav className="relative w-full h-auto max-w-screen-xl my-[3rem]">
         <div className="lg:w-3/5 h-auto m-auto">

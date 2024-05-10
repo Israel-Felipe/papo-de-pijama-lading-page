@@ -8,43 +8,46 @@ export default function Trilha_semanal() {
       <div className="absolute h-full w-full">
         <Image
           src={wallpaper}
-          className={`w-auto h-full lg:w-screen lg:h-auto object-cover
+          className={`w-auto h-full lg:w-screen lg:h-auto object-cover z-0
           }`}
           alt="wallpaper"
         />
       </div>
 
-      <nav className="relative w-auto h-auto mt-20 max-w-screen-xl">
+      <nav className="w-[75%] md:w-3/4 h-auto my-20 max-w-screen-xl z-10">
         <p
-          className="relative flex justify-center text-center
-          lg:text-5xl text-3xl font-bold
-        px-8 leading-10 z-40 lg:mt-16"
+          className="md:text-center
+          lg:text-5xl text-2xl font-bold
+        md:px-8 z-40 !leading-snug"
         >
-          Um plano diário profundo, simples e prático
+          Estude a Bíblia de forma profunda, simples e prática com o material
+          exclusivo do método <b>Papo de Pijama</b>
         </p>
 
         <p
-          className="relative flex justify-start text-start
+          className="text-start md:text-center tracking-wide 
           lg:text-3xl text-lg font-medium text-[#943A49]
-        px-10 lg:px-12 lg:leading-normal z-40 lg:mt-16 mt-8 tracking-[0.02em]"
+        lg:leading-normal z-40 lg:mt-10 mt-8"
         >
-          Com o método Papo de Pijama você tem uma trilha semanal para
-          aprofundar um tema bíblico ao longo da sua semana de forma simples,
-          prática e profunda!
+          Ao fazer sua inscrição, você receberá mensalmente os materiais
+          devocionais exclusivos da metodologia <b>Papo de Pijama</b>, os quais
+          dividem o texto bíblico em estudos sequenciais de uma semana. Isso
+          permitirá que você <u>aprofunde</u> o entendimento do texto e,
+          consequentemente, <u>aplique</u> seus ensinamentos em sua vida!
         </p>
+
         <p
-          className="relative flex justify-start text-start
-          lg:text-3xl text-lg font-medium text-[#943A49]
-        px-10 lg:px-12 lg:leading-normal z-40 lg:mt-10 mt-8 tracking-[0.02em]"
+          className="text-center
+          lg:text-5xl text-3xl font-bold
+        md:px-8 z-40 !leading-snug mt-10"
         >
-          O tema bíblico da semana possui 7 passos importantes distribuídos ao
-          longo da sua semana:
+          Divisão dos blocos de estudo:
         </p>
 
         <div>
           <Image
             src={trilha}
-            className={`max-w-[80%] lg:max-w-screen-lg m-auto pg:my-16 my-6
+            className={`lg:max-w-screen-lg m-auto mt-10
           }`}
             alt="trilha"
           />

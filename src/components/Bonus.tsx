@@ -18,7 +18,7 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
         />
       </div>
 
-      <nav className="flex flex-col lg:flex-row z-40 max-w-screen-xl w-[90%] lg:w-auto mt-16 lg:mt-0">
+      <nav className="flex flex-col lg:flex-row z-40 max-w-screen-xl w-[85%] lg:w-auto mt-16 lg:mt-0">
         <div className="lg:w-1/2 flex flex-col w-[100%]">
           <Image
             src={biblej1}
@@ -44,14 +44,14 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
           </p>
 
           <p
-            className="flex justify-end lg:text-end text-center
+            className="flex justify-center md:justify-end lg:text-end text-center
           lg:text-4xl text-2xl w-full font-medium leading-normal italic"
           >
             Templates para Bible Journaling
           </p>
 
           <p
-            className="flex justify-center lg:justify-end lg:text-end
+            className="flex justify-center lg:justify-end lg:text-end text-justify md:text-start
           lg:text-[1.7rem] w-[90%] leading-normal mt-10 m-auto lg:m-0 lg:my-10"
           >
             E se junto disso tudo você ainda pudesse expressar os seus estudos
@@ -68,13 +68,13 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
             experiência mesmo se não souber desenhar!
           </p>
 
-          <a className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-8 lg:mb-0">
+          <a className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-14 lg:mb-0">
             <button
               onClick={handleOferta}
               className=" bg-[#E4795B] hover:bg-[#943a49] active:bg-[#751133] text-white
               w-[95%] h-16 py-2 px-2 rounded-full
               font-bold lg:text-2xl text-md z-10
-            transition duration-200 transform hover:scale-105 active:scale-100"
+            transition duration-200 transform hover:scale-105 active:scale-95"
             >
               EU QUERO GARANTIR MEU BÔNUS!
             </button>

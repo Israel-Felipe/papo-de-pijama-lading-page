@@ -6,7 +6,7 @@ import twitter from '/public/images/twitter.svg'
 
 export default function Footer() {
   return (
-    <footer className="absolute bottom-0 flex justify-center bg-[#E4AC80] w-full h-auto p-6">
+    <footer className="flex justify-center bg-[#E4AC80] w-full min-h-[20vh] md:min-h-auto p-6">
       <nav className="w-[90%] h-auto max-w-screen-xl flex flex-col-reverse lg:flex-row justify-between">
         <div className="w-40">
           <Image
@@ -31,21 +31,21 @@ export default function Footer() {
         <div className="flex justify-center items-center lg:gap-4 gap-6 lg:w-40">
           <a
             href="https://www.instagram.com/paolamilbauer/"
-            className="lg:w-14 w-12 h-auto hover:scale-110"
+            className="lg:w-14 w-10 h-auto hover:scale-110"
           >
             <Image src={insta} alt="insta" />
           </a>
 
           <a
             href="https://www.youtube.com/@paolamilbauer/"
-            className="lg:w-14 w-12 h-auto hover:scale-110"
+            className="lg:w-14 w-10 h-auto hover:scale-110"
           >
             <Image src={youtube} alt="youtube" />
           </a>
 
           <a
             href="https://twitter.com/paolamilbauer"
-            className="lg:w-14 w-12 h-auto hover:scale-110"
+            className="lg:w-14 w-10 h-auto hover:scale-110"
           >
             <Image src={twitter} alt="twitter" />
           </a>

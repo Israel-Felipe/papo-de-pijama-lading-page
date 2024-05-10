@@ -7,20 +7,68 @@ import depo3 from '/public/images/depo3.png'
 import depo4 from '/public/images/depo4.png'
 import depo5 from '/public/images/depo5.png'
 
-export const topicsWelcome_content = [
+export const Comparative_marta_content = [
   {
-    number: '1',
-    text: 'O fundamento e os princípios da intimidade com Deus.',
+    text: 'Está ansiosa com tantos afazeres',
   },
-
   {
-    number: '2',
-    text: 'O passo a passo para você estudar um texto bíblico de forma simples, prática e profunda.',
+    text: 'Não consegue priorizar as coisas importantes',
   },
-
   {
-    number: '3',
-    text: 'Um guia para ser constante na sua prática devocional.',
+    text: 'Está buscando seu propósito naquilo que faz',
+  },
+  {
+    text: 'Não consegue ouvir a Jesus no seu dia a dia ',
+  },
+]
+
+export const Comparative_maria_content = [
+  {
+    text: 'Aprendeu a se aquietar mesmo com afazeres',
+  },
+  {
+    text: 'Aprendeu a perceber o que é mais importante',
+  },
+  {
+    text: 'Está encontrando seu propósito aos pés de Jesus ',
+  },
+  {
+    text: 'Aprendeu a ouvir a Jesus mesmo em meio a rotina',
+  },
+]
+
+export const temas_content = [
+  {
+    mes: 'Jan/Fev',
+    text: 'Meu Lugar de Intimidade com Deus',
+  },
+  {
+    mes: 'Mar/Abr',
+    text: 'Minha Vida na Grande História de Deus',
+  },
+  {
+    mes: 'Mai/Jun',
+    text: 'Vocação: Minha Vida tem Chamado!',
+  },
+  {
+    mes: 'Julho',
+    text: 'Os Princípios da Liderança Servidora',
+  },
+  {
+    mes: 'Agosto',
+    text: 'As Vilãs e Rivais do Antigo Testamento',
+  },
+  {
+    mes: 'Set/Out',
+    text: 'Treinando o Coração: Disciplinas Espirituais',
+  },
+  {
+    mes: 'Nov',
+    text: 'Desfrutando as Bênçãos de Deus',
+  },
+  {
+    mes: 'Dez',
+    text: 'Ao Redor da Manjedoura',
   },
 ]
 
@@ -90,9 +138,6 @@ export const Comparative_devos_content = [
   {
     text: 'Não consegue aplicar no dia a dia',
   },
-  {
-    text: 'O material é limitado ao próprio material',
-  },
 ]
 
 export const Comparative_papo_content = [
@@ -106,7 +151,10 @@ export const Comparative_papo_content = [
     text: 'Você fixa o assunto e leva para o seu dia e sua vida!',
   },
   {
-    text: 'Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar',
+    text: 'Você é desafiada a aplicar e mudar coisas que o Senhor te mostrar!',
+  },
+  {
+    text: 'Você é acompanhada em grupo!',
   },
 ]
 
