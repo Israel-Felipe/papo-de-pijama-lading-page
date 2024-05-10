@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import wallpaper from '/public/images/sombra_trilha.png'
-import material1 from '/public/images/material1.jpeg'
-import material2 from '/public/images/material2.jpeg'
+import materiaisJuntos from '/public/images/materiaisJuntos.png'
 import trilha from '/public/images/trilha.png'
 
 export default function Trilha_semanal() {
@@ -16,7 +15,7 @@ export default function Trilha_semanal() {
         />
       </div>
 
-      <nav className="w-[75%] md:w-3/4 h-auto my-20 max-w-screen-xl z-10">
+      <nav className="w-[75%] md:w-3/4 h-auto my-16 max-w-screen-xl z-10">
         <p
           className="md:text-center
           lg:text-5xl text-2xl font-bold
@@ -38,25 +37,18 @@ export default function Trilha_semanal() {
           consequentemente, <u>aplique</u> seus ensinamentos em sua vida!
         </p>
 
-        <div className="relative flex md:hidden w-full md:h-[60vh] h-[30vh] mt-20 mb-20">
+        <div className="flex md:hidden w-full my-2">
           <Image
-            src={material1}
-            className={
-              'absolute max-w-[60%] h-auto rounded-2xl -top-8 transform -rotate-6'
-            }
-            alt="material 1"
-          />
-          <Image
-            src={material2}
-            className={'absolute w-[90%] h-auto rounded-2xl top-40 right-0'}
-            alt="material 2"
+            src={materiaisJuntos}
+            className={''}
+            alt="materiais Papo de Pijama"
           />
         </div>
 
         <p
           className="text-center
           lg:text-5xl text-3xl font-bold
-        md:px-8 z-40 !leading-snug mt-10"
+        md:px-8 z-40 !leading-snug mt-0 md:mt-10"
         >
           Divisão dos blocos de estudo:
         </p>
