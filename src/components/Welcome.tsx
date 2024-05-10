@@ -59,7 +59,7 @@ export default function Welcome() {
         />
       </div>
 
-      <div className="h-screen max-w-screen-xl flex flex-col items-center justify-center z-10 py-14 md:py-0">
+      <div className="h-screen max-w-screen-xl flex flex-col items-center justify-center z-10 md:py-0">
         <div className="flex flex-col items-center justify-center">
           <Image
             src={logo}
