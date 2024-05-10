@@ -45,9 +45,9 @@ export default function TesteMartaMaria() {
         mt-4 text-[#751133] lg:w-1/2"
         >
           <i>
-            "<b>Marta, Marta, andas inquieta e agitada</b> com muitas coisas,
-            mas apenas uma é necessária. <b>Maria escolheu a boa parte</b>, e
-            esta não lhe será tirada." - Lc 10.41
+            <b>Marta, Marta, andas inquieta e agitada</b> com muitas coisas, mas
+            apenas uma é necessária. <b>Maria escolheu a boa parte</b>, e esta
+            não lhe será tirada - Lc 10.41
           </i>
         </p>
       </div>

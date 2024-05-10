@@ -50,9 +50,11 @@ export const Depo_images: React.FC<DepoImages> = ({ handleOferta }) => {
           <button
             onClick={handleOferta}
             className="bg-[#E98D2A] hover:bg-[#FFA74D] active:bg-[#B5711E] text-[#5E0616] py-3 px-12 rounded-full font-bold lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8 max-w-[90%]"
-            onMouseOver={(e) => (e.target.style.boxShadow = 'none')}
-            onMouseOut={(e) =>
-              (e.target.style.boxShadow =
+            onMouseOver={(e: React.MouseEvent<HTMLButtonElement>) =>
+              (e.currentTarget.style.boxShadow = 'none')
+            }
+            onMouseOut={(e: React.MouseEvent<HTMLButtonElement>) =>
+              (e.currentTarget.style.boxShadow =
                 '-6px 8px 2px 0px rgba(94, 6, 22, 0.8)')
             }
           >

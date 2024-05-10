@@ -5,11 +5,7 @@ import ao_vivo from '/public/images/ao_vivo.png'
 import wallpaper from '/public/images/fundos/laranja-baloes.png'
 import biblia_aberta from '/public/images/biblia-aberta.png'
 
-interface Ao_vivoProps {
-  handleOferta: () => void
-}
-
-export const Ao_vivo: React.FC<Ao_vivoProps> = ({ handleOferta }) => {
+export default function Ao_vivo() {
   return (
     <header className="relative flex justify-center bg-[#C87116]">
       <div className="absolute h-full w-full">

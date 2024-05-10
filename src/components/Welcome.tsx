@@ -15,7 +15,7 @@ export default function Welcome() {
     return () => clearInterval(interval)
   }, [])
 
-  const typingEffect = (word) => {
+  const useTypingEffect = (word: string) => {
     const typingSpeed = 100 // Velocidade de digitação (em milissegundos)
     const [text, setText] = useState('')
 
@@ -72,7 +72,8 @@ export default function Welcome() {
             <span className="md:text-[#B52548]"> intimidade com Deus </span>
             no dia a dia de forma{' '}
             <span className="bg-[#FF9E9C]">
-              {typingEffect(words[wordIndex])}{' '}
+              {/* simples, profunda e prática! */}
+              {useTypingEffect(words[wordIndex])}{' '}
             </span>
           </p>
         </div>

@@ -9,7 +9,7 @@ import Sobre_o_material from '../components/Sobre_o_material'
 import TemasEstudar from '../components/TemasEstudar'
 import Comparative from '../components/Comparative'
 import { Depo_images } from '../components/Depo_images'
-import { Ao_vivo } from '../components/Ao_vivo'
+import Ao_vivo from '../components/Ao_vivo'
 import { Dia_a_dia } from '../components/Dia_a_dia'
 import Por_menos_de_40 from '../components/Por_menos_de_40'
 import Lista from '../components/Lista'
@@ -116,9 +116,11 @@ export default function Home() {
                 md:w-3/5 h-14 py-2 px-4 rounded-full
                 font-bold text-xl lg:text-2xl z-10
               transition duration-200 transform hover:scale-105 active:scale-95"
-                    onMouseOver={(e) => (e.target.style.boxShadow = 'none')}
-                    onMouseOut={(e) =>
-                      (e.target.style.boxShadow =
+                    onMouseOver={(e: React.MouseEvent<HTMLButtonElement>) =>
+                      (e.currentTarget.style.boxShadow = 'none')
+                    }
+                    onMouseOut={(e: React.MouseEvent<HTMLButtonElement>) =>
+                      (e.currentTarget.style.boxShadow =
                         '-4px 7px 4px 0px rgba(94, 6, 22, 0.6)')
                     }
                   >
