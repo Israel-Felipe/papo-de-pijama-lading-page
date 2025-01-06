@@ -94,21 +94,21 @@ export default function Home() {
                   </p>
                   <div className="relative">
                     <p className="text-[#E98D2A] lg:text-6xl text-5xl font-extrabold">
-                      34,83
+                      59,90
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center justify-center text-center font-bold my-4">
                   <p className="lg:text-xl text-lg text-[#b0173b]">
-                    OU R$ 347,00 À VISTA
+                    OU R$ 599,99 À VISTA
                   </p>
                 </div>
               </div>
 
               <div className="lg:w-1/2 w-[90%] h-auto m-auto mt-12 mb-16 z-10">
                 <a
-                  href="https://pay.hotmart.com/H82747095C?off=gjb2hj2p"
+                  href="https://pay.hotmart.com/H82747095C?off=uqkucoiq&bid=1736199271925"
                   className="w-full  flex justify-center"
                 >
                   <button
