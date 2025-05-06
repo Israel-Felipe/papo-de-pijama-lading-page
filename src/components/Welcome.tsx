@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react'
 
 export default function Welcome() {
   const [wordIndex, setWordIndex] = useState(0)
-  const words = ['simples', 'profunda', 'prática']
+  const words = ['leve', 'profunda', 'prática']
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -76,6 +76,19 @@ export default function Welcome() {
               {useTypingEffect(words[wordIndex])}{' '}
             </span>
           </p>
+        </div>
+        <div className="relative flex justify-center items-center mt-12 h-auto z-40">
+          <a
+            href="https://pay.hotmart.com/H82747095C?off=uqkucoiq&bid=1736199271925&_hi=eyJjaWQiOiIxNzQ1NTA3MjQxNTU0NjUzNTM4ODI4MDE3Mjg4MjAwIiwiYmlkIjoiMTc0NTUwNzI0MTU1NDY1MzUzODgyODAxNzI4ODIwMCIsInNpZCI6ImZjNTllZjk1NDNmNTQ0ZGM4YTE0NmEzNzkyOTUwNGQ5In0=.1746480068258"
+            className="w-full  flex justify-center"
+          >
+            <button
+              className="bg-[#B52446] hover:bg-[#FD3665] active:bg-[#B52446] text-[#fff] py-4 px-6 md:px-32 rounded-full lg:text-3xl text-lg z-10 transition duration-200 transform hover:scale-105 active:scale-95 mb-8"
+              style={{ boxShadow: '0px 11px 24px -10px #313131ab' }}
+            >
+              <b>QUERO PARTICIPAR DO CLUBE</b>
+            </button>
+          </a>
         </div>
       </div>
 
