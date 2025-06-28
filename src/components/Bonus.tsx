@@ -68,9 +68,12 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
             experiência mesmo se não souber desenhar!
           </p>
 
-          <a className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-14 lg:mb-0">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfSUsihoGbCTTMQ3zAChvks3_Q7UIkRkOrI5En3_Gdx0o_J2w/viewform"
+            className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-14 lg:mb-0"
+          >
             <button
-              onClick={handleOferta}
+              //onClick={handleOferta}
               className="bg-[#E98D2A] hover:bg-[#F2A644] active:bg-[#D27920] text-[#FFFFFF]
                 h-14 py-2 px-4 rounded-full
                 font-bold text-lg lg:text-xl z-10

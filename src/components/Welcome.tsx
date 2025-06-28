@@ -78,8 +78,12 @@ export default function Welcome() {
           </p>
         </div>
         <div className="relative flex justify-center items-center mt-12 h-auto z-40">
-          <a
+          {/* <a
             href="https://pay.hotmart.com/H82747095C?off=uqkucoiq&bid=1736199271925&_hi=eyJjaWQiOiIxNzQ1NTA3MjQxNTU0NjUzNTM4ODI4MDE3Mjg4MjAwIiwiYmlkIjoiMTc0NTUwNzI0MTU1NDY1MzUzODgyODAxNzI4ODIwMCIsInNpZCI6ImZjNTllZjk1NDNmNTQ0ZGM4YTE0NmEzNzkyOTUwNGQ5In0=.1746480068258"
+            className="w-full flex justify-center"
+          > */}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfSUsihoGbCTTMQ3zAChvks3_Q7UIkRkOrI5En3_Gdx0o_J2w/viewform"
             className="w-full  flex justify-center"
           >
             <button
