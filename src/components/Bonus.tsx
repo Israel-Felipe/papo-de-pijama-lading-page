@@ -68,27 +68,27 @@ export const Bonus: React.FC<BonusProps> = ({ handleOferta }) => {
             experiência mesmo se não souber desenhar!
           </p>
 
-          <a
+          {/* <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSfSUsihoGbCTTMQ3zAChvks3_Q7UIkRkOrI5En3_Gdx0o_J2w/viewform"
             className="w-full flex items-end lg:justify-end justify-center lg:mt-0 mt-8 mb-14 lg:mb-0"
-          >
-            <button
-              //onClick={handleOferta}
-              className="bg-[#E98D2A] hover:bg-[#F2A644] active:bg-[#D27920] text-[#FFFFFF]
+          > */}
+          <button
+            onClick={handleOferta}
+            className="bg-[#E98D2A] hover:bg-[#F2A644] active:bg-[#D27920] text-[#FFFFFF]
                 h-14 py-2 px-4 rounded-full
                 font-bold text-lg lg:text-xl z-10
               transition duration-200 transform hover:scale-105 active:scale-95"
-              onMouseOver={(e: React.MouseEvent<HTMLButtonElement>) =>
-                (e.currentTarget.style.boxShadow = 'none')
-              }
-              onMouseOut={(e: React.MouseEvent<HTMLButtonElement>) =>
-                (e.currentTarget.style.boxShadow =
-                  '-4px 7px 4px 0px rgba(94, 6, 22, 0.6)')
-              }
-            >
-              QUERO GARANTIR MEU BÔNUS!
-            </button>
-          </a>
+            onMouseOver={(e: React.MouseEvent<HTMLButtonElement>) =>
+              (e.currentTarget.style.boxShadow = 'none')
+            }
+            onMouseOut={(e: React.MouseEvent<HTMLButtonElement>) =>
+              (e.currentTarget.style.boxShadow =
+                '-4px 7px 4px 0px rgba(94, 6, 22, 0.6)')
+            }
+          >
+            QUERO GARANTIR MEU BÔNUS!
+          </button>
+          {/* </a> */}
         </div>
       </nav>
     </header>

@@ -39,17 +39,17 @@ export const Dia_a_dia: React.FC<Dia_a_diaProps> = ({ handleOferta }) => {
                   ficam gravados em nossa plataforma para você poder acessar
                   sempre que precisar retornar algum assunto estudado.
                 </p>
-                <a
+                {/* <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfSUsihoGbCTTMQ3zAChvks3_Q7UIkRkOrI5En3_Gdx0o_J2w/viewform"
                   className="w-full  flex justify-center"
+                > */}
+                <button
+                  onClick={handleOferta}
+                  className="bg-[#5E0616] hover:bg-[#FD3665] active:bg-[#5E0616] text-[#fff] py-4 px-4 rounded-full lg:text-xl text-md z-10 transition duration-200 transform hover:scale-105 active:scale-100 mt-4 md:w-3/4 m-auto uppercase"
                 >
-                  <button
-                    //onClick={handleOferta}
-                    className="bg-[#5E0616] hover:bg-[#FD3665] active:bg-[#5E0616] text-[#fff] py-4 px-4 rounded-full lg:text-xl text-md z-10 transition duration-200 transform hover:scale-105 active:scale-100 mt-4 md:w-3/4 m-auto uppercase"
-                  >
-                    <b>Quero papear de pijama também!</b>
-                  </button>
-                </a>
+                  <b>Quero papear de pijama também!</b>
+                </button>
+                {/* </a> */}
               </div>
             </div>
 
