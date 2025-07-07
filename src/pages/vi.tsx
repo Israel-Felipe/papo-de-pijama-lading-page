@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import Head from 'next/head'
-import Welcome from '../components/Welcome'
+import { Welcome } from '../components/Welcome'
 import TesteMartaMaria from '../components/TesteMartaMaria'
 import DesejaSerMaisParecida from '../components/DesejaSerMaisParecida'
 import { Depo_videos } from '../components/Depo_videos'
@@ -47,7 +47,7 @@ export default function Home() {
       </Head>
 
       <main className="min-h-xl m-auto flex-col justify-center items-center bg-[#FEF4E6]">
-        <Welcome />
+        <Welcome handleOferta={handleOferta} />
         <TesteMartaMaria />
         <DesejaSerMaisParecida />
         <Depo_videos handleOferta={handleOferta} />
