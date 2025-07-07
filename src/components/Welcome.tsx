@@ -18,7 +18,7 @@ export const Welcome: React.FC<Welcome> = ({ handleOferta }) => {
     }, 2000) // Mude o valor do intervalo conforme necessário
 
     return () => clearInterval(interval)
-  }, [])
+  }, [words.length])
 
   const useTypingEffect = (word: string) => {
     const typingSpeed = 100 // Velocidade de digitação (em milissegundos)
